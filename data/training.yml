@@ -1,0 +1,143 @@
+- class: "banner"
+  content:
+    -
+      - class: "align-left"
+        content:
+          - h1: "Training"
+            h3: "\"Teach me how to Sparkle<a href=https://youtu.be/aZglqkCRNt8
+              target=_blank>.</a>\""
+
+          - partial: "button"
+            button:
+              label: "Learn More"
+              url: "#curriculum"
+      - partial: "list"
+        style: "fa-ul"
+        bullets: "fa-li fa fa-angle-right"
+        content:
+          - h4:
+              heading: "Infrastructure Templates 101"
+              url: "#infrastructure-templates-101"
+          - h4:
+              heading: "Building Blocks"
+              url: "#building-blocks"
+          - h4:
+              heading: "Practical Application"
+              url: "#practical-application"
+          - h4:
+              heading: "SparkleFormation Workshops"
+              url: "#sparkleformation-workshops"
+
+- class: "curriculum"
+  id: "curriculum"
+  content:
+    -
+      - h5: "Infrastructure Templates 101"
+        id: "infrastructure-templates-101"
+        content:
+          - ""
+      - h5: "Building Blocks"
+        id: "building-blocks"
+        content:
+          - ""
+    -
+      - h5: "Practical Application"
+        id: "building-blocks"
+        content:
+          - ""
+      - h5: "SparkleFormation Workshops"
+        id: "building-blocks"
+        content:
+          - ""
+
+- class: "packages"
+  content:
+    - h2: "Training Packages"
+      content:
+        - "SparkleFormation Training sessions will be held once every 2-3 months
+          at Heavy Water's training facility - at Centrl Office in the
+          \"Pearl District\" area of Downtown Portland, Oregon. Training
+          sessions will be limited to groups of up to 20-users. On-site training
+          sessions are also available for organizations located in the United
+          States, Canada, Europe, Japan and Australia."
+
+    - partial: "table"
+      table:
+        class: "table-hover"
+        columns:
+          - heading: ""
+            class: "col-sm-6 mobile-scroll-indicator"
+            style: "font-weight: bold;"
+          - heading: "Fundamental"
+            class: "col-sm-2"
+          - heading: "Professional"
+            class: "col-sm-2"
+          - heading: "On-Site"
+            class: "col-sm-2"
+        rows:
+          - data:
+              - "Duration"
+              - "2-days"
+              - "3-days"
+              - "4-days"
+          - data:
+              - "FREE SparkleFormation T-Shirt & Stickers"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+          - data:
+              - "Infrastructure Templates 101"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+          - data:
+              - "Building Blocks"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+          - data:
+              - "Practical Application"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+          - data:
+              - "SparkleFormation Workshops"
+              - ""
+              - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
+          - data:
+              - "Migration Support"
+              - ""
+              - ""
+              - "<span class='fa fa-check'></span>"
+          - data:
+              - "Cost"
+              - "$599 per seat"
+              - "$999 per seat"
+              - "$20,000"
+          - data:
+              - ""
+              - partial: "button"
+                button:
+                  label: "Register"
+                  url: "#schedule"
+                  class: "button-full-width"
+              - partial: "button"
+                button:
+                  label: "Register"
+                  url: "#schedule"
+                  class: "button-full-width"
+              - partial: "button"
+                button:
+                  label: "Contact"
+                  url: "http://www.heavywater.io/contact"
+                  class: "button-full-width"
+
+- class: "schedule"
+  content:
+    - h2: "Upcoming Schedule"
+      content:
+        - ""
+    - partial: "tito"
+      org: "heavywater"
+      event: "sparkleformation-training"

@@ -1,0 +1,10 @@
+%div.section{ class: section[:class], id: section[:id] }
+  = stylesheet_link_tag "section"
+  - if section[:stylesheet]
+    = stylesheet_link_tag section[:stylesheet]
+  %div.container
+    - if section[:data]
+      = partial "partials/data", locals: { content: section[:data] }
+    - if section[:content]
+      - section[:content].each do |content|
+        = partial "partials/display", locals: { content: content }

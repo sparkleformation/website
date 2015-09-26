@@ -1,0 +1,18 @@
+%div.tabular
+  %div.table-responsive
+    = stylesheet_link_tag "table"
+    %table.table{ class: "#{content[:table][:class] || "table-bordered table-striped" }" }
+      %thead
+        %tr
+          - content[:table][:columns].each do |column|
+            %th{ id: column[:id], class: column[:class], style: column[:style] }
+              %span= column[:heading]
+      %tbody
+        - content[:table][:rows].each do |tr|
+          %tr{ class: tr[:class] }
+            - tr[:data].each do |td|
+              %td
+                - if td.kind_of?(String)
+                  %span= td
+                - else
+                  = partial "partials/display", locals: { content: td }

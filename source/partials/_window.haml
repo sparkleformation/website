@@ -1,0 +1,22 @@
+%div.window
+  = stylesheet_link_tag "window"
+  %div.window-frame
+    - 3.times do
+      %span.window-button
+  - if content[:address]
+    %div.window-address-bar
+      %p
+        - if content[:address].match(/^https/)
+          %span.secure.fa.fa-lock
+        %span= content[:address]
+
+  %div.window-content
+    - if content[:img]
+      = partial "partials/img", locals: { content: content }
+    - elsif content[:code]
+      %div.window-body
+        - if content[:code][:file]
+          = partial "#{content[:code][:file]}"
+        - else
+          %pre.highlight{ class: content[:code][:lang] }
+            %code= "#{content.code.snippet}"

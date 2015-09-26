@@ -1,0 +1,65 @@
+---
+- class: "banner"
+  content:
+    - img:
+        src: "img/logo-white.png"
+        class: "center-block"
+
+    - class: "text-center"
+      h2: "<span class=strong>Sparkle</span><span class=thin>Formation</span>"
+      h4: "Write infrastructure code, not serialized data."
+
+    - partial: "button"
+      class: "text-center"
+      button:
+        label: "Learn More"
+        url: "#about"
+
+- class: "example"
+  content:
+    -
+      - h4: "Workflow"
+        width: 5
+        content:
+          - "Describe your entire <underline>infrastructure as code</underline>.
+            Deploy and update entire stacks (or nested stacks) with a single
+            command."
+          - partial: "button"
+            button:
+              label: "Learn more"
+              url: "/docs"
+      - partial: "window"
+        width: 7
+        code:
+          snippet: |
+            $ sfn create training-vpc --file sparkleformation/vpc.rb
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+          lang: "shell"
+
+- class: "about"
+  id: "about"
+  content:
+    -
+      - class: "text-center"
+        h1:
+          icon:
+            class: "fa fa-code"
+        h3: "SparkleFormation DSL"
+        content:
+          - ""
+      - class: "text-center"
+        h1:
+          icon:
+            class: "octicon octicon-terminal"
+        h3: "SparkleFormation CLI"
+        content:
+          - ""
+
+- class: "features"
+  id: "features"
+  content:
+    - h3: "Features"
+    - ""

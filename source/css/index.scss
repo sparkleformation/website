@@ -1,0 +1,13 @@
+@import "theme";
+
+.banner {
+  @extend .theme-colors-primary;
+};
+
+.banner img {
+  max-height: 300px;
+};
+
+.about {
+  @extend .theme-colors-secondary;
+};

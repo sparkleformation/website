@@ -1,0 +1,3 @@
+= stylesheet_link_tag "button"
+%a.button{ href: content[:button][:url], class: "#{content[:button][:class] || "button-default" }" }
+  %span= content[:button][:label]

@@ -1,0 +1,82 @@
+$window-chrome-height: 30px;
+$window-chrome-button-size: 16px;
+$window-chrome-font-size: 14px;
+
+.window {
+	width: 100%;
+	padding: $window-chrome-height 0 0;
+	border-radius: 5px 5px 0 0;
+	background: #C3C3C3;
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+  box-shadow: 10px 10px 20px gray;
+	margin: 20px 0px;
+};
+
+.window .window-frame {
+	width: 100%;
+	display: block;
+	height: 15px;
+	position: absolute;
+	top: 8px;
+	left: 0px;
+};
+
+.window .window-button {
+	height: $window-chrome-button-size;
+	width: $window-chrome-button-size;
+	border-radius: $window-chrome-button-size;
+	background-color: #9A9A9A;
+	border: 1px solid #C3C3C3;
+	float: left;
+	margin-left: 5px;
+};
+
+.window .window-button:first-child {
+	margin-left: 8px;
+};
+
+.window .window-title {
+	line-height: $window-chrome-button-size;
+	font-size: 12px !important;
+	float: left;
+	margin-left: 10px;
+};
+
+.window .window-address-bar {
+	height: calc($window-chrome-height - 10px);
+	width: auto;
+	background: white !important;
+	border-radius: 2px;
+	margin: 8px;
+	white-space: nowrap;
+	overflow: hidden;
+};
+
+.window .window-address-bar .secure {
+	color: #95DF65;
+};
+
+.window .window-address-bar span {
+	font-size: 1.0em;
+	margin: 4px 0px;
+	font-size: $window-chrome-font-size !important;
+	padding-left: 8px;
+};
+
+.window img {
+  width: 100%;
+  overflow: hidden;
+};
+
+.window .window-body pre {
+	width: 100%;
+	padding: 30px;
+};
+
+.window .window-body .highlight {
+	border-radius: 0px !important;
+	border: 0px !important;
+	margin-bottom: 0px !important;
+};

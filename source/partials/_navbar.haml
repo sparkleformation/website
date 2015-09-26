@@ -1,0 +1,20 @@
+%div.navbar
+  = stylesheet_link_tag "navbar"
+  %div{ id: content[:id], class: content[:class] }
+    %div.container
+      %div.navbar-header
+        %button.navbar-toggle{ "type" => "button",
+                               "data-toggle" => "collapse",
+                               "data-target" => ".navbar-collapse" }
+          %span.fa.fa-bars
+        %a.navbar-brand.brand{ href: "/" }
+          %img{ src: content[:img][:src] }
+          %span= content[:title]
+      %div.navbar-collapse.collapse
+        %ul.nav.navbar-nav.navbar-right
+          - content[:options].each do |option|
+            %li
+              %a{ href: option[:url], class: option[:class] }
+                - if option[:icon]
+                  %span{ class: option[:icon][:class] }
+                %span= option[:label] || option[:name]

@@ -1,0 +1,52 @@
+@import "theme";
+
+$navbar-text:         20px;
+$navbar-img:          40px;
+$navbar-line-height:  24px;
+
+.navbar {
+  margin: 0px;
+  border: none;
+  height: 70px;
+};
+
+.navbar .navbar-fixed-top {
+  color: $sparkle-black;
+  background-color: rgba(255, 255, 255, 0.90);
+  padding: 10px 0px;
+};
+
+.navbar .navbar-header img {
+  display:inline-block;
+  max-height: $navbar-img;
+  margin: -10px 0px;
+};
+
+.navbar .navbar-header span {
+  display: inline-block;
+  font-size: $navbar-text;
+  line-height: $navbar-line-height;
+};
+
+.navbar ul li {
+  font-size: $navbar-text;
+  line-height: $navbar-line-height;
+};
+
+.navbar ul li a:hover {
+  background-color: $transparent;
+};
+
+.navbar .button {
+  margin: 0px;
+  padding: 13px;
+  @extend .theme-colors-inverse;
+};
+
+.navbar .button:hover {
+  @extend .theme-colors-tertiary;
+};
+
+.navbar .icon-bar {
+  color: $sparkle-black;
+};

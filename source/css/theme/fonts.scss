@@ -1,0 +1,22 @@
+/* FontAwesome */
+@font-face {
+  font-family: FontAwesome;
+  src: font-url("font-awesome/FontAwesome.otf"),
+       font-url("font-awesome/fontawesome-webfont.eot") format('embedded-opentype'),
+       font-url("font-awesome/fontawesome-webfont.woff") format('woff'),
+       font-url("font-awesome/fontawesome-webfont.ttf") format('truetype'),
+       font-url("font-awesome/fontawesome-webfont.svg") format('svg'),
+};
+@import "font-awesome/font-awesome";
+
+/* GitHub Octicons*/
+@import "octicons/sprockets-octicons";
+
+/* DIN */
+@font-face {
+  font-family: 'DIN Medium';
+  src: font-url('/fonts/din-medium.eot') format('embedded-opentype'),
+       font-url('/fonts/din-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+};

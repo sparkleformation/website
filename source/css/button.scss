@@ -1,0 +1,39 @@
+@import "theme";
+
+.button {
+  display: inline-block;
+  background-color: none;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 500;
+  margin: 15px 0px;
+};
+
+.button:hover,
+.button:focus,
+.button:visited {
+  text-decoration: none;
+};
+
+.button span:after {
+  content: " >"
+}
+
+.button-default {
+  @extend .button;
+  border-width: 4px;
+  padding: 20px 30px;
+  font-size: 24px;
+};
+
+.button-large {
+  @extend .button;
+  border-width: 4px;
+  padding: 30px 40px;
+  font-size: 2.0em;
+};
+
+.button-full-width {
+  @extend .button-default;
+  width: 100%;
+};

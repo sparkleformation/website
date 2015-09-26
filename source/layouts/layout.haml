@@ -1,0 +1,10 @@
+!!! 5
+%html{ lang: "en" }
+  = partial "partials/head"
+  %body
+    - if data[:navigation]
+      = partial "partials/#{data[:navigation][:partial]}", locals: { content: data[:navigation] }
+    = yield
+    - if data[:footer]
+      = partial "partials/load", locals: { content: data[:footer] }
+    = partial "partials/tail"

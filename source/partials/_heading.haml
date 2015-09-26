@@ -1,0 +1,16 @@
+- ["h1", "h2", "h3", "h4", "h5", "h6"].each do |heading|
+  - if content[heading]
+    %div.content-heading
+      - haml_tag heading do
+        - if content[heading].kind_of?(String)
+          %span= content[heading]
+        - elsif content[heading].kind_of?(Hash)
+          - if content[heading][:url]
+            %a{ href: content[heading][:url] }
+              - if content[heading][:icon]
+                %span{ class: content[heading][:icon][:class] }
+              %span{ class: content[heading][:class] }= content[heading][:heading]
+          - else
+            - if content[heading][:icon]
+              %span{ class: content[heading][:icon][:class] }
+            %span{ class: content[heading][:class] }= content[heading][:heading]

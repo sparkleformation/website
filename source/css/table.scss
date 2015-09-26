@@ -1,0 +1,42 @@
+@import "theme";
+
+.tabular {
+  margin: 20px 0px;
+};
+
+.tabular .table-hover tr:hover {
+  background-color: $transparent !important;
+};
+
+.tabular table thead th {
+  font-weight: bold;
+  text-align: center;
+};
+
+.tabular table tbody td {
+  font-weight: normal;
+  text-align: center;
+};
+
+.tabular table tbody td:first-child {
+  font-weight: bold;
+  text-align: left;
+};
+
+.tabular td span {
+  font-size: 1.0em !important;
+};
+
+.mobile-scroll-indicator span:after {
+  @media (max-width: 749px) {
+    content: "Scroll \f138 " !important;
+    font-weight: bold;
+    color: #666666;
+    padding-right: 5px;
+    float: right;
+  };
+};
+
+.mobile-scroll-indicator span {
+  @extend .fa;
+};

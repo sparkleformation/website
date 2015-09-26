@@ -1,0 +1,4 @@
+// Favicons
+= favicon_tag content.img.src
+- %w[144 114 72 57].each do |size|
+  %link{ rel: "apple-touch-icon-precomposed", sizes: "#{size}x#{size}", href: "/img/ico/favicon-#{size}.png" }

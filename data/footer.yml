@@ -1,0 +1,16 @@
+- class: "footer"
+  stylesheet: "footer"
+  content:
+    -
+      - partial: "list"
+        width: 3
+        content:
+          - "<a href=/>Home</a>"
+          - "<a href=/#about>About</a>"
+          - "<a href=/docs>Docs</a>"
+          - "<a href=/training>Training</a>"
+
+    - class: "text-center"
+      content:
+        - "Made with <span class='fa fa-heart'></span> by <a href=http://\
+          www.heavywater.io>Heavy Water</a> &copy; 2013-2015"

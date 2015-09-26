@@ -1,0 +1,12 @@
+%div.tito
+  = stylesheet_link_tag "https://css.tito.io/v1";
+  = stylesheet_link_tag "tito";
+  = javascript_include_tag "https://js.tito.io/v1";
+  - if content[:testing]
+    %script{ "TitoDevelopmentMode" => "true" }
+  - if not content[:button]
+    %tito-widget{ event: "#{content[:org]}/#{content[:event]}" }
+  - if content.button
+    %tito-button{ event: "#{content[:org]}/#{content[:event]}" }
+      - if content[:button][:label]
+        %span= content[:button][:label]

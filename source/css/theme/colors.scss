@@ -1,0 +1,106 @@
+$sparkle-orange:        rgb(234, 149, 22);
+$sparkle-magenta:       rgb(222, 82, 133);
+$sparkle-green:         rgb(112, 194, 25); //
+$sparkle-blue:          rgb(6, 184, 230); // #06b8e6
+$sparkle-black:         rgb(25, 38, 44); // #19262c
+$sparkle-gray:          rgb(200, 200, 200); // #c8c8c8
+$sparkle-white:         rgb(255, 255, 255); // #ffffff
+
+$color-red:             #FF3B30;
+$transparent:           rgba(255, 255, 255, 0.07);
+
+.theme-colors-default {
+  background-color: $sparkle-white;
+  color: $sparkle-black;
+};
+
+.theme-colors-default a,
+.theme-colors-default a:hover,
+.theme-colors-default a:focus,
+.theme-colors-default a:visited {
+  color: $sparkle-black;
+};
+
+.theme-colors-default .button {
+  border-color: $sparkle-black;
+};
+
+.theme-colors-default .button:hover {
+  @extend .theme-colors-primary;
+};
+
+.theme-colors-inverse {
+  background-color: $sparkle-black;
+  color: $sparkle-white;
+};
+
+.theme-colors-inverse a,
+.theme-colors-inverse a:hover,
+.theme-colors-inverse a:focus,
+.theme-colors-inverse a:visited {
+  color: $sparkle-blue;
+};
+
+.theme-colors-alternate .button {
+  border-color: $sparkle-black;
+};
+
+.theme-colors-primary {
+  background-color: $sparkle-blue;
+  color: $sparkle-white;
+};
+
+.theme-colors-primary a,
+.theme-colors-primary a:hover,
+.theme-colors-primary a:focus,
+.theme-colors-primary a:visited {
+  color: $sparkle-white;
+};
+
+.theme-colors-primary .button {
+  border-color: $sparkle-white !important;
+};
+
+.theme-colors-primary .button:hover {
+  @extend .theme-colors-default;
+};
+
+.theme-colors-secondary {
+  background-color: $sparkle-gray;
+  color: $sparkle-black;
+};
+
+.theme-colors-secondary a,
+.theme-colors-secondary a:hover,
+.theme-colors-secondary a:focus,
+.theme-colors-secondary a:visited {
+  color: $sparkle-black;
+};
+
+.theme-colors-secondary .button {
+  border-color: $sparkle-black !important;
+};
+
+.theme-colors-secondary .button:hover {
+  @extend .theme-colors-tertiary;
+};
+
+.theme-colors-tertiary {
+  background-color: $sparkle-magenta;
+  color: $sparkle-white;
+};
+
+.theme-colors-tertiary a,
+.theme-colors-tertiary a:hover,
+.theme-colors-tertiary a:focus,
+.theme-colors-tertiary a:visited {
+  color: $sparkle-white;
+};
+
+.theme-colors-tertiary .button {
+  border-color: $sparkle-white !important;
+};
+
+.theme-colors-tertiary .button:hover {
+  @extend .theme-colors-default;
+};

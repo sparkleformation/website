@@ -1,0 +1,15 @@
+---
+title: "SparkleFormation"
+description: "Write infrastructure code, not serialized data."
+author:
+  name: "Heavy Water"
+  url: "http://www.sparkleformation.io"
+favicon:
+  img:
+    src: "img/logo.png"
+
+opengraph:
+  type: "website"
+  site_name: "SparkleFormation"
+  title: "Write infrastructure code, not serialized data."
+  url: "http://www.sparkleformation.io"

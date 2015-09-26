@@ -1,0 +1,59 @@
+@import "theme";
+@import "button";
+
+.tito-wrapper {
+  background-color: transparent;
+  border: none;
+  max-width: 100% !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+};
+
+.tito-ticket-list {
+  margin: 0px;
+};
+
+.tito-ticket-name-wrapper,
+.tito-ticket-price-quantity-wrapper {
+  border-bottom: none;
+  padding-bottom: 20px;
+};
+
+.tito-ticket-name {
+};
+
+.tito-ticket-description {
+};
+
+.tito-tickets-remaining {
+};
+
+.tito-ticket-price span {
+};
+
+.tito-ticket-quantity span {
+};
+
+.tito-ticket-quantity input {
+};
+
+.tito-discount-code {
+  display: none;
+};
+
+.tito-notch {
+  border: none;
+};
+
+.tito-badge-link {
+  display: none;
+};
+
+.tito-submit-wrapper .tito-submit,
+.tito-submit-wrapper .tito-submit:hover {
+  @extend .button;
+  border-radius: 0px;
+
+};

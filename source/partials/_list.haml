@@ -1,0 +1,25 @@
+%div.list
+  - if not defined? items
+    - items = content[:content]
+  - if not defined? columns
+    - if content[:columns]
+      - columns = content[:columns]
+    - else
+      - columns = 1
+  - width = 12 / columns
+  - rows = items.count / columns
+  - if items.count % columns > 0
+    - rows += 1
+  - index = 0
+
+  %div.row
+    = stylesheet_link_tag "list"
+    - columns.times do
+      %div.list-column{ class: "col-sm-#{width}" }
+        %ul{ class: "#{content[:style] || "list-unstyled"}" }
+          - items[index,rows].each do |item|
+            %li
+              - if content[:bullets]
+                %i.list-icon{ class: content[:bullets] }
+              = partial "partials/display", locals: { content: item }
+          - index += rows

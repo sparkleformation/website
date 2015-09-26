@@ -1,0 +1,6 @@
+- if defined? id
+  %input{ type: "hidden", value: value, id: id, name: id }
+
+- elsif content.kind_of?(Array)
+  - content.each do |content|
+    %input{ type: "hidden", id: content.id, name: content.name || content.id, value: content.value }

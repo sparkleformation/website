@@ -1,0 +1,13 @@
+partial: "navbar"
+class: "navbar-fixed-top"
+title: "<span class=strong>Sparkle</span><span class=thin>Formation</span>"
+img:
+  src: "img/logo-full-color.png"
+options:
+  - label: "About"
+    url: "#about"
+  - label: "Docs"
+    url: "/docs"
+  - label: "Training"
+    url: "/training"
+    class: "button"

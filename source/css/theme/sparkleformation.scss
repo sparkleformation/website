@@ -1,0 +1,18 @@
+@import "colors";
+@import "fonts";
+@import "text";
+
+body {
+  font-family: 'DIN Medium', sans-serif;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  @extend .theme-colors-default;
+};
+
+.blur {
+  filter: blur(5px);
+};
+
+.fa-heart {
+  color: $color-red;
+};

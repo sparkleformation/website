@@ -1,0 +1,5 @@
+- if content[:img][:url]
+  %a{ href: content[:img][:url] }
+    %img.img-responsive{ src: content[:img][:src], class: content[:img][:class] }
+- else
+  %img.img-responsive{ src: content[:img][:src], class: content[:img][:class] }
