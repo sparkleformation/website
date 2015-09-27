@@ -3,8 +3,8 @@
     -
       - class: "align-left"
         content:
-          - h1: "Training"
-            h3: "\"Teach me how to Sparkle<a href=https://youtu.be/aZglqkCRNt8
+          - h2: "Training"
+            h4: "\"Teach me how to Sparkle<a href=https://youtu.be/aZglqkCRNt8
               target=_blank>.</a>\""
 
           - partial: "button"
@@ -15,16 +15,16 @@
         style: "fa-ul"
         bullets: "fa-li fa fa-angle-right"
         content:
-          - h4:
+          - h5:
               heading: "Infrastructure Templates 101"
               url: "#infrastructure-templates-101"
-          - h4:
+          - h5:
               heading: "Building Blocks"
               url: "#building-blocks"
-          - h4:
+          - h5:
               heading: "Practical Application"
               url: "#practical-application"
-          - h4:
+          - h5:
               heading: "SparkleFormation Workshops"
               url: "#sparkleformation-workshops"
 
@@ -55,6 +55,7 @@
         - ""
 
 - class: "packages"
+  id: "packages"
   content:
     - h2: "Training Packages"
       content:
@@ -139,6 +140,7 @@
                   class: "button-full-width"
 
 - class: "schedule"
+  id: "schedule"
   content:
     - h2: "Upcoming Schedule"
       content:
