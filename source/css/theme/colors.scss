@@ -1,13 +1,18 @@
-$sparkle-orange:        rgb(234, 149, 22);
-$sparkle-magenta:       rgb(222, 82, 133);
-$sparkle-green:         rgb(112, 194, 25); //
-$sparkle-blue:          rgb(6, 184, 230); // #06b8e6
-$sparkle-black:         rgb(25, 38, 44); // #19262c
-$sparkle-gray:          rgb(200, 200, 200); // #c8c8c8
-$sparkle-white:         rgb(255, 255, 255); // #ffffff
+$sparkle-orange:              rgb(234, 149, 22);
+$sparkle-magenta:             rgb(222, 82, 133);
+$sparkle-green:               rgb(112, 194, 25); //
+$sparkle-green-translucent:   rgba(112, 194, 25, 0.90); //
+$sparkle-blue:                rgb(6, 184, 230); // #06b8e6
+$sparkle-black:               rgb(25, 38, 44); // #19262c
+$sparkle-gray:                rgb(200, 200, 200); // #c8c8c8
+$sparkle-white:               rgb(255, 255, 255); // #ffffff
 
-$color-red:             #FF3B30;
-$transparent:           rgba(255, 255, 255, 0.07);
+$color-red:                   #FF3B30;
+$transparent:                 rgba(255, 255, 255, 0.07);
+
+.black {
+  color: $sparkle-black !important;
+};
 
 .theme-colors-default {
   background-color: $sparkle-white;
@@ -23,6 +28,17 @@ $transparent:           rgba(255, 255, 255, 0.07);
 
 .theme-colors-default .button {
   border-color: $sparkle-black;
+};
+
+.theme-colors-default p > a,
+.theme-colors-default p > a:hover,
+.theme-colors-default p > a:visited,
+.theme-colors-default p > a:focus,
+.theme-colors-default li > a,
+.theme-colors-default li > a:hover,
+.theme-colors-default li > a:visited,
+.theme-colors-default li > a:focus {
+  color: $sparkle-green;
 };
 
 .theme-colors-default .button:hover {

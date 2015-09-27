@@ -8,6 +8,10 @@
   max-height: 300px;
 };
 
-.about {
+.components {
   @extend .theme-colors-secondary;
+};
+
+.features {
+  @extend .theme-colors-default;
 };
