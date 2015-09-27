@@ -4,6 +4,10 @@ set :images_dir, 'img'
 set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true, :smartypants => true, :autolink => true,
     :quote => true, :footnotes => true
+set :layouts_dir, 'layouts'
+set :layout, 'layout'
+set :partials_dir, 'partials'
+set :trailing_slash, true
 
 with_layout :docs do
   page "/docs"

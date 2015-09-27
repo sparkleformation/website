@@ -8,7 +8,8 @@
 
   // "Google Analytics"
   - if data[:site].has_key?("google-analytics")
-    = partial "layouts/partials/google_analytics"
+    = partial "google_analytics"
 
   // "Auto loader for custom Javascript"
-  = javascript_include_tag "all"
+  // = javascript_include_tag "all"
+  = javascript_include_tag "loveboat.js"
