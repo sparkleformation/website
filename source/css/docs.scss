@@ -1,0 +1,18 @@
+@import "theme";
+
+body {
+};
+
+.documentation {
+  @extend .theme-colors-default;
+  margin-top: -70px;
+  margin-bottom: 100px;
+};
+
+.anchor-offset {
+  margin-bottom: -120px;
+};
+
+.anchor {
+  padding-top: 140px;
+};
