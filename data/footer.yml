@@ -6,9 +6,18 @@
         width: 3
         content:
           - "<a href=/>Home</a>"
-          - "<a href=/#about>About</a>"
-          - "<a href=/docs>Docs</a>"
+          - "<a href=/#components>Components</a>"
+          - "<a href=/#features>Features</a>"
+      - partial: "list"
+        width: 3
+        content:
+          - "<a href=/docs/>Docs</a>"
+          - "<a href=/docs/getting-started>Getting Started</a>"
+      - partial: "list"
+        width: 3
+        content:
           - "<a href=/training>Training</a>"
+          - "<a href=/training#curriculum>Curriculum</a>"
 
     - class: "text-center"
       content:

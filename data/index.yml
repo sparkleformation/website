@@ -13,9 +13,10 @@
       class: "text-center"
       button:
         label: "Learn More"
-        url: "#about"
+        url: "#components"
 
-- class: "example"
+- class: "workflow"
+  id: "workflow"
   content:
     -
       - h4: "Workflow"
@@ -39,8 +40,8 @@
             &nbsp;
           lang: "shell"
 
-- class: "about"
-  id: "about"
+- class: "components"
+  id: "components"
   content:
     -
       - class: "text-center"

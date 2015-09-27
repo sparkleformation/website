@@ -49,17 +49,22 @@
         id: "building-blocks"
         content:
           - ""
+    - h5: "Template Development Migration & Support"
+      id: "template-development"
+      content:
+        - ""
 
 - class: "packages"
   content:
     - h2: "Training Packages"
       content:
         - "SparkleFormation Training sessions will be held once every 2-3 months
-          at Heavy Water's training facility - at Centrl Office in the
-          \"Pearl District\" area of Downtown Portland, Oregon. Training
-          sessions will be limited to groups of up to 20-users. On-site training
-          sessions are also available for organizations located in the United
-          States, Canada, Europe, Japan and Australia."
+          at Heavy Water's training facility - at <a href=http://\
+          centrloffice.com target=_blank>Centrl Office</a> in the \"Pearl
+          District\" area of Downtown Portland, Oregon. Training sessions will
+          be limited to groups of up to 20-users. On-site training sessions are
+          also available for organizations located in the United States, Canada,
+          Europe, Japan and Australia."
 
     - partial: "table"
       table:
@@ -106,7 +111,7 @@
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
           - data:
-              - "Migration Support"
+              - "Template Development"
               - ""
               - ""
               - "<span class='fa fa-check'></span>"
