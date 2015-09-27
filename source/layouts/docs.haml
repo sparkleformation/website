@@ -2,6 +2,7 @@
   = partial "breadcrumbs"
   %div.documentation
     = stylesheet_link_tag "docs"
-    %div.container
-      :preserve
-        #{yield}
+    %div.documentation-content
+      %div.container
+        :preserve
+          #{yield}
