@@ -1,4 +1,16 @@
+- crumb = current_resource
+- breadcrumbs = [current_resource]
+- current_resource.url.split("/")[1..-2].length.times do
+  - breadcrumbs.push(crumb.parent)
+  - crumb = crumb.parent
+
 %div.breadcrumbs
   = stylesheet_link_tag "breadcrumbs"
   %div.container
-  
+    %div.row
+      %div.col-sm-offset-4.col-sm-8.col-md-offset-3.col-md-9
+        %ol.list-inline
+          - breadcrumbs.reverse.each do |segment|
+            %li
+              %a{ href: segment.url }
+                %span.black= segment.data[:title]
