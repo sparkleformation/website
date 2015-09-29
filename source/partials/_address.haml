@@ -1,0 +1,19 @@
+%address
+  = stylesheet_link_tag "address"
+  - if content[:company]
+    %strong= content[:company]
+    %br
+  - if content[:name]
+    %strong= content[:name]
+    %br
+  - if content[:email]
+    %a{ href: "mailto:#{content[:email]}" }= content[:email]
+    %br
+  - if content[:street]
+    = content[:street]
+    %br
+    = "#{content[:city]}, #{content[:state]} #{content[:zip]}"
+    %br
+  - if content[:phone]
+    = content[:phone]
+    %br
