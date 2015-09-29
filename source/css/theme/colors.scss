@@ -1,12 +1,14 @@
-$sparkle-orange:              rgb(234, 149, 22);
-$sparkle-magenta:             rgb(222, 82, 133);
+$sparkle-orange:              rgb(234, 149, 22); //
+$sparkle-orange-translucent:  rgba(234, 149, 22, 0.90); //
+$sparkle-magenta:             rgb(222, 82, 133); //
 $sparkle-green:               rgb(112, 194, 25); //
 $sparkle-green-translucent:   rgba(112, 194, 25, 0.90); //
 $sparkle-blue:                rgb(6, 184, 230); // #06b8e6
 $sparkle-black:               rgb(25, 38, 44); // #19262c
 $sparkle-gray:                rgb(200, 200, 200); // #c8c8c8
+$sparkle-gray-translucent:    rgba(200, 200, 200, 0.90); // #c8c8c8
 $sparkle-white:               rgb(255, 255, 255); // #ffffff
-
+$sparkle-white-translucent:   rgba(255, 255, 255, 0.95); //
 $color-red:                   #FF3B30;
 $transparent:                 rgba(255, 255, 255, 0.07);
 
@@ -14,113 +16,213 @@ $transparent:                 rgba(255, 255, 255, 0.07);
   color: $sparkle-black !important;
 };
 
-.toc {
-  background-color: $sparkle-gray;
+.white {
+  color: white !important;
 };
 
-.theme-colors-default {
+.temp,
+.temp * {
+  color: $color-red !important;
+};
+
+.theme-bg-default,
+.theme-bg-default p {
   background-color: $sparkle-white;
   color: $sparkle-black;
 };
 
-.theme-colors-default a,
-.theme-colors-default a:hover,
-.theme-colors-default a:focus,
-.theme-colors-default a:visited {
+.theme-bg-default a,
+.theme-bg-default a:hover,
+.theme-bg-default a:focus,
+.theme-bg-default a:visited {
   color: $sparkle-black;
 };
 
-.theme-colors-default .button {
-  border-color: $sparkle-black;
-};
-
-.theme-colors-default p > a,
-.theme-colors-default p > a:hover,
-.theme-colors-default p > a:visited,
-.theme-colors-default p > a:focus,
-.theme-colors-default li > a,
-.theme-colors-default li > a:hover,
-.theme-colors-default li > a:visited,
-.theme-colors-default li > a:focus {
+.theme-bg-default p > a,
+.theme-bg-default p > a:hover,
+.theme-bg-default p > a:visited,
+.theme-bg-default p > a:focus,
+.theme-bg-default li > a,
+.theme-bg-default li > a:hover,
+.theme-bg-default li > a:visited,
+.theme-bg-default li > a:focus {
   color: $sparkle-green;
 };
 
-.theme-colors-default .button:hover {
-  @extend .theme-colors-primary;
+.theme-bg-default .button {
+  border-color: $sparkle-black;
 };
 
-.theme-colors-inverse {
+.theme-bg-default .button:hover {
+  background-color: $sparkle-orange;
+  color: $sparkle-white;
+  border-color: $sparkle-orange;
+};
+
+.theme-bg-inverse,
+.theme-bg-inverse p {
   background-color: $sparkle-black;
   color: $sparkle-white;
 };
 
-.theme-colors-inverse a,
-.theme-colors-inverse a:hover,
-.theme-colors-inverse a:focus,
-.theme-colors-inverse a:visited {
+.theme-bg-inverse a,
+.theme-bg-inverse a:hover,
+.theme-bg-inverse a:focus,
+.theme-bg-inverse a:visited {
   color: $sparkle-blue;
 };
 
-.theme-colors-alternate .button {
+.theme-bg-inverse p > a,
+.theme-bg-inverse p > a:hover,
+.theme-bg-inverse p > a:visited,
+.theme-bg-inverse p > a:focus,
+.theme-bg-inverse li > a,
+.theme-bg-inverse li > a:hover,
+.theme-bg-inverse li > a:visited,
+.theme-bg-inverse li > a:focus {
+  color: $sparkle-blue;
+};
+
+.theme-bg-inverse .button {
   border-color: $sparkle-black;
 };
 
-.theme-colors-primary {
+.theme-bg-inverse .button:hover {
   background-color: $sparkle-blue;
   color: $sparkle-white;
+  border-color: $sparkle-white;
 };
 
-.theme-colors-primary a,
-.theme-colors-primary a:hover,
-.theme-colors-primary a:focus,
-.theme-colors-primary a:visited {
-  color: $sparkle-white;
-};
-
-.theme-colors-primary .button {
-  border-color: $sparkle-white !important;
-};
-
-.theme-colors-primary .button:hover {
-  @extend .theme-colors-default;
-};
-
-.theme-colors-secondary {
+.theme-bg-neutral,
+.theme-bg-neutral p {
   background-color: $sparkle-gray;
   color: $sparkle-black;
 };
 
-.theme-colors-secondary a,
-.theme-colors-secondary a:hover,
-.theme-colors-secondary a:focus,
-.theme-colors-secondary a:visited {
+.theme-bg-neutral a,
+.theme-bg-neutral a:hover,
+.theme-bg-neutral a:focus,
+.theme-bg-neutral a:visited {
   color: $sparkle-black;
 };
 
-.theme-colors-secondary .button {
+.theme-bg-neutral p > a,
+.theme-bg-neutral p > a:hover,
+.theme-bg-neutral p > a:visited,
+.theme-bg-neutral p > a:focus,
+.theme-bg-neutral li > a,
+.theme-bg-neutral li > a:hover,
+.theme-bg-neutral li > a:visited,
+.theme-bg-neutral li > a:focus {
+  color: $sparkle-magenta;
+};
+
+.theme-bg-neutral .button {
   border-color: $sparkle-black !important;
 };
 
-.theme-colors-secondary .button:hover {
-  @extend .theme-colors-tertiary;
+.theme-bg-neutral .button:hover {
+  background-color: $sparkle-green;
+  color: $sparkle-white;
+  border-color: $sparkle-white;
 };
 
-.theme-colors-tertiary {
+.theme-bg-color-primary,
+.theme-bg-color-primary p {
+  background-color: $sparkle-blue;
+  color: $sparkle-white;
+};
+
+.theme-bg-color-primary a,
+.theme-bg-color-primary a:hover,
+.theme-bg-color-primary a:focus,
+.theme-bg-color-primary a:visited {
+  color: $sparkle-white;
+};
+
+.theme-bg-color-primary p > a,
+.theme-bg-color-primary p > a:hover,
+.theme-bg-color-primary p > a:visited,
+.theme-bg-color-primary p > a:focus,
+.theme-bg-color-primary li > a,
+.theme-bg-color-primary li > a:hover,
+.theme-bg-color-primary li > a:visited,
+.theme-bg-color-primary li > a:focus {
+  color: $sparkle-black;
+};
+
+.theme-bg-color-primary .button {
+  border-color: $sparkle-white !important;
+};
+
+.theme-bg-color-primary .button:hover {
+  background-color: $sparkle-white;
+  color: $sparkle-black;
+  border-color: $sparkle-black;
+};
+
+.theme-bg-color-secondary {
   background-color: $sparkle-magenta;
   color: $sparkle-white;
 };
 
-.theme-colors-tertiary a,
-.theme-colors-tertiary a:hover,
-.theme-colors-tertiary a:focus,
-.theme-colors-tertiary a:visited {
+.theme-bg-color-secondary a,
+.theme-bg-color-secondary a:hover,
+.theme-bg-color-secondary a:focus,
+.theme-bg-color-secondary a:visited {
   color: $sparkle-white;
 };
 
-.theme-colors-tertiary .button {
-  border-color: $sparkle-white !important;
+.theme-bg-color-secondary p > a,
+.theme-bg-color-secondary p > a:hover,
+.theme-bg-color-secondary p > a:visited,
+.theme-bg-color-secondary p > a:focus,
+.theme-bg-color-secondary li > a,
+.theme-bg-color-secondary li > a:hover,
+.theme-bg-color-secondary li > a:visited,
+.theme-bg-color-secondary li > a:focus {
+  color: $sparkle-orange;
 };
 
-.theme-colors-tertiary .button:hover {
-  @extend .theme-colors-default;
+.theme-bg-color-secondary .button {
+  border-color: $sparkle-white;
+};
+
+.theme-bg-color-secondary .button:hover {
+  background-color: $sparkle-blue;
+  color: $sparkle-white;
+  border-color: $sparkle-white;
+};
+
+.theme-bg-color-tertiary {
+  background-color: $sparkle-green;
+  color: $sparkle-white;
+};
+
+.theme-bg-color-tertiary a,
+.theme-bg-color-tertiary a:hover,
+.theme-bg-color-tertiary a:focus,
+.theme-bg-color-tertiary a:visited {
+  color: $sparkle-black;
+};
+
+.theme-bg-color-tertiary p > a,
+.theme-bg-color-tertiary p > a:hover,
+.theme-bg-color-tertiary p > a:visited,
+.theme-bg-color-tertiary p > a:focus,
+.theme-bg-color-tertiary li > a,
+.theme-bg-color-tertiary li > a:hover,
+.theme-bg-color-tertiary li > a:visited,
+.theme-bg-color-tertiary li > a:focus {
+  color: $sparkle-black;
+};
+
+.theme-bg-color-tertiary .button {
+  border-color: $sparkle-white;
+};
+
+.theme-bg-color-tertiary .button:hover {
+  background-color: $sparkle-blue;
+  color: $sparkle-white;
+  border-color: $sparkle-white;
 };

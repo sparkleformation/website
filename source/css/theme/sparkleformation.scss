@@ -6,7 +6,7 @@ body {
   font-family: 'DIN Medium', sans-serif;
   font-size: $default-font-size;
   line-height: $default-line-height;
-  @extend .theme-colors-default;
+  @extend .theme-bg-default;
 };
 
 .blur {
@@ -15,4 +15,8 @@ body {
 
 .fa-heart {
   color: $color-red;
+};
+
+.coming-soon {
+  opacity: 0.6;
 };

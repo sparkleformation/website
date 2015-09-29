@@ -1,17 +1,5 @@
 @import "theme";
 
-.banner {
-  @extend .theme-colors-primary;
-};
-
 .banner img {
   max-height: 300px;
-};
-
-.components {
-  @extend .theme-colors-secondary;
-};
-
-.features {
-  @extend .theme-colors-default;
 };

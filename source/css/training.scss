@@ -1,23 +1,11 @@
 @import "theme";
 
-.banner {
-  @extend .theme-colors-tertiary;
-};
-
 .banner img {
   max-height: 300px;
 };
 
 .banner .list a:hover {
   text-decoration: underline;
-};
-
-.packages {
-  @extend .theme-colors-secondary;
-};
-
-.schedule {
-  @extend .theme-colors-default;
 };
 
 .packages .tabular table .button-full-width {
