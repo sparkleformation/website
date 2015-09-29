@@ -1,0 +1,31 @@
+@import "theme";
+
+.sidebar {
+  display: block;
+  margin-top: 70px;
+  z-index: 9999 !important;
+  padding: 90px 15px;
+  @extend .theme-bg-color-tertiary;
+};
+
+.sidebar > ul {
+  padding: 0px;
+};
+
+.sidebar > ul > li {
+  list-style: none;
+};
+
+.sidebar > ul > li ul {
+  @extend .fa-ul;
+  margin-left: 0px;
+  padding-left: 20px;
+};
+
+.sidebar > ul > li li:before {
+  @extend .fa;
+  @extend .fa-li;
+  content: "\f105";
+  margin: 0px;
+  padding-left: 10px;
+};

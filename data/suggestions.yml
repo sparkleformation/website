@@ -1,0 +1,18 @@
+- class: "suggestions theme-bg-color-primary"
+  id: "suggestions"
+  stylesheet: "button"
+  content:
+    -
+      - width: 8
+        content: "Having trouble getting started? Have questions about advanced
+          workflows or use cases using SparkleFormation? Or do you need help
+          automating your infrastructure with SparkleFormation? Support for
+          SparkleFormation is provided by <a href=http://www.heavywater.io>Heavy
+          Water</a>."
+      - partial: "button"
+        width: 4
+        class: "text-center"
+        button:
+          label: "Get Support"
+          url: "http://www.heavywater.io/contact"
+          class: "button-full-width"
