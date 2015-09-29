@@ -77,22 +77,40 @@
           icon:
             class: "fa fa-code"
         h5: "SparkleFormation"
+        h6: "Library & DSL"
         content:
-          - ""
+          - "SparkleFormation is a Ruby DSL library for programmatically
+            composing template files commonly used by IaaS orchestration APIs. It
+            has builtin helper methods targeting the AWS CloudFormation
+            API and includes translations for other providers (e.g. Rackspace, OpenStack, etc)."
+          - partial: "learn-more"
+            url: "/docs/sparkle_formation/"
       - class: "text-center"
         h1:
           icon:
             class: "fa fa-terminal"
-        h5: "SparkleFormation CLI"
+        h5: "SparkleFormation"
+        h6: "CLI Tool"
         content:
-          - ""
+          - "The SparkleFormation CLI (<kbd>sfn</kbd>) is a command line interface
+            for remote orchestration APIs. <kbd>sfn</kbd> provides support for all 
+            SparkleFormation features, including template compilation,
+            resource discovery, and complex stack operations."
+          - partial: "learn-more"
+            url: "/docs/sfn/"
       - class: "text-center coming-soon"
         h1:
           icon:
             class: "fa fa-cloud-upload"
-        h5: "SparkleFormation CI"
+        h5: "SparkleFormation"
+        h6: "CI Service"
         content:
-          - ""
+          - "A single-purpose CI service for continuous provisioning. The 
+            SparkleFormation CI service simplifies full stack orchestration and 
+            empowers DevOps teams to manage infrastructure with source control actions. 
+            <br />Compose, Commit, Tag, Provision." 
+          - partial: "learn-more"
+            url: "#"
 
 - class: "features"
   id: "features"
