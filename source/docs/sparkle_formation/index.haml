@@ -5,6 +5,6 @@ weight: 0
 ---
 
 %h2= "SparkleFormation Library & DSL"
-- current_resource.children.each do |page|
+- current_resource.children.sort_by!{ |c| c.data[:weight] }.each do |page|
   %ul
     = partial "toc-helper", locals: { content: page }
