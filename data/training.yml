@@ -1,4 +1,4 @@
-- class: "banner"
+- class: "banner theme-bg-color-secondary"
   content:
     -
       - class: "align-left"
@@ -54,7 +54,7 @@
       content:
         - ""
 
-- class: "packages"
+- class: "packages theme-bg-neutral"
   id: "packages"
   content:
     - h2: "Training Packages"

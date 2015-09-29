@@ -6,10 +6,14 @@ author:
   url: "http://www.sparkleformation.io"
 favicon:
   img:
-    src: "img/logo.png"
+    src: "img/logo-full-color.png"
 
 opengraph:
   type: "website"
   site_name: "SparkleFormation"
   title: "Write infrastructure code, not serialized data."
   url: "http://www.sparkleformation.io"
+
+github:
+  org: "sparkleformation"
+  branch: "master"

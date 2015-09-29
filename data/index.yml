@@ -1,5 +1,5 @@
 ---
-- class: "banner"
+- class: "banner theme-bg-color-primary"
   content:
     - img:
         src: "img/logo-white.png"
@@ -8,6 +8,12 @@
     - class: "text-center"
       h2: "<span class=strong>Sparkle</span><span class=thin>Formation</span>"
       h4: "Write infrastructure code, not serialized data."
+      content:
+        - "Describe the state of infrastructure resources as code. This allows
+          for provisioning and updating of isolated stacks of resources in a
+          predictable and repeatable manner. These stacks can be mangaged as
+          single independent or interdependent collection which allow for
+          creation, modification, or deletion via a single API call."
 
     - partial: "button"
       class: "text-center"
@@ -33,14 +39,24 @@
         width: 7
         code:
           snippet: |
-            $ sfn create training-vpc --file sparkleformation/vpc.rb
+            $ sfn create training-vpc
             &nbsp;
             &nbsp;
             &nbsp;
             &nbsp;
           lang: "shell"
 
-- class: "components"
+# - class: "testimonials theme-bg-color-secondary"
+#   id: "testimonials"
+#   content:
+#     - partial: "testimonial"
+#       testimonials:
+#         - quote: "Where limitations with Terraform and Chef Provisioning would
+#             have caused us to rethink our architecture, SparkleFormation \"just
+#             worked\"."
+#           attribution: "Pete Cheslock"
+
+- class: "components theme-bg-neutral"
   id: "components"
   content:
     -
@@ -48,14 +64,21 @@
         h1:
           icon:
             class: "fa fa-code"
-        h3: "SparkleFormation DSL"
+        h5: "SparkleFormation"
         content:
           - ""
       - class: "text-center"
         h1:
           icon:
-            class: "octicon octicon-terminal"
-        h3: "SparkleFormation CLI"
+            class: "fa fa-terminal"
+        h5: "SparkleFormation CLI"
+        content:
+          - ""
+      - class: "text-center coming-soon"
+        h1:
+          icon:
+            class: "fa fa-cloud-upload"
+        h5: "SparkleFormation CI"
         content:
           - ""
 
@@ -63,4 +86,54 @@
   id: "features"
   content:
     - h3: "Features"
-    - ""
+    -
+      - h4:
+          heading: "Comrehensive DSL"
+          icon:
+            class: "fa fa-file-code-o"
+        content:
+          - ""
+          - partial: "learn-more"
+            url: "#"
+      - h4:
+          heading: "Powerful CLI Tooling"
+          icon:
+            class: "octicon octicon-terminal"
+        content:
+          - ""
+          - partial: "learn-more"
+            url: "#"
+    -
+      - h4:
+          heading: "Nested Stacks"
+          icon:
+            class: "fa fa-server"
+        content:
+          - ""
+          - partial: "learn-more"
+            url: "#"
+      - h4:
+          heading: "Stack Policies"
+          icon:
+            class: "fa fa-toggle-on"
+        content:
+          - ""
+          - partial: "learn-more"
+            url: "#"
+    -
+      - h4:
+          heading: "SparklePacks"
+          icon:
+            class: "fa fa-magic"
+        content:
+          - ""
+          - partial: "learn-more"
+            url: "#"
+      - h4:
+          heading: "Cross Platform"
+          icon:
+            class: "fa fa-language"
+        content:
+          - ""
+          - partial: "learn-more"
+            url: "#"

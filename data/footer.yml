@@ -1,4 +1,4 @@
-- class: "footer"
+- class: "footer theme-bg-inverse"
   stylesheet: "footer"
   content:
     -
