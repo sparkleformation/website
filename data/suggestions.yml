@@ -6,9 +6,9 @@
       - width: 8
         content: "Having trouble getting started? Have questions about advanced
           workflows or use cases using SparkleFormation? Or do you need help
-          automating your infrastructure with SparkleFormation? Support for
-          SparkleFormation is provided by <a href=http://www.heavywater.io>Heavy
-          Water</a>."
+          automating your infrastructure with SparkleFormation? Support and
+          Professional Services for SparkleFormation are provided by <a
+          href=http://www.heavywater.io>Heavy Water</a>."
       - partial: "button"
         width: 4
         class: "text-center"
