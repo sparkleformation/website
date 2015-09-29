@@ -54,6 +54,12 @@ $navbar-line-height:  24px;
   border-color: $sparkle-white;
 };
 
+// .navbar .button span:after {
+//   @extend .fa;
+//   content: "\f0d0";
+//   margin-left: 8px;
+// };
+
 .navbar .navbar-toggle {
   margin-top: 0px;
   margin-bottom: 0px;

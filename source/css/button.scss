@@ -15,11 +15,11 @@
   text-decoration: none;
 };
 
-.button span:after {
-  @extend .fa;
-  content: "\f0d0";
-  margin-left: 8px;
-};
+// .button span:after {
+//   @extend .fa;
+//   content: "\f0d0";
+//   margin-left: 8px;
+// };
 
 .button-default {
   @extend .button;
