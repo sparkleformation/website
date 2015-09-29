@@ -10,4 +10,8 @@
 
 .packages .tabular table .button-full-width {
   padding: 10px 15px !important;
-}
+};
+
+.packages .button span:after {
+  content: none;
+};

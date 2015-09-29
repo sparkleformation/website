@@ -118,13 +118,13 @@ $transparent:                 rgba(255, 255, 255, 0.07);
 };
 
 .theme-bg-neutral .button {
-  border-color: $sparkle-black !important;
+  border-color: $sparkle-black;
 };
 
 .theme-bg-neutral .button:hover {
   background-color: $sparkle-green;
-  color: $sparkle-white;
-  border-color: $sparkle-white;
+  color: $sparkle-black;
+  border-color: $sparkle-black;
 };
 
 .theme-bg-color-primary,
@@ -152,13 +152,13 @@ $transparent:                 rgba(255, 255, 255, 0.07);
 };
 
 .theme-bg-color-primary .button {
-  border-color: $sparkle-white !important;
+  border-color: $sparkle-white;
 };
 
 .theme-bg-color-primary .button:hover {
-  background-color: $sparkle-white;
-  color: $sparkle-black;
-  border-color: $sparkle-black;
+  background-color: $sparkle-magenta;
+  color: $sparkle-white;
+  border-color: $sparkle-white;
 };
 
 .theme-bg-color-secondary {

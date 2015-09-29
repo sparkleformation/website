@@ -45,13 +45,13 @@ $navbar-line-height:  24px;
   margin: 0px;
   padding: 13px;
   background-color: $sparkle-black;
-  border-color: $sparkle-black;
+  border-color: $sparkle-white;
   color: $sparkle-white;
 };
 
 .navbar .button:hover {
   background-color: $sparkle-magenta;
-  border-color: $sparkle-magenta;
+  border-color: $sparkle-white;
 };
 
 .navbar .navbar-toggle {
