@@ -50,6 +50,8 @@ $transparent:                 rgba(255, 255, 255, 0.07);
 };
 
 .theme-bg-default .button {
+  background-color: inherit;
+  color: inherit;
   border-color: $sparkle-black;
 };
 
@@ -84,7 +86,9 @@ $transparent:                 rgba(255, 255, 255, 0.07);
 };
 
 .theme-bg-inverse .button {
-  border-color: $sparkle-black;
+  background-color: inherit;
+  color: inherit;
+  border-color: $sparkle-white;
 };
 
 .theme-bg-inverse .button:hover {
