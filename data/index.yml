@@ -5,15 +5,13 @@
         src: "img/logo-white.png"
         class: "center-block"
 
-    - class: "text-center"
+    - class: "text-center col-md-offset-1 col-md-10"
       h2: "<span class=strong>Sparkle</span><span class=thin>Formation</span>"
-      h4: "Write infrastructure code, not serialized data."
+      h4: "Compose your infrastructure."
       content:
-        - "Describe the state of infrastructure resources as code. This allows
-          for provisioning and updating of isolated stacks of resources in a
-          predictable and repeatable manner. These stacks can be mangaged as
-          single independent or interdependent collection which allow for
-          creation, modification, or deletion via a single API call."
+        - "SparkleFormation provisions, modifies, and destroys stacks in a predictable & repeatable manner. Deploy
+          individual or nested resource collections to manage your infrastructure from a single API call."
+        - "Compose your infrastructure. Commit to source control. Tag the release. Provision it."
 
     - partial: "button"
       class: "text-center"
