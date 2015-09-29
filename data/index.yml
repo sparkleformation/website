@@ -122,48 +122,55 @@
           icon:
             class: "fa fa-file-code-o"
         content:
-          - ""
+          - "Serialized data (e.g. JSON, XML, YAML) is great for computers, but painful for humans. SparkleFormation's DSL allows you to describe infrastructure programatically then generate native orchestration templates. Its programatic approach to composition allows reuse of common patterns and enforcement of organizational standards across templates, while maintaining zero-day support for all features."
           - partial: "learn-more"
-            url: "#"
+            url: "/docs/sparkle_formation/sparkleformation-dsl"
       - h4:
           heading: "Powerful CLI Tooling"
           icon:
             class: "octicon octicon-terminal"
         content:
-          - ""
+          - "SparkleFormation's CLI tool provides sophisticated orchestration API interaction and template management."
+          - partial: "list"
+            bullets: "octicon octicon-telescope"
+            content:
+             - "Create, Update, and Destroy Stacks"
+             - "Process templates written in the DSL"
+             - "Discover Stack Metadata and Outputs"
+             - "Inspect Stack Resources"
           - partial: "learn-more"
-            url: "#"
+            url: "/docs/sfn/"
     -
       - h4:
           heading: "Nested Stacks"
           icon:
             class: "fa fa-server"
         content:
-          - ""
+          - "With nested stack support, multiple infrastructure stacks can be grouped into a single template. This allows you to logically compartmentalize resources for independent development and testing, while you maintain an entire infrastructure via a single point of entry. Nested stacks automatically detect and propagate changes to child stacks as required to maintain the expected infrastructure state."
           - partial: "learn-more"
-            url: "#"
+            url: "/docs/sparkle_formation/nested-stacks"
       - h4:
           heading: "Stack Policies"
           icon:
             class: "fa fa-toggle-on"
         content:
-          - ""
+          - "SparkleFormation includes support for AWS Stack Policies to add an extra layer of control and security.Policies restrict or allow actions on specific stack resources. The CLI tool extracts policies described in DSL written templates and applies them to the stack via the API. This allows you to maintain a record of stack policies inline with your template code in source control."
           - partial: "learn-more"
-            url: "#"
-    -
-      - h4:
-          heading: "SparklePacks"
-          icon:
-            class: "fa fa-magic"
-        content:
-          - ""
-          - partial: "learn-more"
-            url: "#"
-      - h4:
-          heading: "Cross Platform"
-          icon:
-            class: "fa fa-language"
-        content:
-          - ""
-          - partial: "learn-more"
-            url: "#"
+            url: "/docs/sparkle_formation/stack-policies"
+    # -
+    #   - h4:
+    #       heading: "SparklePacks"
+    #       icon:
+    #         class: "fa fa-magic"
+    #     content:
+    #       - ""
+    #       - partial: "learn-more"
+    #         url: "#"
+    #   - h4:
+    #       heading: "Cross Platform"
+    #       icon:
+    #         class: "fa fa-language"
+    #     content:
+    #       - ""
+    #       - partial: "learn-more"
+    #         url: "#"
