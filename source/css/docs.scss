@@ -3,7 +3,7 @@
 body {
 };
 
-.documentation-content {
+.documentation .container {
   margin-top: -70px;
   margin-bottom: 100px;
 };
@@ -16,8 +16,16 @@ body {
   padding-top: 140px;
 };
 
-.toc {
-  z-index: 999;
-  position: relative;
-  top: 0;
+.documentation-content ul {
+  @extend .fa-ul;
+  margin-left: 0px;
+  padding-left: 20px;
+};
+
+.documentation-content li:before {
+  @extend .fa;
+  @extend .fa-li;
+  content: "\f105";
+  margin: 0px;
+  padding-left: 10px;
 };
