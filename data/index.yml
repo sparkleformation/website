@@ -118,7 +118,7 @@
     - h3: "Features"
     -
       - h4:
-          heading: "Comrehensive DSL"
+          heading: "Comprehensive DSL"
           icon:
             class: "fa fa-file-code-o"
         content:
