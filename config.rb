@@ -9,6 +9,9 @@ set :layout, 'layout'
 set :partials_dir, 'partials'
 set :trailing_slash, true
 
+activate :directory_indexes
+page "/docs/*/*", :directory_index => false
+
 with_layout :docs do
   page "/docs"
   page "/docs/*"
@@ -20,7 +23,6 @@ configure :build do
 end
 
 activate :livereload
-activate :directory_indexes
 activate :syntax
 
 activate :deploy do |deploy|
