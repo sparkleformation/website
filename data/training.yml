@@ -16,8 +16,8 @@
         bullets: "fa-li fa fa-angle-right"
         content:
           - h5:
-              heading: "Infrastructure Templates 101"
-              url: "#infrastructure-templates-101"
+              heading: "IaaS Orchestration 101"
+              url: "#iaas-orchestration-101"
           - h5:
               heading: "Building Blocks"
               url: "#building-blocks"
@@ -26,29 +26,66 @@
               url: "#practical-application"
           - h5:
               heading: "SparkleFormation Workshops"
-              url: "#sparkleformation-workshops"
+              url: "#workshops"
 
 - class: "curriculum"
   id: "curriculum"
   content:
     -
-      - h5: "Infrastructure Templates 101"
-        id: "infrastructure-templates-101"
+      - h5: "IaaS Orchestration 101"
+        id: "iaas-orchestration-101"
         content:
-          - ""
+          - "Trainees will get a guided tour of IaaS orchestration API
+            templating systems (e.g. AWS CloudFormation), including a high-level
+            overview of the lower-level APIs they provide access to."
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "Orchestration API Overview"
+              - "An introduction to Resources"
+              - "Custom resources"
       - h5: "Building Blocks"
         id: "building-blocks"
         content:
-          - ""
+          - "Trainees will learn how to leverage the four primary primitives
+            provided by SparkleFormation, and a close look at the
+            SparkleFormation CLI tool (<code>sfn</code>)."
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "Components"
+              - "Dynamics"
+              - "Registry"
+              - "Templates"
+              - "<code>sfn</code> walkthrough"
     -
       - h5: "Practical Application"
-        id: "building-blocks"
+        id: "practical-application"
         content:
-          - ""
-      - h5: "SparkleFormation Workshops"
-        id: "building-blocks"
+          - "Trainees will be taught how to apply what they've learned to
+            compose example stacks for popular application architectures and
+            services, including:"
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "The \"Hello World\" of application stacks"
+              - "Basic relational-database application stack(s)"
+              - "Network isolation via nested stacks"
+      - h5: "Workshops"
+        id: "workshops"
         content:
-          - ""
+          - "Trainees will spend an entire day in a series of workshops,
+            covering advanced topics and receiving hands-on assistance from
+            trainers, including:"
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "Foo"
+              - "Bar"
     - h5: "Template Development Migration & Support"
       id: "template-development"
       content:
@@ -58,15 +95,6 @@
   id: "packages"
   content:
     - h2: "Training Packages"
-      content:
-        - "SparkleFormation Training sessions will be held once every 2-3 months
-          at Heavy Water's training facility - at <a href=http://\
-          centrloffice.com target=_blank>Centrl Office</a> in the \"Pearl
-          District\" area of Downtown Portland, Oregon. Training sessions will
-          be limited to groups of up to 20-users. On-site training sessions are
-          also available for organizations located in the United States, Canada,
-          Europe, Japan and Australia."
-
     - partial: "table"
       table:
         class: "table-hover"
@@ -144,7 +172,13 @@
   content:
     - h2: "Upcoming Schedule"
       content:
-        - ""
+        - "SparkleFormation Training sessions will be held once every 2-3 months
+          at <a href=http://www.heavywater.io>Heavy Water's</a> training
+          facility - at <a href=http://centrloffice.com target=_blank>Centrl
+          Office</a> in the \"Pearl District\" area of Downtown Portland,
+          Oregon. Training sessions will be limited to groups of up to 20-users.
+          On-site training sessions are also available for organizations located
+          in the United States, Canada, Europe, Japan and Australia."
     - partial: "tito"
       org: "heavywater"
       event: "sparkleformation-training"
