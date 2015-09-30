@@ -1,3 +1,4 @@
+@import "theme/text";
 @import "button";
 
 .tito-wrapper {
@@ -24,6 +25,7 @@
 };
 
 .tito-ticket-description {
+  font-size: 1.0em;
 };
 
 .tito-tickets-remaining {
