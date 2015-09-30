@@ -64,16 +64,17 @@
       - h5: "Practical Application"
         id: "practical-application"
         content:
-          - "Trainees will be taught how to apply what they've learned to
-            compose example stacks for popular application architectures and
-            services, including:"
+          - "Trainees will be taught how to apply what they've learned using
+            best-practices to compose example stacks for popular application 
+            architectures and services, including:"
           - partial: "list"
             style: "fa-ul"
             bullets: "fa-li octicon octicon-check"
             content:
+              - "Infrastructure architecture best practices"
               - "The \"Hello World\" of application stacks"
-              - "Basic relational-database application stack(s)"
-              - "Network isolation via nested stacks"
+              - "VPC creation and discovery"
+              - "Isolating resources and nested stacks"
       - h5: "Workshops"
         id: "workshops"
         content:
@@ -84,12 +85,14 @@
             style: "fa-ul"
             bullets: "fa-li octicon octicon-check"
             content:
-              - "Foo"
-              - "Bar"
+              - "Defining and triggering Configuration Management"
+              - "SparkleFormation infrastructure development workflows"
+              - "Reusability and organizational standards enforcement"
+              - "Extending capabilities with Custom Resources"
     - h5: "Template Development Migration & Support"
       id: "template-development"
       content:
-        - ""
+        - "Trainer and Trainees will collaboratively compose SparkleFormation templates covering baseline infrastructure needs."
 
 - class: "packages theme-bg-neutral"
   id: "packages"
@@ -120,7 +123,7 @@
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
           - data:
-              - "Infrastructure Templates 101"
+              - "IaaS Orchestration 101"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
