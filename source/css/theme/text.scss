@@ -1,7 +1,5 @@
-@import "theme";
-
-$default-font-size:     1.75em;
-$default-line-height:   1.875em;
+$default-font-size:   1.75em;
+$default-line-height: 1.875em;
 
 .theme-default-text {
   font-size: $default-font-size;
@@ -43,10 +41,6 @@ a:visited {
 
 .brand {
   font-family: 'DIN Medium', sans-serif;
-};
-
-.temp {
-  color: $color-red;
 };
 
 .strong {
