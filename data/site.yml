@@ -14,3 +14,5 @@ opengraph:
   title: "SparkleFormation"
   description: "Compose your infrastructure."
   url: "http://www.sparkleformation.io"
+
+google_analytics: "UA-39138312-11"
