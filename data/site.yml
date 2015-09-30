@@ -1,6 +1,6 @@
 ---
 title: "SparkleFormation"
-description: "Write infrastructure code, not serialized data."
+description: "Compose your infrastructure."
 author:
   name: "Heavy Water"
   url: "http://www.sparkleformation.io"
@@ -11,9 +11,6 @@ favicon:
 opengraph:
   type: "website"
   site_name: "SparkleFormation"
-  title: "Write infrastructure code, not serialized data."
+  title: "SparkleFormation"
+  description: "Compose your infrastructure."
   url: "http://www.sparkleformation.io"
-
-github:
-  org: "sparkleformation"
-  branch: "master"
