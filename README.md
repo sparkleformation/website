@@ -26,7 +26,7 @@ plain ol' Javascript.
 
 # How do I deploy?
 
-The SparkleFormation landing page website is deployed to GitHub Pages using the
+You can deploy the SparkleFormation landing page website to GitHub Pages using the
 [middleman-deploy][middleman-deploy] gem:
 
 ```
