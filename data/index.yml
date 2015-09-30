@@ -1,13 +1,17 @@
 ---
-- class: "banner"
+- class: "banner theme-bg-color-primary"
   content:
     - img:
         src: "img/logo-white.png"
         class: "center-block"
 
-    - class: "text-center"
+    - class: "text-center col-md-offset-1 col-md-10"
       h2: "<span class=strong>Sparkle</span><span class=thin>Formation</span>"
-      h4: "Write infrastructure code, not serialized data."
+      h4: "Compose your infrastructure."
+      content:
+        - "SparkleFormation provisions, modifies, and destroys stacks in a predictable & repeatable manner. Deploy
+          individual or nested resource collections to manage your infrastructure from a single API call."
+        - "Compose your infrastructure. Commit to source control. Tag the release. Provision it."
 
     - partial: "button"
       class: "text-center"
@@ -20,27 +24,51 @@
   content:
     -
       - h4: "Workflow"
-        width: 5
+        width: 12
         content:
-          - "Describe your entire <underline>infrastructure as code</underline>.
-            Deploy and update entire stacks (or nested stacks) with a single
-            command."
-          - partial: "button"
-            button:
-              label: "Learn more"
-              url: "/docs"
+          - "Describe your entire <underline>infrastructure as code</underline>, then provision it with a single command."
       - partial: "window"
-        width: 7
+        width: 12
         code:
           snippet: |
-            $ sfn create training-vpc --file sparkleformation/vpc.rb
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
+            $ sfn create infrastructure-vpc
+            [Sfn]: Cloud Formation: create
+            [Sfn]:   -> Name: infrastructure-vpc
+            [Sfn]: Vpc Cidr [10.0.0.0/16]:
+            [Sfn]: Dns Support [true]:
+            [Sfn]: Dns Hostnames [true]:
+            [Sfn]: Instance Tenancy [default]:
+            [Sfn]: Public Us West2a Subnet Cidr [10.0.0.0/24]:
+            [Sfn]: Public Us West2b Subnet Cidr [10.0.1.0/24]:
+            [Sfn]: Public Us West2c Subnet Cidr [10.0.2.0/24]:
+            [Sfn]: Events for Stack: infrastructure-vpc
+            Time                      Resource Logical Id   Resource Status
+            2015-09-29 21:06:20 UTC   infrastructure-vpc    CREATE_IN_PROGRESS
+            2015-09-29 21:07:29 UTC   infrastructure-vpc    CREATE_COMPLETE
+            [Sfn]: Stack create complete: SUCCESS
+            [Sfn]: Stack description of infrastructure-vpc:
+            [Sfn]: Outputs for stack: infrastructure-vpc
+            [Sfn]:    Vpc Id: vpc-e2581487
+            [Sfn]:    Vpc Cidr: 10.0.0.0/16
+            [Sfn]:    Public Route Table: rtb-69194d0c
+            [Sfn]:    Private Route Table: rtb-6e194d0b
+            [Sfn]:    Internet Gateway: igw-d3911ab6
+            [Sfn]:    Public Us West2a Subnet: subnet-1a15487f
+            [Sfn]:    Public Us West2b Subnet: subnet-11ed9d66
+            [Sfn]:    Public Us West2c Subnet: subnet-d320aa8a
           lang: "shell"
 
-- class: "components"
+# - class: "testimonials theme-bg-color-secondary"
+#   id: "testimonials"
+#   content:
+#     - partial: "testimonial"
+#       testimonials:
+#         - quote: "Where limitations with Terraform and Chef Provisioning would
+#             have caused us to rethink our architecture, SparkleFormation \"just
+#             worked\"."
+#           attribution: "Pete Cheslock"
+
+- class: "components theme-bg-neutral"
   id: "components"
   content:
     -
@@ -48,19 +76,101 @@
         h1:
           icon:
             class: "fa fa-code"
-        h3: "SparkleFormation DSL"
+        h5: "SparkleFormation"
+        h6: "Library & DSL"
         content:
-          - ""
+          - "SparkleFormation is a Ruby DSL library for programmatically
+            composing template files commonly used by IaaS orchestration APIs. It
+            has builtin helper methods targeting the AWS CloudFormation
+            API and includes translations for other providers (e.g. Rackspace, OpenStack, etc)."
+          - partial: "learn-more"
+            url: "/docs/sparkle_formation/"
       - class: "text-center"
         h1:
           icon:
-            class: "octicon octicon-terminal"
-        h3: "SparkleFormation CLI"
+            class: "fa fa-terminal"
+        h5: "SparkleFormation"
+        h6: "CLI Tool"
         content:
-          - ""
+          - "The SparkleFormation CLI (<kbd>sfn</kbd>) is a command line interface
+            for remote orchestration APIs. <kbd>sfn</kbd> provides support for all 
+            SparkleFormation features, including template compilation,
+            resource discovery, and complex stack operations."
+          - partial: "learn-more"
+            url: "/docs/sfn/"
+      - class: "text-center coming-soon"
+        h1:
+          icon:
+            class: "fa fa-cloud-upload"
+        h5: "SparkleFormation"
+        h6: "CI Service"
+        content:
+          - "A single-purpose CI service for continuous provisioning. The 
+            SparkleFormation CI service simplifies full stack orchestration and 
+            empowers DevOps teams to manage infrastructure with source control actions. 
+            <br />Compose, Commit, Tag, Provision." 
+          - partial: "learn-more"
+            url: "#"
 
 - class: "features"
   id: "features"
   content:
     - h3: "Features"
-    - ""
+    -
+      - h4:
+          heading: "Comprehensive DSL"
+          icon:
+            class: "fa fa-file-code-o"
+        content:
+          - "Serialized data (e.g. JSON, XML, YAML) is great for computers, but painful for humans. SparkleFormation's DSL allows you to describe infrastructure programatically then generate native orchestration templates. Its programatic approach to composition allows reuse of common patterns and enforcement of organizational standards across templates, while maintaining zero-day support for all features."
+          - partial: "learn-more"
+            url: "/docs/sparkle_formation/sparkleformation-dsl"
+      - h4:
+          heading: "Powerful CLI Tooling"
+          icon:
+            class: "octicon octicon-terminal"
+        content:
+          - "SparkleFormation's CLI tool provides sophisticated orchestration API interaction and template management."
+          - partial: "list"
+            bullets: "octicon octicon-telescope"
+            content:
+             - "Create, Update, and Destroy Stacks"
+             - "Process templates written in the DSL"
+             - "Discover Stack Metadata and Outputs"
+             - "Inspect Stack Resources"
+          - partial: "learn-more"
+            url: "/docs/sfn/"
+    -
+      - h4:
+          heading: "Nested Stacks"
+          icon:
+            class: "fa fa-server"
+        content:
+          - "With nested stack support, multiple infrastructure stacks can be grouped into a single template. This allows you to logically compartmentalize resources for independent development and testing, while you maintain an entire infrastructure via a single point of entry. Nested stacks automatically detect and propagate changes to child stacks as required to maintain the expected infrastructure state."
+          - partial: "learn-more"
+            url: "/docs/sparkle_formation/nested-stacks"
+      - h4:
+          heading: "Stack Policies"
+          icon:
+            class: "fa fa-toggle-on"
+        content:
+          - "SparkleFormation includes support for AWS Stack Policies to add an extra layer of control and security.Policies restrict or allow actions on specific stack resources. The CLI tool extracts policies described in DSL written templates and applies them to the stack via the API. This allows you to maintain a record of stack policies inline with your template code in source control."
+          - partial: "learn-more"
+            url: "/docs/sparkle_formation/stack-policies"
+    # -
+    #   - h4:
+    #       heading: "SparklePacks"
+    #       icon:
+    #         class: "fa fa-magic"
+    #     content:
+    #       - ""
+    #       - partial: "learn-more"
+    #         url: "#"
+    #   - h4:
+    #       heading: "Cross Platform"
+    #       icon:
+    #         class: "fa fa-language"
+    #     content:
+    #       - ""
+    #       - partial: "learn-more"
+    #         url: "#"

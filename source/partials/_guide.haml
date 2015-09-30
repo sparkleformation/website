@@ -1,0 +1,7 @@
+- if current_resource.data[:next]
+  - button = { button: {} }
+  - button[:button][:class] = "text-center button-full-width"
+  - button[:button][:url] = current_resource.data[:next][:url]
+  - button[:button][:label] = "NEXT: #{current_resource.data[:next][:label]}"
+  %div.guide
+    = partial "button", locals: { content: button }

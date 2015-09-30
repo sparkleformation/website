@@ -3,9 +3,27 @@
 .breadcrumbs {
   display: block;
   position: fixed;
-  top: 70;
   left: 0;
   right: 0;
-  background-color: $sparkle-green-translucent;
+  background-color: $sparkle-gray-translucent;
   height: 50px;
+  z-index: 1;
+  overflow: auto;
+};
+
+.breadcrumbs ol {
+  margin: 0px;
+};
+
+.breadcrumbs li,
+.breadcrumbs a {
+  padding: 10px 0px;
+};
+
+.breadcrumbs a:hover {
+};
+
+.breadcrumbs li + li:before {
+  content: "> ";
+  color: black;
 };

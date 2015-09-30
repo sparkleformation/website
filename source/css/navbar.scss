@@ -12,7 +12,7 @@ $navbar-line-height:  24px;
 
 .navbar .navbar-fixed-top {
   color: $sparkle-black;
-  background-color: rgba(255, 255, 255, 0.90);
+  background-color: $sparkle-white-translucent;
   padding: 10px 0px;
 };
 
@@ -37,19 +37,28 @@ $navbar-line-height:  24px;
   background-color: $transparent;
 };
 
-.navbar .button {
-  margin: 0px;
-  padding: 13px;
-  @extend .theme-colors-inverse;
-};
-
-.navbar .button:hover {
-  @extend .theme-colors-tertiary;
-};
-
 .navbar .icon-bar {
   color: $sparkle-black;
 };
+
+.navbar .button {
+  margin: 0px;
+  padding: 13px;
+  background-color: $sparkle-black;
+  border-color: $sparkle-white;
+  color: $sparkle-white;
+};
+
+.navbar .button:hover {
+  background-color: $sparkle-magenta;
+  border-color: $sparkle-white;
+};
+
+// .navbar .button span:after {
+//   @extend .fa;
+//   content: "\f0d0";
+//   margin-left: 8px;
+// };
 
 .navbar .navbar-toggle {
   margin-top: 0px;

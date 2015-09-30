@@ -1,0 +1,5 @@
+%div.sidebar
+  = stylesheet_link_tag "sidebar"
+  - unless current_resource.url == "/docs/"
+    %ul
+      = partial "toc"

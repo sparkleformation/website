@@ -1,10 +1,10 @@
-- class: "banner"
+- class: "banner theme-bg-color-secondary"
   content:
     -
       - class: "align-left"
         content:
-          - h1: "Training"
-            h3: "\"Teach me how to Sparkle<a href=https://youtu.be/aZglqkCRNt8
+          - h2: "Training"
+            h4: "\"Teach me how to Sparkle<a href=https://youtu.be/aZglqkCRNt8
               target=_blank>.</a>\""
 
           - partial: "button"
@@ -15,57 +15,89 @@
         style: "fa-ul"
         bullets: "fa-li fa fa-angle-right"
         content:
-          - h4:
-              heading: "Infrastructure Templates 101"
-              url: "#infrastructure-templates-101"
-          - h4:
+          - h5:
+              heading: "IaaS Orchestration 101"
+              url: "#iaas-orchestration-101"
+          - h5:
               heading: "Building Blocks"
               url: "#building-blocks"
-          - h4:
+          - h5:
               heading: "Practical Application"
               url: "#practical-application"
-          - h4:
+          - h5:
               heading: "SparkleFormation Workshops"
-              url: "#sparkleformation-workshops"
+              url: "#workshops"
 
 - class: "curriculum"
   id: "curriculum"
   content:
     -
-      - h5: "Infrastructure Templates 101"
-        id: "infrastructure-templates-101"
+      - h5: "IaaS Orchestration 101"
+        id: "iaas-orchestration-101"
         content:
-          - ""
+          - "Trainees will get a guided tour of IaaS orchestration API
+            templating systems (e.g. AWS CloudFormation), including a high-level
+            overview of the lower-level APIs they provide access to."
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "Orchestration API Overview"
+              - "An introduction to Resources"
+              - "Custom resources"
       - h5: "Building Blocks"
         id: "building-blocks"
         content:
-          - ""
+          - "Trainees will learn how to leverage the four primary primitives
+            provided by SparkleFormation, and a close look at the
+            SparkleFormation CLI tool (<code>sfn</code>)."
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "Components"
+              - "Dynamics"
+              - "Registry"
+              - "Templates"
+              - "<code>sfn</code> walkthrough"
     -
       - h5: "Practical Application"
-        id: "building-blocks"
+        id: "practical-application"
         content:
-          - ""
-      - h5: "SparkleFormation Workshops"
-        id: "building-blocks"
+          - "Trainees will be taught how to apply what they've learned using
+            best-practices to compose example stacks for popular application 
+            architectures and services, including:"
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "Infrastructure architecture best practices"
+              - "The \"Hello World\" of application stacks"
+              - "VPC creation and discovery"
+              - "Isolating resources and nested stacks"
+      - h5: "Workshops"
+        id: "workshops"
         content:
-          - ""
+          - "Trainees will spend an entire day in a series of workshops,
+            covering advanced topics and receiving hands-on assistance from
+            trainers, including:"
+          - partial: "list"
+            style: "fa-ul"
+            bullets: "fa-li octicon octicon-check"
+            content:
+              - "Defining and triggering Configuration Management"
+              - "SparkleFormation infrastructure development workflows"
+              - "Reusability and organizational standards enforcement"
+              - "Extending capabilities with Custom Resources"
     - h5: "Template Development Migration & Support"
       id: "template-development"
       content:
-        - ""
+        - "Trainer and Trainees will collaboratively compose SparkleFormation templates covering baseline infrastructure needs."
 
-- class: "packages"
+- class: "packages theme-bg-neutral"
+  id: "packages"
   content:
     - h2: "Training Packages"
-      content:
-        - "SparkleFormation Training sessions will be held once every 2-3 months
-          at Heavy Water's training facility - at <a href=http://\
-          centrloffice.com target=_blank>Centrl Office</a> in the \"Pearl
-          District\" area of Downtown Portland, Oregon. Training sessions will
-          be limited to groups of up to 20-users. On-site training sessions are
-          also available for organizations located in the United States, Canada,
-          Europe, Japan and Australia."
-
     - partial: "table"
       table:
         class: "table-hover"
@@ -91,7 +123,7 @@
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
           - data:
-              - "Infrastructure Templates 101"
+              - "IaaS Orchestration 101"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
@@ -139,10 +171,17 @@
                   class: "button-full-width"
 
 - class: "schedule"
+  id: "schedule"
   content:
     - h2: "Upcoming Schedule"
       content:
-        - ""
+        - "SparkleFormation Training sessions will be held once every 2-3 months
+          at <a href=http://www.heavywater.io>Heavy Water's</a> training
+          facility - at <a href=http://centrloffice.com target=_blank>Centrl
+          Office</a> in the \"Pearl District\" area of Downtown Portland,
+          Oregon. Training sessions will be limited to groups of up to 20-users.
+          On-site training sessions are also available for organizations located
+          in the United States, Canada, Europe, Japan and Australia."
     - partial: "tito"
       org: "heavywater"
       event: "sparkleformation-training"

@@ -3,5 +3,12 @@
   %div.documentation
     = stylesheet_link_tag "docs"
     %div.container
-      :preserve
-        #{yield}
+      %div.row
+        %div.col-sm-4.col-md-3
+          = partial "sidebar"
+        %div.col-sm-8.col-md-9
+          %div.documentation-content
+            :preserve
+              #{yield}
+            = partial "guide"
+  = partial "load", locals: { content: data[:suggestions] }

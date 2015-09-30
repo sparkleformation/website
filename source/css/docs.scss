@@ -3,16 +3,29 @@
 body {
 };
 
-.documentation {
-  @extend .theme-colors-default;
+.documentation .container {
   margin-top: -70px;
   margin-bottom: 100px;
 };
 
-.anchor-offset {
+.documentation-content .anchor-offset {
   margin-bottom: -120px;
 };
 
-.anchor {
+.documentation-content .anchor {
   padding-top: 140px;
+};
+
+.documentation-content ul {
+  @extend .fa-ul;
+  margin-left: 0px;
+  padding-left: 20px;
+};
+
+.documentation-content li:before {
+  @extend .fa;
+  @extend .fa-li;
+  content: "\f105";
+  margin: 0px;
+  padding-left: 10px;
 };

@@ -22,6 +22,7 @@ end
 activate :livereload
 activate :directory_indexes
 activate :syntax
+
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'gh-pages'

@@ -1,0 +1,2 @@
+- sitemap.where( :section.gt => 0 ).order_by(:section).all.each do |page|
+  = partial "toc-helper", locals: { content: page }

@@ -1,9 +1,5 @@
 @import "theme";
 
-.banner {
-  @extend .theme-colors-tertiary;
-};
-
 .banner img {
   max-height: 300px;
 };
@@ -12,14 +8,10 @@
   text-decoration: underline;
 };
 
-.packages {
-  @extend .theme-colors-secondary;
-};
-
-.schedule {
-  @extend .theme-colors-default;
-};
-
 .packages .tabular table .button-full-width {
   padding: 10px 15px !important;
-}
+};
+
+.packages .button span:after {
+  content: none;
+};
