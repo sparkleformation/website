@@ -5,7 +5,7 @@
         content:
           - h2: "Training"
             h4: "\"Teach me how to Sparkle<a href=https://youtu.be/aZglqkCRNt8
-              target=_blank>.</a>\""
+              target=_blank>!</a>\""
 
           - partial: "button"
             button:
@@ -65,7 +65,7 @@
         id: "practical-application"
         content:
           - "Trainees will be taught how to apply what they've learned using
-            best-practices to compose example stacks for popular application 
+            best-practices to compose example stacks for popular application
             architectures and services, including:"
           - partial: "list"
             style: "fa-ul"
@@ -98,6 +98,14 @@
   id: "packages"
   content:
     - h2: "Training Packages"
+      content:
+        - "SparkleFormation Training sessions are hosted via <underline>Google
+          Hangout</underline> and at <a href=http://centrloffice.com
+          target=_blank>Centrl Office</a>, in the \"Pearl District\" area of
+          Downtown Portland, Oregon. Training sessions will be limited to groups
+          of up to 20-users. On-site training sessions are also available for
+          organizations located in the United States, Canada, Europe, Japan and
+          Australia."
     - partial: "table"
       table:
         class: "table-hover"
@@ -175,13 +183,13 @@
   content:
     - h2: "Upcoming Schedule"
       content:
-        - "SparkleFormation Training sessions will be held once every 2-3 months
-          at <a href=http://www.heavywater.io>Heavy Water's</a> training
-          facility - at <a href=http://centrloffice.com target=_blank>Centrl
-          Office</a> in the \"Pearl District\" area of Downtown Portland,
-          Oregon. Training sessions will be limited to groups of up to 20-users.
-          On-site training sessions are also available for organizations located
-          in the United States, Canada, Europe, Japan and Australia."
+        - "SparkleFormation Training sessions are hosted via <underline>Google
+          Hangout</underline> and at <a href=http://centrloffice.com
+          target=_blank>Centrl Office</a>, in the \"Pearl District\" area of
+          Downtown Portland, Oregon. Training sessions will be limited to groups
+          of up to 20-users. On-site training sessions are also available for
+          organizations located in the United States, Canada, Europe, Japan and
+          Australia."
     - partial: "tito"
       org: "heavywater"
       event: "sparkleformation-training"
