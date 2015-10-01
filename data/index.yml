@@ -75,40 +75,49 @@
       - class: "text-center"
         h1:
           icon:
-            class: "fa fa-code"
+            class: "fa fa-code xl-icon"
         h5: "SparkleFormation"
         h6: "Library & DSL"
         content:
-          - "SparkleFormation is a Ruby DSL library for programmatically
-            composing template files commonly used by IaaS orchestration APIs. It
-            has builtin helper methods targeting the AWS CloudFormation
-            API and includes translations for other providers (e.g. Rackspace, OpenStack, etc)."
+          - content:
+              - "SparkleFormation is a Ruby DSL library for programmatically
+                composing template files commonly used by IaaS orchestration
+                APIs. It has builtin helper methods targeting the AWS
+                CloudFormation API and includes translations for other providers
+                (e.g. Rackspace, OpenStack, etc)."
+            class: "product-description"
           - partial: "learn-more"
             url: "/docs/sparkle_formation/"
       - class: "text-center"
         h1:
           icon:
-            class: "fa fa-terminal"
+            class: "fa fa-terminal xl-icon"
         h5: "SparkleFormation"
         h6: "CLI Tool"
         content:
-          - "The SparkleFormation CLI (<kbd>sfn</kbd>) is a command line interface
-            for remote orchestration APIs. <kbd>sfn</kbd> provides support for all 
-            SparkleFormation features, including template compilation,
-            resource discovery, and complex stack operations."
+          - content:
+              - "The SparkleFormation CLI (<kbd>sfn</kbd>) is a command
+                line interface for remote orchestration APIs. <kbd>sfn</kbd>
+                provides support for all SparkleFormation features, including
+                template compilation, resource discovery, and complex stack
+                operations."
+            class: "product-description"
           - partial: "learn-more"
             url: "/docs/sfn/"
       - class: "text-center coming-soon"
         h1:
           icon:
-            class: "fa fa-cloud-upload"
+            class: "fa fa-cloud-upload xl-icon"
         h5: "SparkleFormation"
         h6: "CI Service"
         content:
-          - "A single-purpose CI service for continuous provisioning. The 
-            SparkleFormation CI service simplifies full stack orchestration and 
-            empowers DevOps teams to manage infrastructure with source control actions. 
-            <br />Compose, Commit, Tag, Provision." 
+          - content:
+              - "A single-purpose CI service for continuous provisioning.
+                The SparkleFormation CI service simplifies full stack
+                orchestration and empowers DevOps teams to manage infrastructure
+                with source control actions. <br />Compose, Commit, Tag,
+                Provision."
+            class: "product-description"
           - partial: "learn-more"
             url: "#"
 
@@ -122,7 +131,15 @@
           icon:
             class: "fa fa-file-code-o"
         content:
-          - "Serialized data (e.g. JSON, XML, YAML) is great for computers, but painful for humans. SparkleFormation's DSL allows you to describe infrastructure programatically then generate native orchestration templates. Its programatic approach to composition allows reuse of common patterns and enforcement of organizational standards across templates, while maintaining zero-day support for all features."
+          - content:
+              - "Serialized data (e.g. JSON, XML, YAML) is great for
+                computers, but painful for humans. SparkleFormation's DSL allows
+                you to describe infrastructure programatically then generate
+                native orchestration templates. Its programatic approach to
+                composition allows reuse of common patterns and enforcement of
+                organizational standards across templates, while maintaining
+                zero-day support for all features."
+            class: "feature-description"
           - partial: "learn-more"
             url: "/docs/sparkle_formation/sparkleformation-dsl.html"
       - h4:
@@ -130,14 +147,17 @@
           icon:
             class: "octicon octicon-terminal"
         content:
-          - "SparkleFormation's CLI tool provides sophisticated orchestration API interaction and template management."
-          - partial: "list"
-            bullets: "octicon octicon-telescope"
-            content:
-             - "Create, Update, and Destroy Stacks"
-             - "Process templates written in the DSL"
-             - "Discover Stack Metadata and Outputs"
-             - "Inspect Stack Resources"
+          - content:
+              - "SparkleFormation's CLI tool provides sophisticated
+                orchestration API interaction and template management."
+              - partial: "list"
+                bullets: "octicon octicon-telescope"
+                content:
+                 - "Create, Update, and Destroy Stacks"
+                 - "Process templates written in the DSL"
+                 - "Discover Stack Metadata and Outputs"
+                 - "Inspect Stack Resources"
+            class: "feature-description"
           - partial: "learn-more"
             url: "/docs/sfn/"
     -
@@ -146,7 +166,15 @@
           icon:
             class: "fa fa-server"
         content:
-          - "With nested stack support, multiple infrastructure stacks can be grouped into a single template. This allows you to logically compartmentalize resources for independent development and testing, while you maintain an entire infrastructure via a single point of entry. Nested stacks automatically detect and propagate changes to child stacks as required to maintain the expected infrastructure state."
+          - content:
+              - "With nested stack support, multiple infrastructure stacks
+                can be grouped into a single template. This allows you to
+                logically compartmentalize resources for independent development
+                and testing, while you maintain an entire infrastructure via a
+                single point of entry. Nested stacks automatically detect and
+                propagate changes to child stacks as required to maintain the
+                expected infrastructure state."
+            class: "feature-description"
           - partial: "learn-more"
             url: "/docs/sparkle_formation/nested-stacks.html"
       - h4:
@@ -154,7 +182,15 @@
           icon:
             class: "fa fa-toggle-on"
         content:
-          - "SparkleFormation includes support for AWS Stack Policies to add an extra layer of control and security.Policies restrict or allow actions on specific stack resources. The CLI tool extracts policies described in DSL written templates and applies them to the stack via the API. This allows you to maintain a record of stack policies inline with your template code in source control."
+          - content:
+              - "SparkleFormation includes support for AWS Stack Policies to add
+                an extra layer of control and security.Policies restrict or
+                allow actions on specific stack resources. The CLI tool extracts
+                policies described in DSL written templates and applies them to
+                the stack via the API. This allows you to maintain a record of
+                stack policies inline with your template code in source
+                control."
+            class: "feature-description"
           - partial: "learn-more"
             url: "/docs/sparkle_formation/stack-policies.html"
     # -
