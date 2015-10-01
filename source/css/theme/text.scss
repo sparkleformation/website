@@ -48,9 +48,16 @@ a:visited {
 };
 
 .thin {
-  font-weight: 200;
+  font-weight: 100;
 };
 
 underline {
   text-decoration: underline;
+};
+
+pre,
+pre * {
+  overflow: auto !important;
+  white-space: pre !important;
+  word-wrap: normal;
 };
