@@ -22,7 +22,6 @@ function standardOut (output, target, start, interval) {
   var lines = ( $(output).val().split("\n").length )
   for (count = 0; count < lines; count++) {
     setTimeout(function(){
-      console.log( $(output).val().split("\n")[line] )
       $(target).append( "\n" + $(output).val().split("\n")[line] );
       line += 1;
     }, delay);
