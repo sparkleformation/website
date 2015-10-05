@@ -21,6 +21,40 @@
 
 - class: "workflow"
   id: "workflow"
+  data:
+    - id: "demo-1-input"
+      value: " sfn create infrastructure-vpc"
+    - id: "demo-1-prompts"
+      value: |
+        [Sfn]: Cloud Formation: create
+        [Sfn]:   -> Name: infrastructure-vpc
+        [Sfn]: Vpc Cidr [10.0.0.0/16]:
+        [Sfn]: Dns Support [true]:
+        [Sfn]: Dns Hostnames [true]:
+        [Sfn]: Instance Tenancy [default]:
+        [Sfn]: Public Us West2a Subnet Cidr [10.0.0.0/24]:
+        [Sfn]: Public Us West2b Subnet Cidr [10.0.1.0/24]:
+        [Sfn]: Public Us West2c Subnet Cidr [10.0.2.0/24]:
+        [Sfn]: Events for Stack: infrastructure-vpc
+    - id: "demo-1-events"
+      value: |
+        Time                      Resource Logical Id   Resource Status
+        2015-09-29 21:06:20 UTC   infrastructure-vpc    CREATE_IN_PROGRESS
+        2015-09-29 21:07:29 UTC   infrastructure-vpc    CREATE_COMPLETE
+    - id: "demo-1-output"
+      value: |
+        [Sfn]: Stack create complete: SUCCESS
+        [Sfn]: Stack description of infrastructure-vpc:
+        [Sfn]: Outputs for stack: infrastructure-vpc
+        [Sfn]:    Vpc Id: vpc-e2581487
+        [Sfn]:    Vpc Cidr: 10.0.0.0/16
+        [Sfn]:    Public Route Table: rtb-69194d0c
+        [Sfn]:    Private Route Table: rtb-6e194d0b
+        [Sfn]:    Internet Gateway: igw-d3911ab6
+        [Sfn]:    Public Us West2a Subnet: subnet-1a15487f
+        [Sfn]:    Public Us West2b Subnet: subnet-11ed9d66
+        [Sfn]:    Public Us West2c Subnet: subnet-d320aa8a
+
   content:
     -
       - h4: "Workflow"
@@ -28,34 +62,10 @@
         content:
           - "Describe your entire <underline>infrastructure as code</underline>, then provision it with a single command."
       - partial: "window"
+        id: "sfn-demo"
         width: 12
         code:
-          snippet: |
-            $ sfn create infrastructure-vpc
-            [Sfn]: Cloud Formation: create
-            [Sfn]:   -> Name: infrastructure-vpc
-            [Sfn]: Vpc Cidr [10.0.0.0/16]:
-            [Sfn]: Dns Support [true]:
-            [Sfn]: Dns Hostnames [true]:
-            [Sfn]: Instance Tenancy [default]:
-            [Sfn]: Public Us West2a Subnet Cidr [10.0.0.0/24]:
-            [Sfn]: Public Us West2b Subnet Cidr [10.0.1.0/24]:
-            [Sfn]: Public Us West2c Subnet Cidr [10.0.2.0/24]:
-            [Sfn]: Events for Stack: infrastructure-vpc
-            Time                      Resource Logical Id   Resource Status
-            2015-09-29 21:06:20 UTC   infrastructure-vpc    CREATE_IN_PROGRESS
-            2015-09-29 21:07:29 UTC   infrastructure-vpc    CREATE_COMPLETE
-            [Sfn]: Stack create complete: SUCCESS
-            [Sfn]: Stack description of infrastructure-vpc:
-            [Sfn]: Outputs for stack: infrastructure-vpc
-            [Sfn]:    Vpc Id: vpc-e2581487
-            [Sfn]:    Vpc Cidr: 10.0.0.0/16
-            [Sfn]:    Public Route Table: rtb-69194d0c
-            [Sfn]:    Private Route Table: rtb-6e194d0b
-            [Sfn]:    Internet Gateway: igw-d3911ab6
-            [Sfn]:    Public Us West2a Subnet: subnet-1a15487f
-            [Sfn]:    Public Us West2b Subnet: subnet-11ed9d66
-            [Sfn]:    Public Us West2c Subnet: subnet-d320aa8a
+          snippet: "$"
           lang: "shell"
 
 # - class: "testimonials theme-bg-color-secondary"
