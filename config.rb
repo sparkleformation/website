@@ -24,6 +24,7 @@ end
 
 activate :livereload
 activate :syntax
+activate :sparkle_docs
 
 activate :deploy do |deploy|
   deploy.method = :git
