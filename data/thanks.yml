@@ -2,7 +2,7 @@
 - class: "banner theme-bg-default"
   content:
     - img:
-        src: "img/logo-full-color.png"
+        src: "/img/logo-full-color.png"
         class: "center-block"
 
     - class: "text-center col-md-offset-1 col-md-10"
