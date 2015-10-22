@@ -206,7 +206,8 @@ $theme-color-auto:              rgba(255, 255, 255, 0.90);
   color: inherit;
 };
 
-.theme-bg-color-secondary {
+.theme-bg-color-secondary,
+.theme-bg-color-secondary p {
   background-color: $theme-color-secondary;
   color: $theme-color-auto;
 };
@@ -243,7 +244,8 @@ $theme-color-auto:              rgba(255, 255, 255, 0.90);
   color: inherit;
 };
 
-.theme-bg-color-tertiary {
+.theme-bg-color-tertiary,
+.theme-bg-color-tertiary p {
   background-color: $theme-color-tertiary;
   color: $theme-color-auto;
 };
