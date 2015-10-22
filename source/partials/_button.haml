@@ -1,3 +1,6 @@
 = stylesheet_link_tag "button"
-%a.button{ href: content[:button][:url], class: "#{content[:button][:class] || "button-default" }" }
-  %span= content[:button][:label]
+- if content[:button][:type] == "submit"
+  %input.button{ id: content[:button][:id], type: content[:button][:type], href: content[:button][:url], class: "#{content[:button][:class] || "button-default" }", value: content[:button][:label] }
+- else
+  %a.button{ id: content[:button][:id], type: content[:button][:type], href: content[:button][:url], class: "#{content[:button][:class] || "button-default" }" }
+    %span= content[:button][:label]

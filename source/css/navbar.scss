@@ -10,14 +10,18 @@ $navbar-line-height:  24px;
   height: 70px;
 };
 
+.navbar .navbar-brand {
+  color: $theme-color-black;
+};
+
 .navbar .navbar-fixed-top {
-  color: $sparkle-black;
-  background-color: $sparkle-white-translucent;
+  color: $theme-color-black;
+  background-color: $theme-color-white-translucent;
   padding: 10px 0px;
 };
 
 .navbar .navbar-header img {
-  display:inline-block;
+  display: inline-block;
   max-height: $navbar-img;
   margin: -10px 0px;
 };
@@ -38,20 +42,20 @@ $navbar-line-height:  24px;
 };
 
 .navbar .icon-bar {
-  color: $sparkle-black;
+  color: $theme-color-black;
 };
 
 .navbar .button {
   margin: 0px;
   padding: 13px;
-  background-color: $sparkle-black;
-  border-color: $sparkle-white;
-  color: $sparkle-white;
+  background-color: $theme-color-black;
+  border-color: $theme-color-white;
+  color: $theme-color-white;
 };
 
 .navbar .button:hover {
-  background-color: $sparkle-magenta;
-  border-color: $sparkle-white;
+  background-color: $theme-color-secondary;
+  border-color: $theme-color-white;
 };
 
 // .navbar .button span:after {

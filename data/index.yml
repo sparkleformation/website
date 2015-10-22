@@ -220,3 +220,30 @@
     #       - ""
     #       - partial: "learn-more"
     #         url: "#"
+
+- class: "cta theme-bg-color-primary"
+  id: "sign-up"
+  stylesheet: "button"
+  content:
+    -
+      - width: 8
+        h4:
+          heading: "Join the waiting list!"
+          icon:
+            class: "octicon octicon-radio-tower"
+        content:
+          - "SparklePro is currently in \"technical preview\" while we iron out
+            some kinks, collect user feedback, and add some polish. We can't
+            wait to share it with you though, so let us know if you're
+            interested in kicking the tires when we open up the public BETA."
+          - "Leave us your email address to join the waiting list."
+      - width: 4
+        content:
+          - partial: "mailchimp"
+            placeholder: "Your email address..."
+            button:
+              label: "Sign Up!"
+              url: "http://www.heavywater.io/contact"
+              class: "button-full-width"
+              type: "submit"
+              id: "mce-embedded-subscribe"
