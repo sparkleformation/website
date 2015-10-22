@@ -9,6 +9,8 @@ $(document).ready(function() {
   $('.coming-soon a').click(false);
   $('.coming-soon a').html("Coming soon >");
 
+  $('.documentation-content table').addClass('table table-hover table-condensed table-responsive')
+
   $('#sfn-demo code').focus()
   .typetype( $('#demo-1-input').val(), {e:0});
   stdOut( '#demo-1-prompts', '#sfn-demo code', 5000,  500);
