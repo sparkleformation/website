@@ -9,8 +9,22 @@ $sparkle-gray:                rgb(200, 200, 200); // #c8c8c8
 $sparkle-gray-translucent:    rgba(200, 200, 200, 0.90); // #c8c8c8
 $sparkle-white:               rgb(255, 255, 255); // #ffffff
 $sparkle-white-translucent:   rgba(255, 255, 255, 0.95); //
-$color-red:                   #FF3B30;
+$sparkle-color-red:                   #FF3B30;
 $transparent:                 rgba(255, 255, 255, 0.07);
+
+
+$theme-color-red:               $sparkle-color-red;
+$theme-color-orange:            $sparkle-orange;
+$theme-color-white:             $sparkle-white;
+$theme-color-white-translucent: $sparkle-white-translucent;
+$theme-color-gray:              $sparkle-gray;
+$theme-color-gray-translucent:  rgba(124, 124, 124, 0.90);
+$theme-color-black:             rgb(43, 48, 58);
+$theme-color-primary:           $sparkle-blue;
+$theme-color-secondary:         $sparkle-magenta;
+$theme-color-tertiary:          $sparkle-green;
+$theme-color-auto:              rgba(255, 255, 255, 0.75);
+
 
 .black {
   color: $sparkle-black !important;
@@ -22,7 +36,7 @@ $transparent:                 rgba(255, 255, 255, 0.07);
 
 .temp,
 .temp * {
-  color: $color-red !important;
+  color: $theme-color-red !important;
 };
 
 .theme-bg-default,
