@@ -118,15 +118,14 @@
         h1:
           icon:
             class: "fa fa-cloud-upload xl-icon"
-        h5: "SparkleFormation"
-        h6: "CI Service"
+        h5: "SparkleProvision"
+        h6: "Provisioning Service"
         content:
           - content:
-              - "A single-purpose CI service for continuous provisioning.
-                The SparkleFormation CI service simplifies full stack
-                orchestration and empowers DevOps teams to manage infrastructure
-                with source control actions. <br />Compose, Commit, Tag,
-                Provision."
+              - "A continuous-provisioning service. The SparkleProvision service
+                simplifies full stack orchestration and empowers DevOps teams to
+                manage infrastructure with source control actions. <br />
+                Compose, Commit, Tag, Provision."
             class: "product-description"
           - partial: "learn-more"
             url: "#"
