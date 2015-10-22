@@ -5,22 +5,22 @@
       - partial: "list"
         width: 3
         content:
-          - "<a href=/>Home</a>"
-          - "<a href=/#components>Components</a>"
-          - "<a href=/#features>Features</a>"
+          - "[Home](/)"
+          - "[Components](/#components)"
+          - "[Features](/#features)"
       - partial: "list"
         width: 3
         content:
-          - "<a href=/docs/>Docs</a>"
-          - "<a href=/docs/sparkle_formation/>Library & DSL</a>"
-          - "<a href=/docs/sfn/>CLI</a>"
+          - "[Docs](/docs/)"
+          - "[Library & DSL](/docs/sparkle_formation/)"
+          - "[CLI](/docs/sfn/)"
       - partial: "list"
         width: 3
         content:
-          - "<a href=/training>Training</a>"
-          - "<a href=/training#curriculum>Curriculum</a>"
-          - "<a href=/training#packages>Packages</a>"
-          - "<a href=/training#schedule>Schedule</a>"
+          - "[Training](/training)"
+          - "[Curriculum](/training#curriculum)"
+          - "[Packages](/training#packages)"
+          - "[Schedule](/training#schedule)"
       - width: 3
         partial: "address"
         company: "<a href=http://www.heavywater.io>Heavy Water</a>"
@@ -32,9 +32,7 @@
 
     - class: "text-center"
       content:
-        - "<a href=https://twitter.com/sfnftw target=_blank>
-          <span class='social-icon fa fa-twitter'></span></a>
-          <a href=https://github.com/sparkleformation target=_blank>
-          <span class='social-icon fa fa-github'></span></a>"
-        - "Made with <span class='fa fa-heart'></span> by <a href=http://\
-          www.heavywater.io>Heavy Water</a> &copy; 2013-2015"
+        - "[<span class='social-icon fa fa-twitter' />](https://twitter.com/sfnftw)
+          [<span class='social-icon fa fa-github' />](https://github.com/sparkleformation)"
+        - "Made with <span class='fa fa-heart'></span> by
+          [Heavy Water](http://www.heavywater.io) &copy; 2013-2015"

@@ -92,7 +92,8 @@
     - h5: "Template Development Migration & Support"
       id: "template-development"
       content:
-        - "Trainer and Trainees will collaboratively compose SparkleFormation templates covering baseline infrastructure needs."
+        - "Trainer and Trainees will collaboratively compose SparkleFormation
+          templates covering baseline infrastructure needs."
 
 - class: "packages theme-bg-neutral"
   id: "packages"
@@ -100,12 +101,11 @@
     - h2: "Training Packages"
       content:
         - "SparkleFormation Training sessions are hosted via <underline>Google
-          Hangout</underline> and at <a href=http://centrloffice.com
-          target=_blank>Centrl Office</a>, in the \"Pearl District\" area of
-          Downtown Portland, Oregon. Training sessions will be limited to groups
-          of up to 20-users. On-site training sessions are also available for
-          organizations located in the United States, Canada, Europe, Japan and
-          Australia."
+          Hangout</underline> and at [Centrl Office](http://centrloffice.com),
+          in the \"Pearl District\" area of Downtown Portland, Oregon. Training
+          sessions will be limited to groups of up to 20-users. On-site training
+          sessions are also available for organizations located in the United
+          States, Canada, Europe, Japan and Australia."
     - partial: "table"
       table:
         class: "table-hover"
@@ -184,9 +184,9 @@
     - h2: "Upcoming Schedule"
       content:
         - "SparkleFormation Training sessions are hosted via <underline>Google
-          Hangout</underline> and at <a href=http://centrloffice.com
-          target=_blank>Centrl Office</a>, in the \"Pearl District\" area of
-          Downtown Portland, Oregon. Training sessions will be limited to groups
+          Hangout</underline> and at [Centrl Office](http://centrloffice.com),
+          in the \"Pearl District\" area of Downtown Portland, Oregon. Training
+          sessions will be limited to groups
           of up to 20-users. On-site training sessions are also available for
           organizations located in the United States, Canada, Europe, Japan and
           Australia."
