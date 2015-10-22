@@ -2,7 +2,9 @@
   - if content == ""
     %p.temp= lorem.paragraph
   - else
-    %p= content
+    %span
+      :markdown
+        #{content}
 
 - elsif content.kind_of?(Hash)
   %div{ class: content["class"], id: content[:id] }
