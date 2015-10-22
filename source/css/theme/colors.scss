@@ -9,21 +9,20 @@ $sparkle-gray:                rgb(200, 200, 200); // #c8c8c8
 $sparkle-gray-translucent:    rgba(200, 200, 200, 0.90); // #c8c8c8
 $sparkle-white:               rgb(255, 255, 255); // #ffffff
 $sparkle-white-translucent:   rgba(255, 255, 255, 0.95); //
-$sparkle-color-red:                   #FF3B30;
+$sparkle-color-red:           #FF3B30;
 $transparent:                 rgba(255, 255, 255, 0.07);
-
 
 $theme-color-red:               $sparkle-color-red;
 $theme-color-orange:            $sparkle-orange;
 $theme-color-white:             $sparkle-white;
 $theme-color-white-translucent: $sparkle-white-translucent;
 $theme-color-gray:              $sparkle-gray;
-$theme-color-gray-translucent:  rgba(124, 124, 124, 0.90);
-$theme-color-black:             rgb(43, 48, 58);
+$theme-color-gray-translucent:  $sparkle-gray-translucent;
+$theme-color-black:             $sparkle-black;
 $theme-color-primary:           $sparkle-blue;
 $theme-color-secondary:         $sparkle-magenta;
 $theme-color-tertiary:          $sparkle-green;
-$theme-color-auto:              rgba(255, 255, 255, 0.75);
+$theme-color-auto:              rgba(255, 255, 255, 0.90);
 
 
 .black {
@@ -39,17 +38,27 @@ $theme-color-auto:              rgba(255, 255, 255, 0.75);
   color: $theme-color-red !important;
 };
 
+.transparent{
+  background-color: $transparent;
+  border: 1px solid rgba(238, 238, 238, 0.27);
+  color: #FFFFFF;
+};
+
+.transparent:focus{
+  border-color: #FFFFFF;
+};
+
 .theme-bg-default,
 .theme-bg-default p {
-  background-color: $sparkle-white;
-  color: $sparkle-black;
+  background-color: $theme-color-white;
+  color: $theme-color-black;
 };
 
 .theme-bg-default a,
 .theme-bg-default a:hover,
 .theme-bg-default a:focus,
 .theme-bg-default a:visited {
-  color: $sparkle-black;
+  color: $theme-color-primary;
 };
 
 .theme-bg-default p > a,
@@ -60,32 +69,36 @@ $theme-color-auto:              rgba(255, 255, 255, 0.75);
 .theme-bg-default li > a:hover,
 .theme-bg-default li > a:visited,
 .theme-bg-default li > a:focus {
-  color: $sparkle-green;
+  color: $theme-color-tertiary;
 };
 
 .theme-bg-default .button {
   background-color: inherit;
   color: inherit;
-  border-color: $sparkle-black;
+  border-color: $theme-color-black;
 };
 
 .theme-bg-default .button:hover {
-  background-color: $sparkle-orange;
-  color: $sparkle-white;
-  border-color: $sparkle-orange;
+  background-color: $theme-color-primary;
+  color: $theme-color-auto;
+  border-color: $theme-color-primary;
+};
+
+.theme-bg-default .button span {
+  color: inherit;
 };
 
 .theme-bg-inverse,
 .theme-bg-inverse p {
-  background-color: $sparkle-black;
-  color: $sparkle-white;
+  background-color: $theme-color-black;
+  color: $theme-color-white;
 };
 
 .theme-bg-inverse a,
 .theme-bg-inverse a:hover,
 .theme-bg-inverse a:focus,
 .theme-bg-inverse a:visited {
-  color: $sparkle-blue;
+  color: $theme-color-primary;
 };
 
 .theme-bg-inverse p > a,
@@ -96,32 +109,36 @@ $theme-color-auto:              rgba(255, 255, 255, 0.75);
 .theme-bg-inverse li > a:hover,
 .theme-bg-inverse li > a:visited,
 .theme-bg-inverse li > a:focus {
-  color: $sparkle-blue;
+  color: $theme-color-primary;
 };
 
 .theme-bg-inverse .button {
   background-color: inherit;
   color: inherit;
-  border-color: $sparkle-white;
+  border-color: $theme-color-auto;
 };
 
 .theme-bg-inverse .button:hover {
-  background-color: $sparkle-blue;
-  color: $sparkle-white;
-  border-color: $sparkle-white;
+  background-color: $theme-color-secondary;
+  color: $theme-color-white;
+  border-color: $theme-color-white;
+};
+
+.theme-bg-inverse .button span {
+  color: inherit;
 };
 
 .theme-bg-neutral,
 .theme-bg-neutral p {
-  background-color: $sparkle-gray;
-  color: $sparkle-black;
+  background-color: $theme-color-gray;
+  color: $theme-color-black;
 };
 
 .theme-bg-neutral a,
 .theme-bg-neutral a:hover,
 .theme-bg-neutral a:focus,
 .theme-bg-neutral a:visited {
-  color: $sparkle-black;
+  color: $theme-color-auto;
 };
 
 .theme-bg-neutral p > a,
@@ -132,30 +149,36 @@ $theme-color-auto:              rgba(255, 255, 255, 0.75);
 .theme-bg-neutral li > a:hover,
 .theme-bg-neutral li > a:visited,
 .theme-bg-neutral li > a:focus {
-  color: $sparkle-magenta;
+  color: $theme-color-auto;
 };
 
 .theme-bg-neutral .button {
-  border-color: $sparkle-black;
+  background-color: inherit;
+  color: inherit;
+  border-color: $theme-color-black;
 };
 
 .theme-bg-neutral .button:hover {
-  background-color: $sparkle-green;
-  color: $sparkle-black;
-  border-color: $sparkle-black;
+  background-color: $theme-color-tertiary;
+  color: $theme-color-black;
+  border-color: $theme-color-black;
+};
+
+.theme-bg-neutral .button span {
+  color: inherit;
 };
 
 .theme-bg-color-primary,
 .theme-bg-color-primary p {
-  background-color: $sparkle-blue;
-  color: $sparkle-white;
+  background-color: $theme-color-primary;
+  color: $theme-color-auto;
 };
 
 .theme-bg-color-primary a,
 .theme-bg-color-primary a:hover,
 .theme-bg-color-primary a:focus,
 .theme-bg-color-primary a:visited {
-  color: $sparkle-white;
+  color: $theme-color-auto;
 };
 
 .theme-bg-color-primary p > a,
@@ -166,29 +189,33 @@ $theme-color-auto:              rgba(255, 255, 255, 0.75);
 .theme-bg-color-primary li > a:hover,
 .theme-bg-color-primary li > a:visited,
 .theme-bg-color-primary li > a:focus {
-  color: $sparkle-black;
+  color: $theme-color-black;
 };
 
 .theme-bg-color-primary .button {
-  border-color: $sparkle-white;
+  border-color: $theme-color-auto;
 };
 
 .theme-bg-color-primary .button:hover {
-  background-color: $sparkle-magenta;
-  color: $sparkle-white;
-  border-color: $sparkle-white;
+  background-color: $theme-color-secondary;
+  color: $theme-color-auto;
+  border-color: $theme-color-auto;
+};
+
+.theme-bg-color-primary .button span {
+  color: inherit;
 };
 
 .theme-bg-color-secondary {
-  background-color: $sparkle-magenta;
-  color: $sparkle-white;
+  background-color: $theme-color-secondary;
+  color: $theme-color-auto;
 };
 
 .theme-bg-color-secondary a,
 .theme-bg-color-secondary a:hover,
 .theme-bg-color-secondary a:focus,
 .theme-bg-color-secondary a:visited {
-  color: $sparkle-white;
+  color: $theme-color-auto;
 };
 
 .theme-bg-color-secondary p > a,
@@ -199,29 +226,33 @@ $theme-color-auto:              rgba(255, 255, 255, 0.75);
 .theme-bg-color-secondary li > a:hover,
 .theme-bg-color-secondary li > a:visited,
 .theme-bg-color-secondary li > a:focus {
-  color: $sparkle-orange;
+  color: $theme-color-primary;
 };
 
 .theme-bg-color-secondary .button {
-  border-color: $sparkle-white;
+  border-color: $theme-color-auto;
 };
 
 .theme-bg-color-secondary .button:hover {
-  background-color: $sparkle-blue;
-  color: $sparkle-white;
-  border-color: $sparkle-white;
+  background-color: $theme-color-primary;
+  color: $theme-color-auto;
+  border-color: $theme-color-auto;
+};
+
+.theme-bg-color-secondary .button span {
+  color: inherit;
 };
 
 .theme-bg-color-tertiary {
-  background-color: $sparkle-green;
-  color: $sparkle-white;
+  background-color: $theme-color-tertiary;
+  color: $theme-color-auto;
 };
 
 .theme-bg-color-tertiary a,
 .theme-bg-color-tertiary a:hover,
 .theme-bg-color-tertiary a:focus,
 .theme-bg-color-tertiary a:visited {
-  color: $sparkle-black;
+  color: $theme-color-auto;
 };
 
 .theme-bg-color-tertiary p > a,
@@ -232,15 +263,19 @@ $theme-color-auto:              rgba(255, 255, 255, 0.75);
 .theme-bg-color-tertiary li > a:hover,
 .theme-bg-color-tertiary li > a:visited,
 .theme-bg-color-tertiary li > a:focus {
-  color: $sparkle-black;
+  color: $theme-color-black;
 };
 
 .theme-bg-color-tertiary .button {
-  border-color: $sparkle-white;
+  border-color: $theme-color-auto;
 };
 
 .theme-bg-color-tertiary .button:hover {
-  background-color: $sparkle-blue;
-  color: $sparkle-white;
-  border-color: $sparkle-white;
+  background-color: $theme-color-primary;
+  color: $theme-color-auto;
+  border-color: $theme-color-auto;
+};
+
+.theme-bg-color-tertiary .button span {
+  color: inherit;
 };

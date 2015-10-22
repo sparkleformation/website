@@ -16,3 +16,9 @@ opengraph:
   url: "http://www.sparkleformation.io"
 
 google_analytics: "UA-39138312-11"
+
+mailchimp:
+  org: "heavywater"
+  region: "us6"
+  user: "576e632588"
+  id: "7a323d63c3"
