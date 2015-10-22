@@ -118,13 +118,14 @@
         h1:
           icon:
             class: "fa fa-cloud-upload xl-icon"
-        h5: "SparkleProvision"
+        h5: "SparklePro"
         h6: "Provisioning Service"
         content:
           - content:
-              - "A continuous-provisioning service. The SparkleProvision service
-                simplifies full stack orchestration and empowers DevOps teams to
-                manage infrastructure with source control actions. <br />
+              - "SparklePro(visioning) is a continuous-provisioning service.
+                The SparklePro service simplifies full stack orchestration and
+                empowers DevOps teams to manage infrastructure with source
+                control actions. <br />
                 Compose, Commit, Tag, Provision."
             class: "product-description"
           - partial: "learn-more"
