@@ -89,11 +89,15 @@
               - "SparkleFormation infrastructure development workflows"
               - "Reusability and organizational standards enforcement"
               - "Extending capabilities with Custom Resources"
-    - h5: "Template Development Migration & Support"
-      id: "template-development"
+    - h5: "Professional Services"
+      id: "professional-services"
       content:
-        - "Trainer and Trainees will collaboratively compose SparkleFormation
-          templates covering baseline infrastructure needs."
+        - "On-site training comes with 2-days of Professional Services provided
+          by one of [Heavy Water's](http://www.heavywater.io) Senior Operations
+          Engineers. Professional services will be custom-tailored to the unique
+          needs of the Customer (e.g. bootstrapping migration to
+          SparkleFormation from native CloudFormation templates, assessment and
+          enhancement of existing SparkleFormation templates, etc)."
 
 - class: "packages theme-bg-neutral"
   id: "packages"
@@ -122,8 +126,8 @@
         rows:
           - data:
               - "Duration"
+              - "1-days"
               - "2-days"
-              - "3-days"
               - "4-days"
           - data:
               - "FREE SparkleFormation T-Shirt & Stickers"
@@ -151,7 +155,7 @@
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
           - data:
-              - "Template Development"
+              - "Professional Services"
               - ""
               - ""
               - "<span class='fa fa-check'></span>"
