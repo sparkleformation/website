@@ -12,6 +12,9 @@
   // "CSS resources"
   = stylesheet_link_tag "base"
 
+  // "JQuery"
+  = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
+
   // "Favicons"
   = partial "partials/favicons", locals: { content: data[:site][:favicon] }
 
