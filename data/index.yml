@@ -67,6 +67,8 @@
         code:
           snippet: "$"
           lang: "shell"
+      - partial: "js"
+        source: "sfn-demo.js"
 
 # - class: "testimonials theme-bg-color-secondary"
 #   id: "testimonials"
