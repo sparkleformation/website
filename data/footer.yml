@@ -32,7 +32,7 @@
 
     - class: "text-center"
       content:
-        - "[<span class='social-icon fa fa-twitter' />](https://twitter.com/sfnftw)
+        - "[<span class='social-icon fa fa-twitter' />](https://twitter.com/sfn)
           [<span class='social-icon fa fa-github' />](https://github.com/sparkleformation)"
         - "Made with <span class='fa fa-heart'></span> by
           [Heavy Water](http://www.heavywater.io) &copy; 2013-2015"
