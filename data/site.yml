@@ -22,3 +22,13 @@ mailchimp:
   region: "us6"
   user: "576e632588"
   id: "7a323d63c3"
+
+twitter:
+  site_visit:
+    tracking:
+      id: "twitter_tracking_site_visit"
+      value: "ntqp6"
+  sign_ups:
+    tracking:
+      id: "twitter_tracking_sign_ups"
+      value: "ntqp7"

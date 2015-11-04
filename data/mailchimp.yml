@@ -32,6 +32,13 @@ thank_you:
           url: "http://twitter.com/intent/tweet?url=http://www.sparkleformation.io&text=I%20signed%20up%20to%20continuously%20provision%20my%20infrastructure%20to%20@AWScloud%20using%20@sfnftw%20and%20you%20should%20too!%20Learn%20more:&related=sfnftw"
           class: "button-full-width"
 
+  - class: "hidden"
+    content:
+      - partial: "twitter_ads"
+        tracking:
+          id: "twitter_tracking_sign_ups"
+          value: "ntqp7"
+
 subscription_confirmation:
   - class: "banner theme-bg-default"
     content:
