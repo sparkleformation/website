@@ -2,3 +2,4 @@ build/
 build/*
 *.md
 Gemfile.lock
+source/docs/*/images*
