@@ -30,7 +30,12 @@ body {
   padding-left: 10px;
 };
 
+
 .documentation-content table tbody > tr > td:first-child {
   display: table-row;
   border-top: 5px solid transparent;
+};
+
+.documentation img {
+  max-width: 50%;
 };
