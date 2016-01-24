@@ -39,3 +39,12 @@ body {
 .documentation img {
   max-width: 80%;
 };
+
+.provider-hidden {
+  display: none !important;
+};
+
+.provider-invisible {
+  visibility: hidden !important;
+  height: 0;
+};
