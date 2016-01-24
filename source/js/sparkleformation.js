@@ -13,14 +13,18 @@ $(document).ready(function() {
   if(display_guide_toggles()){
     guide_provider_show();
     guide_pagination();
+    console.log($(document).attr('location').pathname);
+    if($(document).attr('location').hash != ""){
+      display_page_by_name(
+        $(document).attr('location').hash.split('#')[1]
+      )
+    }
     $('a').click(function(){
       path = $(this).attr('href');
       if(path.includes('#')){
         parts = path.split('#');
         if(parts[0] == $(document).attr('location').pathname){
-          page = $('h2[id="' + parts[1] + '"]').first();
-          idx = $('h2').index(page);
-          display_page(idx);
+          display_page_by_name(parts[1]);
         }
       }
     });
@@ -119,4 +123,10 @@ function reload_current_page(){
   if(window.sparkle_guide_pagination){
     display_page(window.sparkle_guide_pagination['current_page']);
   }
+}
+
+function display_page_by_name(name){
+  page = $('h2[id="' + name + '"]').first();
+  idx = $('h2').index(page);
+  display_page(idx);
 }
