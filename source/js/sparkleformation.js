@@ -41,13 +41,13 @@ function guide_provider_show(name){
     to_show = items.filter('[id*="-sparkles-'+ name + '"]');
     to_hide = items.filter(':not([id*="-sparkles-'+ name + '"])');
     to_show.each(function(){
-      $(this).removeClass('provider-hidden');
+      $(this).removeClass('provider-invisible');
       $(this).addClass('provider-invisible');
-      $(this).next().removeClass('provider-hidden');
+      $(this).next().removeClass('provider-invisible');
     });
     to_hide.each(function(){
-      $(this).addClass('provider-hidden');
-      $(this).next().addClass('provider-hidden');
+      $(this).addClass('provider-invisible');
+      $(this).next().addClass('provider-invisible');
     });
     $('[id^="provider-"]').removeClass('btn-primary');
     $('#provider-' + name).addClass('btn-primary');

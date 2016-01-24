@@ -40,11 +40,7 @@ body {
   max-width: 80%;
 };
 
-.provider-hidden {
-  display: none !important;
-};
-
 .provider-invisible {
-  visibility: hidden !important;
   height: 0;
+  visibility: hidden;
 };
