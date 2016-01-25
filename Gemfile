@@ -3,11 +3,12 @@
 source 'https://rubygems.org'
 
 gem "middleman"
+gem "middleman-core", "< 4"
 gem "middleman-livereload"
 gem "middleman-syntax"
 gem "middleman-deploy"
 gem "kramdown"
-gem "bootstrap-sass"
+gem "bootstrap-sass", '3.3.5.1'
 
 gem 'middleman-sparkle_docs', :git => 'git@github.com:sparkleformation/middleman-sparkle_docs'
 
