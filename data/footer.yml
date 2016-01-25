@@ -12,6 +12,7 @@
         width: 3
         content:
           - "[Docs](/docs/)"
+          - "[Getting Started](/docs/guides/v0-1.html)"
           - "[Library & DSL](/docs/sparkle_formation/)"
           - "[CLI](/docs/sfn/)"
       - partial: "list"

@@ -1,5 +1,6 @@
 build/
 build/*
 *.md
+!source/docs/guides/**/*.md
 Gemfile.lock
 source/docs/*/images*

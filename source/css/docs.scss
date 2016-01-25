@@ -39,3 +39,8 @@ body {
 .documentation img {
   max-width: 80%;
 };
+
+.provider-invisible {
+  height: 0;
+  visibility: hidden;
+};

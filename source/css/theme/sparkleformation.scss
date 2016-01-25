@@ -17,10 +17,15 @@ body {
   color: $theme-color-red;
 };
 
+.disabled,
 .coming-soon {
   opacity: 0.6;
 };
 
+button[disabled],
+.disabled a:hover,
+.disabled button:hover,
+.disabled .button:hover,
 .coming-soon a:hover {
   cursor: not-allowed;
 };
