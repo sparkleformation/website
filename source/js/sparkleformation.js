@@ -59,13 +59,20 @@ function guide_provider_show(name){
 function display_guide_toggles(){
   items = $('h4[id*="-sparkles-"]');
   if(items.size() > 1){
-    names = items.map(function(){
+    valid_names = items.map(function(){
       parts = $(this).attr('id').split('-');
       return parts[parts.indexOf('sparkles') + 1];
     }).toArray().filter(function(v){ return !!v; });
-    names = $($.unique(names).sort()).map(function(k,v){
+    var names = [];
+    $(valid_names).each(function(k,v){
+      if(names.indexOf(v) == -1){
+        names.push(v);
+      }
+    });
+    names = $(names.sort()).map(function(k,v){
       return v[0].toUpperCase() + v.slice(1);
     });
+    console.log(names);
     container = $('.documentation-content').first();
     result = names.map(function(idx, value){
       l_value = value.toLowerCase();
