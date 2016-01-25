@@ -96,18 +96,20 @@ function display_page(idx){
     $('h2').first().nextAll().hide();
     start_at = $(pages[idx]);
     $('.page-controls').detach();
-    controls = '';
+    controls = '<div class="col-md-6">';
     if(p_pg < 0){
-      controls = controls + '<button class="btn btn-default" disabled="disabled">Previous</button> '
+      controls = controls + '<button class="button button-full-width disabled" disabled="disabled">Previous</button> '
     } else {
-      controls = controls + '<button class="btn btn-default" onclick="display_page(' + p_pg + ');">Previous</button> '
+      controls = controls + '<button class="button button-full-width" onclick="display_page(' + p_pg + ');">Previous</button> '
     }
+    controls = controls + '</div><div class="col-md-6">';
     if(n_pg > max_pg){
-      controls = '<button class="btn btn-default" disabled="disabled">Next</button>'
+      controls = '<button class="button button-full-width disabled" disabled="disabled">Next</button>'
     } else {
-      controls = controls + '<button class="btn btn-default" onclick="display_page(' + n_pg + ');">Next</button> '
+      controls = controls + '<button class="button button-full-width" onclick="display_page(' + n_pg + ');">Next</button> '
     }
-    $(pages[idx + 1]).before('<div class="page-controls anchor" style="display: block; text-align: center;">' + controls + '</div>');
+    controls = controls + '</div>';
+    $(pages[idx + 1]).before('<div class="page-controls anchor" style="display: block; text-align: center;"><div class="row">' + controls + '</div></div>');
     start_at.show();
     start_at.nextUntil('h2').show();
     window.sparkle_guide_pagination['current_page'] = idx;
