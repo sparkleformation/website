@@ -11,13 +11,13 @@ $(document).ready(function() {
 
   $('.documentation-content table').addClass('table table-hover table-condensed table-responsive')
   if(display_guide_toggles()){
-    guide_provider_show();
     guide_pagination();
-    console.log($(document).attr('location').pathname);
     if($(document).attr('location').hash != ""){
       display_page_by_name(
         $(document).attr('location').hash.split('#')[1]
       )
+    } else {
+      guide_provider_show();
     }
     $('a').click(function(){
       path = $(this).attr('href');
@@ -82,7 +82,6 @@ function guide_pagination(){
     'total_pages': $('h2').size()
   };
   $('h2').first().nextAll().hide();
-  display_page(0);
 }
 
 function display_page(idx){
@@ -112,6 +111,7 @@ function display_page(idx){
     start_at.show();
     start_at.nextUntil('h2').show();
     window.sparkle_guide_pagination['current_page'] = idx;
+    $(document).attr('location').hash = start_at.attr('id')
     $('html, body').animate({
       scrollTop: start_at.offset().top
     }, 200);
