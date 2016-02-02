@@ -1,0 +1,42 @@
+default:
+  - class: "promotion theme-bg-color-primary"
+    id: "promotion"
+    stylesheet: "promote"
+    content:
+      -
+        - width: 8
+          content: "**Questions?** If you need help getting started with
+            SparkleFormation or if you have questions about advanced
+            SparkleFormation workflows or use cases, [contact us](/contact) today.
+            Or perhaps you're looking for assistance automating your
+            infrastructure with SparkleFormation? Support and [Professional
+            Services](/services) for SparkleFormation are provided by [Heavy
+            Water](http://www.heavywater.io)."
+        - partial: "button"
+          width: 4
+          class: "text-center"
+          button:
+            label: "Learn More"
+            url: "/services"
+            class: "button-full-width"
+
+services:
+  - class: "promotion theme-bg-color-primary"
+    id: "promotion"
+    stylesheet: "promote"
+    content:
+      -
+        - width: 8
+          content: "[Heavy Water](http://www.heavywater.io) is an industry
+            leader in infrastructure automation consulting services. We help
+            organizations implement infrastructure delivery solutions at scale,
+            integrating SparkleFormation alongside existing automation tools
+            like Chef and Puppet. Contact us today and let us help automate your
+            business."
+        - partial: "button"
+          width: 4
+          class: "text-center"
+          button:
+            label: "Contact Sales"
+            url: "/contact"
+            class: "button-full-width"
