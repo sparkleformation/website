@@ -96,8 +96,8 @@
           Services](/services) provided by one of Heavy Water's Senior
           Operations Engineers. Professional services will be custom-tailored to
           the unique needs of the Customer (e.g. bootstrapping migration to
-          SparkleFormation from native CloudFormation templates, assessment and
-          enhancement of existing SparkleFormation templates, etc)."
+          SparkleFormation from native Orchestration API templates, assessment
+          and enhancement of existing SparkleFormation templates, etc)."
         - partial: "learn-more"
           url: "/services"
 
