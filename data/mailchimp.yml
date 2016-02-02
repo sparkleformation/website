@@ -7,29 +7,25 @@ thank_you:
           class: "center-block"
 
       - class: "text-center col-sm-offset-1 col-sm-10"
-        h2: "<span class=strong>Sparkle</span><span class=thin>Pro</span>"
-        h4: "Thank you for your interest in SparklePro!"
+        h2: "<span class=strong>Sparkle</span><span class=thin>Formation</span>"
+        h4: "Newsletter registration: almost complete..."
         content:
-          - "SparklePro is currently in \"technical preview\" while we iron out
-            some kinks, collect user feedback, and add some polish - but we can't
-            wait to share it with you! We're planning on a beta launch in a few
-            weeks, so stay tuned for an invite. Just <underline>make sure to
-            confirm your email address</underline> by clicking the link in the
-            email we just sent you, which will complete your registration."
+          - "Thank you for signing up for the SparkleFormation Newsletter.
+            **Please make sure to confirm your email address** by clicking the
+            link in the email we just sent you, which will complete your
+            registration."
 
   - class: "share theme-bg-color-secondary"
     content:
       - class: "text-center col-sm-offset-1 col-sm-10"
         content:
-          - "While you wait for your invite can you do us a favor? Will you help
-            us <br> spread the word about SparkleFormation & SparklePro with a
-            Tweet?"
+          - "Help spread the SparkleFormation love with a Tweet?"
 
       - partial: "button"
         class: "text-center col-sm-offset-4 col-sm-4"
         button:
           label: "Spread the Love"
-          url: "http://twitter.com/intent/tweet?url=http://www.sparkleformation.io&text=I%20signed%20up%20to%20continuously%20provision%20my%20infrastructure%20to%20@AWScloud%20using%20@sfnftw%20and%20you%20should%20too!%20Learn%20more:&related=sfnftw"
+          url: "http://twitter.com/intent/tweet?url=http://www.sparkleformation.io&text=I'm%20using%20@sfnftw%20to%20automate%20my%20infrastructure%20provisioning%20and%20you%20should%20too!%20Learn%20more:&related=sfnftw"
           class: "button-full-width"
 
   - class: "hidden"
@@ -46,26 +42,24 @@ subscription_confirmation:
           src: "/img/logo-full-color.png"
           class: "center-block"
 
-      - class: "text-center col-sm-offset-2 col-sm-8"
-        h2: "<span class=strong>Sparkle</span><span class=thin>Pro</span>"
-        h4: "Your registration is complete!"
+      - class: "text-center col-sm-offset-1 col-sm-10"
+        h2: "<span class=strong>Sparkle</span><span class=thin>Formation</span>"
+        h4: "Newsletter registration complete!"
         content:
-          - "SparklePro is currently in \"technical preview\" while we iron out
-            some kinks, collect user feedback, and add some polish - but we can't
-            wait to share it with you! We're planning on a beta launch in a few
-            weeks, so stay tuned for an invite."
+          - "Your SparkleFormation Newsletter registration is completed! You are
+            now signed up to receive email notifications about new releases,
+            community events, and more. Never more than one email per week,
+            almost always at least one email per month."
 
   - class: "share theme-bg-color-secondary"
     content:
       - class: "text-center col-sm-offset-1 col-sm-10"
         content:
-          - "While you wait for your invite can you do us a favor? Will you help
-            us <br> spread the word about SparkleFormation & SparklePro with a
-            Tweet?"
+          - "Help spread the SparkleFormation love with a Tweet?"
 
       - partial: "button"
         class: "text-center col-sm-offset-4 col-sm-4"
         button:
           label: "Spread the Love"
-          url: "http://twitter.com/intent/tweet?url=http://www.sparkleformation.io&text=I%20signed%20up%20to%20continuously%20provision%20my%20infrastructure%20to%20@AWScloud%20using%20@sfnftw%20and%20you%20should%20too!%20Learn%20more:&related=sfnftw"
+          url: "http://twitter.com/intent/tweet?url=http://www.sparkleformation.io&text=I'm%20using%20@sfnftw%20to%20automate%20my%20infrastructure%20provisioning%20and%20you%20should%20too!%20Learn%20more:&related=sfnftw"
           class: "button-full-width"
