@@ -1,0 +1,23 @@
+@import "theme/colors";
+
+.disabled {
+  opacity: 0.6;
+};
+
+.disabled,
+.disabled:hover,
+.disabled *:hover {
+  cursor: not-allowed;
+};
+
+.success {
+  border-color: #4cae4c !important;
+  background-color: #5cb85c !important;
+  color: $theme-color-auto !important;
+};
+
+.failed {
+  border-color: #d43f3a !important;
+  background-color: #d9534f !important;
+  color: $theme-color-auto !important
+}

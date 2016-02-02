@@ -1,0 +1,68 @@
+---
+- class: "banner theme-bg-color-tertiary"
+  content:
+    - class: "text-center"
+      h1: "Contact Us"
+    - class: "text-center"
+      content: "Get answers to your questions about SparkleFormation or inquire
+        about our Professional Services."
+
+- class: "contact-us theme-bg-default"
+  content:
+    -
+      - width: 7
+        h3:
+          class: "brand"
+          heading: "Contact Us"
+        content:
+          - "Questions about SparkleFormation, `sfn`, [Training](/training), or
+            [Professional Services](/services)? Leave us a note and we'll get
+            back to you ASAP &mdash; usually within one business day."
+          - partial: "whitespace"
+            height: 50
+          - partial: "address"
+            company: "Heavy Water"
+            street: "PO Box 8308"
+            city: "Portland"
+            state: "OR"
+            zip: "97207"
+            phone: "1-844-424-2626"
+
+      - width: 5
+        partial: "slacker-form"
+        id: "contact"
+        slack:
+          webhook: "https://hooks.slack.com/services/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"
+          channel: "contact"
+          username: "SparkleFormation"
+          icon: "http://www.sparkleformation.io/favicon-160x160.png"
+        form:
+          - id: "name"
+            type: "text"
+            label: "Name"
+            placeholder: "Your Name"
+
+          - id: "organization"
+            type: "text"
+            label: "Organization"
+            placeholder: "Your Organization"
+
+          - id: "email"
+            type: "email"
+            label: "Email"
+            placeholder: "you@example.com"
+
+          - id: "phone"
+            type: "text"
+            label: "Phone"
+            placeholder: "555-555-1234"
+
+          - id: "message"
+            type: "textarea"
+            rows: 5
+            label: "Message"
+            placeholder: "How can we help you?"
+
+        submit:
+          label: "Send"
+          redirect: "/"

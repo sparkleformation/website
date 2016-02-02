@@ -7,6 +7,7 @@ gem "middleman-core", "< 4"
 gem "middleman-livereload"
 gem "middleman-syntax"
 gem "middleman-deploy"
+gem "middleman-favicon-maker"
 gem "kramdown"
 gem "bootstrap-sass", '3.3.5.1'
 

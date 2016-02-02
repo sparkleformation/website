@@ -4,10 +4,10 @@
   %meta{ "name" => "viewport", "content" => "width=device-width, initial-scale=1" }
 
   // "Website Properties"
-  %meta{ name: "description", content: data[:site][:description] }
+  %meta{ name: "description", content: "#{current_resource.data.description || data[:site][:description]}" }
   %meta{ name: "author", content: data[:site][:author][:name] }
   %link{ rel: "icon", href: data[:site][:favicon][:img][:src] }
-  %title= "#{data[:site][:title]} - #{current_resource.data.description || data[:site][:description]}"
+  %title= "#{data[:site][:title]}: #{current_resource.data.title || data[:site][:subtitle]}"
 
   // "CSS resources"
   = stylesheet_link_tag "base"

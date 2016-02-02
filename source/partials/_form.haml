@@ -1,0 +1,55 @@
+%form{ id: "#{content[:id]}-form" }
+  = stylesheet_link_tag "form"
+  = stylesheet_link_tag "button"
+  - content[:form].each do |group|
+    - form_group_id = "#{content[:id]}-#{group[:id]}"
+    - form_group_label_id = "#{form_group_id}-label"
+    %div.form-group
+      - if group[:label]
+        %label{ for: group[:id], id: form_group_label_id }= group[:label]
+
+      %div.input-group
+        - if group[:type] == "select"
+          - if group[:multiple]
+            %select{ class: "#{group[:class] || "form-control"}",
+                     multiple: "",
+                     id: form_group_id,
+                     type: "select"}
+              - group[:options].each do |option|
+                %option= option
+          - else
+            %select{ class: "#{group[:class] || "form-control"}",
+                     id: form_group_id,
+                     type: "select"}
+              - group[:options].each do |option|
+                %option= option
+
+        - elsif group[:type] == "textarea"
+          %textarea{ class: "#{group[:class] || "form-control"}",
+                     id: form_group_id,
+                     type: "textarea",
+                     rows: "#{group[:rows] || 3}",
+                     placeholder: "#{group[:placeholder] || ""}"}
+
+        - elsif group[:type] == "checkbox"
+          %input{ class: group[:class],
+                  id: form_group_id,
+                  type: "checkbox" }= group[:text]
+
+        - else
+          - if group[:prefix]
+            %div.input-group-addon= group[:prefix]
+          %input{ class: "#{group[:class] || "form-control"}",
+                  id: form_group_id,
+                  type: group[:type],
+                  placeholder: "#{group[:placeholder] || ""}" }
+          - if group[:suffix]
+            %div.input-group-addon= group[:suffix]
+
+  %input{ class: "#{content[:submit][:class] || "button button-full-width"}",
+           id: "submit",
+           type: "#{content[:submit][:type] || "submit"}",
+           value: "#{content[:submit][:label] || "Submit"}"}
+  %span.small.theme-color-gray
+    :markdown
+      #{content[:submit][:subtext]}

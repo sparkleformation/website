@@ -37,6 +37,10 @@ $navbar-line-height:  24px;
   line-height: $navbar-line-height;
 };
 
+.navbar ul li a {
+  padding: 15px 10px;
+};
+
 .navbar ul li a:hover {
   background-color: $transparent;
 };
@@ -67,4 +71,15 @@ $navbar-line-height:  24px;
 .navbar .navbar-toggle {
   margin-top: 0px;
   margin-bottom: 0px;
+};
+
+// Navbar alignment fixes...
+.navbar .navbar-right {
+  margin-right: 0px;
+};
+
+@media (min-width: 769px) {
+  .navbar .navbar-brand {
+    padding-left: 0px;
+  };
 };

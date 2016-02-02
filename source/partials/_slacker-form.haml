@@ -1,0 +1,8 @@
+%div.slacker-form
+  = partial "partials/data", locals: { id: "slacker-form", value: "##{content[:id]}-form" }
+  = partial "partials/data", locals: { id: "slacker-redirect", value: content[:submit][:redirect] }
+  - content[:slack].each do |key, value|
+    - id = "slacker-#{key}"
+    = partial "partials/data", locals: { id: id, value: value }
+  = partial "partials/form", locals: { content: content }
+  = javascript_include_tag "slacker_form"
