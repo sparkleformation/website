@@ -1,0 +1,16 @@
+.banner h1:before,
+.banner h2:before,
+.banner h3:before,
+.banner h4:before,
+.banner h5:before,
+.banner h6:before {
+  display: none;
+};
+
+.banner .list {
+  margin-top: 15px;
+};
+
+.banner .list a:hover {
+  text-decoration: underline;
+};

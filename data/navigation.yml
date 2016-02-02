@@ -15,4 +15,7 @@ options:
     class: "black"
   - label: "Training"
     url: "/training"
+    class: "black"
+  - label: "Services"
+    url: "/services"
     class: "button"

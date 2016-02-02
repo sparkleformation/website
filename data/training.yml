@@ -92,12 +92,15 @@
     - h5: "Professional Services"
       id: "professional-services"
       content:
-        - "On-site training comes with 2-days of Professional Services provided
-          by one of [Heavy Water's](http://www.heavywater.io) Senior Operations
-          Engineers. Professional services will be custom-tailored to the unique
-          needs of the Customer (e.g. bootstrapping migration to
+        - "On-site training comes with 2-days of [Professional
+          Services](/services) provided by one of Heavy Water's Senior
+          Operations Engineers. Professional services will be custom-tailored to
+          the unique needs of the Customer (e.g. bootstrapping migration to
           SparkleFormation from native CloudFormation templates, assessment and
           enhancement of existing SparkleFormation templates, etc)."
+        - partial: "learn-more"
+          url: "/services"
+
 
 - class: "packages theme-bg-neutral"
   id: "packages"
