@@ -1,0 +1,13 @@
+---
+- class: "share theme-bg-color-secondary"
+  content:
+    - class: "text-center col-sm-offset-1 col-sm-10"
+      content:
+        - "Help spread the SparkleFormation love with a Tweet?!"
+
+    - partial: "button"
+      class: "text-center col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4"
+      button:
+        label: "Spread the Love"
+        url: "http://twitter.com/intent/tweet?url=http://www.sparkleformation.io&text=I'm%20using%20@sfnftw%20to%20automate%20my%20infrastructure%20provisioning%20and%20you%20should%20too!%20Learn%20more:&related=sfnftw"
+        class: "button-full-width"

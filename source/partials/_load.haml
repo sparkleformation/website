@@ -1,2 +1,5 @@
 - content.each do |section|
-  = partial "section", locals: { section: section }
+  - if section[:source]
+    = partial "load", locals: { content: data[section[:source]] }
+  - else
+    = partial "section", locals: { section: section }
