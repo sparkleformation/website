@@ -35,7 +35,7 @@
           webhook: "https://hooks.slack.com/services/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"
           channel: "contact"
           username: "SparkleFormation"
-          icon: "/img/logo-full-color.png"
+          icon: "http://www.sparkleformation.io/favicon-160x160.png"
         form:
           - id: "name"
             type: "text"
