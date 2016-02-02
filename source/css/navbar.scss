@@ -37,6 +37,10 @@ $navbar-line-height:  24px;
   line-height: $navbar-line-height;
 };
 
+.navbar ul li a {
+  padding: 15px 10px;
+};
+
 .navbar ul li a:hover {
   background-color: $transparent;
 };
