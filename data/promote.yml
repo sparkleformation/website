@@ -38,5 +38,5 @@ services:
           class: "text-center"
           button:
             label: "Contact Sales"
-            url: "/contact"
+            url: "/contact?s=professional-services"
             class: "button-full-width"
