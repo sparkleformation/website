@@ -68,3 +68,14 @@ $navbar-line-height:  24px;
   margin-top: 0px;
   margin-bottom: 0px;
 };
+
+// Navbar alignment fixes...
+.navbar .navbar-right {
+  margin-right: 0px;
+};
+
+@media (min-width: 769px) {
+  .navbar .navbar-brand {
+    padding-left: 0px;
+  };
+};
