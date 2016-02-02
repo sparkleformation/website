@@ -1,6 +1,6 @@
 // "See http://ogp.me/ for more information"
 %meta{ name: "og:url", content: content[:url] + current_resource.url }
-- ["title", "type", "description", "site_name", "image", "audio", "video"].each do |property|
+- ["type", "site_name", "title", "description", "image", "audio", "video"].each do |property|
   - @metadata = current_resource.data[property] || content[property]
   - if @metadata.kind_of? Hash
     - @metadata.each do |name, value|
