@@ -8,9 +8,11 @@
             content: "First-party services from the authors of SparkleFormation"
 
           - partial: "button"
+            class: "hidden-xs"
             button:
               label: "Learn More"
               url: "#professional-services"
+
       - partial: "list"
         style: "fa-ul"
         bullets: "fa-li fa fa-angle-right"
@@ -28,6 +30,12 @@
               heading: "Hybrid Clouds"
               url: "#hybrid-clouds"
 
+    - partial: "button"
+      class: "hidden-sm hidden-md hidden-lg"
+      button:
+        label: "Learn More"
+        url: "#professional-services"
+
 - class: "professional-services"
   id: "professional-services"
   content:
@@ -39,7 +47,7 @@
           - "For organizations that are interested in getting started with
             SparkleFormation and would like some hands-on assistance, Heavy
             Water provides the **Jump Start Program**. This program is specially
-            designed to remove the unpredictability typically associated with
+            designed to remove the unpredictability commonly associated with
             Professional Services engagements by providing a predefined package
             of services at a fixed cost."
           - partial: "learn-more"
@@ -50,7 +58,7 @@
         h5: "Template Development"
         content:
           - "Need help automating your infrastructure using SparkleFormation?
-            Perhaps you've already began implementing SparkleFormation within
+            Perhaps you've already begun implementing SparkleFormation within
             your organization but you just need more bandwidth to develop
             templates for specific tiers of your infrastructure &mdash; Heavy
             Water has an experienced team of Automation Engineers who can help."
@@ -74,8 +82,8 @@
           - "The \"hybrid cloud\" isn't impossible, but if your organization is
             leveraging multiple cloud providers, you are probably aware of the
             operational complexity it can introduce. SparkleFormation can help
-            solve this problem, and Heavy Water can help implement templates for
-            multiple cloud providers."
+            solve this problem, and Heavy Water can help implement templates and
+            integrations for multiple cloud providers."
           - partial: "learn-more"
             label: "Contact Sales >"
             url: "/contact?s=hybrid-clouds"
