@@ -11,7 +11,7 @@
           - "[Features](/#features)"
           - class: "white"
             content: "[Docs](/docs/)"
-          - "[Getting Started](/docs/guides/v0-1.html)"
+          - "[Getting Started](/docs/guides/getting-started.html)"
           - "[Library & DSL](/docs/sparkle_formation/)"
           - "[CLI](/docs/sfn/)"
           - class: "white"
