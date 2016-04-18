@@ -120,8 +120,6 @@
           - heading: ""
             class: "col-sm-6 mobile-scroll-indicator"
             style: "font-weight: bold;"
-          - heading: "Fundamental"
-            class: "col-sm-2"
           - heading: "Professional"
             class: "col-sm-2"
           - heading: "On-Site"
@@ -129,51 +127,38 @@
         rows:
           - data:
               - "Duration"
-              - "1-days"
               - "2-days"
               - "4-days"
           - data:
               - "FREE SparkleFormation T-Shirt & Stickers"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
-              - "<span class='fa fa-check'></span>"
           - data:
               - "IaaS Orchestration 101"
-              - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
           - data:
               - "Building Blocks"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
-              - "<span class='fa fa-check'></span>"
           - data:
               - "Practical Application"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
-              - "<span class='fa fa-check'></span>"
           - data:
               - "SparkleFormation Workshops"
-              - ""
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
           - data:
               - "Professional Services"
               - ""
-              - ""
               - "<span class='fa fa-check'></span>"
           - data:
               - "Cost"
-              - "$599 per seat"
               - "$999 per seat"
               - "$20,000"
           - data:
               - ""
-              - partial: "button"
-                button:
-                  label: "Register"
-                  url: "#schedule"
-                  class: "button-full-width"
               - partial: "button"
                 button:
                   label: "Register"
