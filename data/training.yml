@@ -45,6 +45,7 @@
               - "Orchestration API Overview"
               - "An introduction to Resources"
               - "Custom resources"
+              - "Effective use of Orchestration APIs"
       - h5: "Building Blocks"
         id: "building-blocks"
         content:
