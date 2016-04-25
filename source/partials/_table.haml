@@ -13,6 +13,8 @@
             - tr[:data].each do |td|
               %td
                 - if td.kind_of?(String)
-                  %span= td
+                  %span
+                    :markdown
+                      #{td}
                 - else
                   = partial "partials/display", locals: { content: td }
