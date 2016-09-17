@@ -116,22 +116,6 @@
             class: "product-description"
           - partial: "learn-more"
             url: "/docs/sfn/"
-      - class: "text-center coming-soon"
-        h1:
-          icon:
-            class: "fa fa-cloud-upload xl-icon"
-        h5: "SparklePro"
-        h6: "Provisioning Service"
-        content:
-          - content:
-              - "SparklePro(visioning) is a continuous-provisioning service.
-                The SparklePro service simplifies full stack orchestration and
-                empowers DevOps teams to manage infrastructure with source
-                control actions. <br />
-                Compose, Commit, Tag, Provision."
-            class: "product-description"
-          - partial: "learn-more"
-            url: "#"
 
 - class: "platforms theme-bg-default"
   id: "platforms"
