@@ -1,3 +1,3 @@
-- if data[:site][:google_analytics]
+- if !data[:site][:google_analytics].to_s.empty?
   %input{ type: "hidden", id: "google-analytics", name: "google-analytics", value: data[:site][:google_analytics] }
   = javascript_include_tag "google-analytics.js"

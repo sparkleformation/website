@@ -10,8 +10,7 @@ default:
             SparkleFormation workflows or use cases, [contact us](/contact) today.
             Or perhaps you're looking for assistance automating your
             infrastructure with SparkleFormation? Support and [Professional
-            Services](/services) for SparkleFormation are provided by [Heavy
-            Water](http://www.heavywater.io)."
+            Services](/services) for SparkleFormation are provided by []()."
         - partial: "button"
           width: 4
           class: "text-center"
@@ -27,7 +26,7 @@ services:
     content:
       -
         - width: 8
-          content: "[Heavy Water](http://www.heavywater.io) is an industry
+          content: "[]() is an industry
             leader in infrastructure automation consulting services. We help
             organizations implement infrastructure delivery solutions at scale,
             integrating SparkleFormation alongside existing automation tools

@@ -21,18 +21,18 @@
           - partial: "whitespace"
             height: 50
           - partial: "address"
-            company: "Heavy Water"
-            street: "PO Box 8308"
-            city: "Portland"
-            state: "OR"
-            zip: "97207"
-            phone: "1-844-424-2626"
+            company: "_BLAH_"
+            street: "PO Box 1"
+            city: "Nowhere"
+            state: "AK"
+            zip: "00000"
+            phone: "555-1212"
 
       - width: 5
         partial: "slacker-form"
         id: "contact"
         slack:
-          webhook: "https://hooks.slack.com/services/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"
+          webhook: ""
           channel: "contact"
           username: "SparkleFormation"
           icon: "http://www.sparkleformation.io/favicon-160x160.png"

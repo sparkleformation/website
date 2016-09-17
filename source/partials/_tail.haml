@@ -6,10 +6,10 @@
   = javascript_include_tag "ie10-viewport-bug-workaround.js"
 
   // "Google Analytics"
-  = partial "google_analytics"
+  = # partial "google_analytics"
 
   // "Twitter"
-  = partial "twitter_ads", locals: { content: data[:site][:twitter][:site_visit] }
+  = # partial "twitter_ads", locals: { content: data[:site][:twitter][:site_visit] }
 
   // "Auto loader for custom Javascript"
   // = javascript_include_tag "all"

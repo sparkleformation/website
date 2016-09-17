@@ -45,8 +45,8 @@
         h5: "Jump Start Program"
         content:
           - "For organizations that are interested in getting started with
-            SparkleFormation and would like some hands-on assistance, Heavy
-            Water provides the **Jump Start Program**. This program is specially
+            SparkleFormation and would like some hands-on assistance, _BLAH_
+            provides the **Jump Start Program**. This program is specially
             designed to remove the unpredictability commonly associated with
             Professional Services engagements by providing a predefined package
             of services at a fixed cost."
@@ -60,8 +60,8 @@
           - "Need help automating your infrastructure using SparkleFormation?
             Perhaps you've already begun implementing SparkleFormation within
             your organization but you just need more bandwidth to develop
-            templates for specific tiers of your infrastructure &mdash; Heavy
-            Water has an experienced team of Automation Engineers who can help."
+            templates for specific tiers of your infrastructure &mdash; _BLAH_
+            has an experienced team of Automation Engineers who can help."
           - partial: "learn-more"
             label: "Contact Sales >"
             url: "/contact?s=template-development"
@@ -71,7 +71,7 @@
         content:
           - "If your organization is migrating infrastructure from a traditional
             virtualization platform to a public or private cloud provider
-            &mdash; Heavy Water can help."
+            &mdash; _BLAH_ can help."
           - partial: "learn-more"
             label: "Contact Sales >"
             url: "/contact?s=infrastructure-migration"
@@ -82,7 +82,7 @@
           - "The \"hybrid cloud\" isn't impossible, but if your organization is
             leveraging multiple cloud providers, you are probably aware of the
             operational complexity it can introduce. SparkleFormation can help
-            solve this problem, and Heavy Water can help implement templates and
+            solve this problem, and _BLAH_ can help implement templates and
             integrations for multiple cloud providers."
           - partial: "learn-more"
             label: "Contact Sales >"

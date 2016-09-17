@@ -5,7 +5,7 @@
     - if data[:navigation]
       = partial "#{data[:navigation][:partial]}", locals: { content: data[:navigation] }
     = yield
-    - if data[:promote]
+    - if false && data[:promote]
       - page = current_resource.url.gsub("/","")
       = partial "load", locals: { content: data[:promote][page] || data[:promote][:default] }
     - if data[:footer]

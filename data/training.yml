@@ -94,7 +94,7 @@
       id: "professional-services"
       content:
         - "On-site training comes with 2-days of [Professional
-          Services](/services) provided by one of Heavy Water's Senior
+          Services](/services) provided by one of _BLAH_'s Senior
           Operations Engineers. Professional services will be custom-tailored to
           the unique needs of the Customer (e.g. bootstrapping migration to
           SparkleFormation from native Orchestration API templates, assessment
@@ -168,7 +168,7 @@
               - partial: "button"
                 button:
                   label: "Contact"
-                  url: "http://www.heavywater.io/contact"
+                  url: "http://www.sparkleformation.io/contact"
                   class: "button-full-width"
 
 - class: "schedule"
@@ -176,13 +176,7 @@
   content:
     - h2: "Upcoming Schedule"
       content:
-        - "SparkleFormation Training sessions are hosted via <underline>Google
-          Hangout</underline> and at [Centrl Office](http://centrloffice.com),
-          in the \"Pearl District\" area of Downtown Portland, Oregon. Training
-          sessions will be limited to groups
-          of up to 20-users. On-site training sessions are also available for
-          organizations located in the United States, Canada, Europe, Japan and
-          Australia."
+        - ""
     - partial: "tito"
-      org: "heavywater"
+      org: ""
       event: "sparkleformation-training"

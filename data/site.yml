@@ -2,7 +2,7 @@
 title: "SparkleFormation"
 description: "Compose your infrastructure."
 author:
-  name: "Heavy Water"
+  name: "spox"
   url: "http://www.sparkleformation.io"
 favicon:
   img:
@@ -15,20 +15,20 @@ opengraph:
   description: "Compose your infrastructure."
   url: "http://www.sparkleformation.io"
 
-google_analytics: "UA-39138312-11"
+google_analytics: ""
 
 mailchimp:
-  org: "heavywater"
-  region: "us6"
-  user: "576e632588"
-  id: "7a323d63c3"
+  org: ""
+  region: ""
+  user: ""
+  id: ""
 
 twitter:
   site_visit:
     tracking:
-      id: "twitter_tracking_site_visit"
-      value: "ntqp6"
+      id: ""
+      value: ""
   sign_ups:
     tracking:
-      id: "twitter_tracking_sign_ups"
-      value: "ntqp7"
+      id: ""
+      value: ""

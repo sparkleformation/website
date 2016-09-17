@@ -3,7 +3,7 @@
   content:
     -
       - partial: "list"
-        width: 3
+        width: 2
         content:
           - class: "white"
             content: "[Home](/)"
@@ -14,44 +14,10 @@
           - "[Getting Started](/docs/guides/getting-started.html)"
           - "[Library & DSL](/docs/sparkle_formation/)"
           - "[CLI](/docs/sfn/)"
-          - class: "white"
-            content: "[Training](/training)"
-          - "[Curriculum](/training#curriculum)"
-          - "[Packages](/training#packages)"
-          - "[Schedule](/training#schedule)"
-      - partial: "list"
-        width: 3
-        content:
-          - class: "white"
-            content: "[Services](/services)"
-          - "[Jump Start](/services#jump-start)"
-          - "[Template Development](/services#template-development)"
-          - "[Migration](/services#migration)"
-          - "[Hybrid Clouds](/services#hybrid-clouds)"
-          - class: "white"
-            content: "[Contact](/contact)"
-      - width: 6
-        content:
-          - h3:
-              heading: "Newsletter"
-              icon:
-                class: "octicon octicon-radio-tower"
-            content:
-              - "Join the SparkleFormation Newsletter &mdash; never more than
-                one email per week, almost always at least one email per month."
-          - partial: "mailchimp"
-            placeholder: "Your email address..."
-            button:
-              label: "Sign Up!"
-              url: "http://www.heavywater.io/contact"
-              class: "button-full-width"
-              type: "submit"
-              id: "mce-embedded-subscribe"
 
     - class: "text-center"
       content:
         - "[<span class='social-icon fa fa-twitter' />](https://twitter.com/sfnftw)
-          [<span class='social-icon fa fa-github' />](https://github.com/sparkleformation)
-          [<span class='social-icon fa fa-paper-plane' />](/contact)"
+          [<span class='social-icon fa fa-github' />](https://github.com/sparkleformation)"
         - "Made with <span class='fa fa-heart'></span> by
-          [Heavy Water](http://www.heavywater.io) &copy; 2013-2015"
+          [spox](https://github.com/chrisroberts) &copy; 2013-2016"
