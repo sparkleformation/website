@@ -131,8 +131,8 @@
           4.2.1/cloudformation/cf_overview.html), [Google Cloud Platform (Cloud
           Deployment Manager)](https://cloud.google.com/deployment-manager/\
           overview), [OpenStack (HEAT)](https://wiki.openstack.org/wiki/Heat),
-          and [Rackspace (Cloud Orchestration)](https://www.rackspace.com/\
-          en-us/cloud/orchestration)."
+          [Rackspace (Cloud Orchestration)](https://www.rackspace.com/\
+          en-us/cloud/orchestration), and [Terraform](https://www.terraform.io)."
     - partial: "table"
       table:
         class: "table-hover"
@@ -152,9 +152,12 @@
             class: "col-sm-1"
           - heading: "Rackspace"
             class: "col-sm-1"
+          - heading: "Terraform"
+            class: "col-sm-1"
         rows:
           - data:
               - "[Create stacks](/docs/sfn/commands.html#stack-create)"
+              - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
@@ -169,8 +172,10 @@
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
           - data:
               - "[Link stacks](/docs/guides/apply-and-nested.html#apply-stack-implementation)"
+              - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
@@ -185,8 +190,10 @@
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
+              - "<span class='fa fa-check'></span>"
           - data:
               - "[Describe stacks](/docs/sfn/commands.html#stack-describe)"
+              - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
@@ -201,6 +208,7 @@
               - "(limited)"
               - "<span class='fa fa-check'></span>"
               - "<span class='fa fa-check'></span>"
+              - ""
           - data:
               - "[Stack update planning](/docs/sfn/commands.html#stack-update)"
               - "<span class='fa fa-check'></span>"
@@ -209,11 +217,13 @@
               - ""
               - ""
               - ""
+              - ""
           - data:
               - "[Stack graphing](/docs/sfn/commands.html#template-graphs)"
               - "<span class='fa fa-check'></span>"
               - ""
               - "<span class='fa fa-check'></span>"
+              - ""
               - ""
               - ""
               - ""
