@@ -1,11 +1,11 @@
 %li
   %a{ href: content.url }= content.data[:title]
-  - if content.data[:anchors]
+  - if content.data[:anchors] && content.url == current_resource.url
     %ul
       - content.data[:anchors].each do |anchor|
         %li
           %a{ href: "#{content.url}#{anchor[:url]}" }= anchor[:title]
-  - if content.children.count > 0
+  - if content.children.count > 0 && current_resource.url.include?(content.url)
     %ul
       - content.children.sort_by!{ |c| c.data[:weight] }.each do |child|
         = partial "toc-helper", locals: { content: child }
