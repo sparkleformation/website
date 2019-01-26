@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: SparkleFormation DSL</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sparkle_formation/sparkleformation-dsl.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='SparkleFormation DSL' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/'>
+<span class='black'>SparkleFormation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>
+<span class='black'>SparkleFormation DSL</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>SparkleFormation DSL</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html#behavior'>Behavior</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html#key-alteration'>Key Alteration</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html#data-access'>Data Access</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>SparkleFormation Building Blocks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>Template Anatomy</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/helper-methods.html'>Helper Methods</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Nested Stacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>Inheritance and Merging</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/stack-policies.html'>Stack Policies</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>Provider Restrictions</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/translation.html'>Translation</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>Compile Time Parameters</a>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="sparkleformation-dsl">SparkleFormation DSL</h2>&#x000A;&#x000A;<p>The SparkleFormation DSL (domain specific language) is based&#x000A;on (and built on top of) the <a href="https://github.com/chrisroberts/attribute_struct">AttributeStruct</a>&#x000A;library. This provides SparkleFormation with its free-form behavior&#x000A;and allows immediate support of any template style or API&#x000A;updates requiring modifications to existing templates.</p>&#x000A;&#x000A;<p>For a closer look at the underlying features provided by&#x000A;the AttributeStruct library, please refer to the&#x000A;<a href="https://chrisroberts.github.io/attribute_struct">AttributeStruct documentation</a>.</p>&#x000A;&#x000A;<h3 id="behavior">Behavior</h3>&#x000A;&#x000A;<p>The behavior of the SparkleFormation DSL is largely dictated by the&#x000A;AttributeStruct library, and as such are not specific to SparkleFormation&#x000A;alone. Some optional features of the AttributeStruct library are automatically&#x000A;enabled when using SparkleFormation, most notably the automatic camel casing&#x000A;of key values.</p>&#x000A;&#x000A;<h4 id="key-alteration">Key Alteration</h4>&#x000A;&#x000A;<p>The default behavior of SparkleFormation is to camel case all Hash keys.&#x000A;This is done via:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">AttributeStruct</span><span class="p">.</span><span class="nf">camel_keys</span> <span class="o">=</span> <span class="kp">true</span>&#x000A;</code></pre></div>&#x000A;<p>And results in all Hash keys in the resultant compile Hash being converted&#x000A;to a camel cased format:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'spox'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"Creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<p>In some cases it may be desired to have a key <em>not</em>&#x000A;be automatically camel cased. Camel casing can be&#x000A;disabled via a helper method that is attached to the&#x000A;Symbol and String instances:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">set!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">.</span><span class="nf">disable_camel!</span><span class="p">).</span><span class="nf">default</span> <span class="s1">'spox'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<p>Depending on the formatting of the target template there&#x000A;may be lack of consistency within certain locations. A&#x000A;classic example of this inconsistency can be seen in the&#x000A;<code>AWS::CloudFormation::Init</code> metadata section on compute&#x000A;type resources. Within the context of this <code>Init</code> section&#x000A;the format of the keys change from the standard camel casing&#x000A;to a snake cased format. It is possible to handle this by using&#x000A;the <code>disable_camel!</code> method for all defined keys, but it is&#x000A;clunky and reduces the readability of the code.</p>&#x000A;&#x000A;<p>As the data structure is built when compiling the SparkleFormation&#x000A;template state is tracked at each “level” of the data structure.&#x000A;When the camel casing is enabled on AttributeStruct, this is merely&#x000A;the default behavior and can be overridden, even from within&#x000A;the DSL. For example:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span> <span class="k">do</span>&#x000A;    <span class="n">camel_keys_set!</span><span class="p">(</span><span class="ss">:auto_disable</span><span class="p">)</span>&#x000A;    <span class="n">creator</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">outputs</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">.</span><span class="nf">disable_camel!</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">},</span>&#x000A;  <span class="s2">"Outputs"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"Value"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Ref"</span><span class="p">:</span> <span class="s2">"creator"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<p>This example shows how the behavior of the Hash key modification&#x000A;can be altered at a specific context within the data structure.&#x000A;New values added (as well as nested) will not the camel casing&#x000A;modification applied. The behavior can be adjusted at multiple&#x000A;depth locations, and that behavior will persist on re-entry:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span> <span class="k">do</span>&#x000A;    <span class="n">camel_keys_set!</span><span class="p">(</span><span class="ss">:auto_disable</span><span class="p">)</span>&#x000A;    <span class="n">creator</span> <span class="k">do</span>&#x000A;      <span class="n">camel_keys_set!</span><span class="p">(</span><span class="ss">:auto_enable</span><span class="p">)</span>&#x000A;      <span class="n">default</span> <span class="s1">'spox'</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">outputs</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">.</span><span class="nf">disable_camel!</span><span class="p">)</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">type</span> <span class="s1">'String'</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">author</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'John Doe'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span><span class="p">,</span>&#x000A;      <span class="s2">"Type"</span><span class="p">:</span> <span class="s2">"String"</span>&#x000A;    <span class="p">},</span>&#x000A;    <span class="s2">"author"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"default"</span><span class="p">:</span> <span class="s2">"John Doe"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">},</span>&#x000A;  <span class="s2">"Outputs"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"Value"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Ref"</span><span class="p">:</span> <span class="s2">"creator"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<h3 id="features">Features</h3>&#x000A;&#x000A;<h4 id="data-access">Data Access</h4>&#x000A;&#x000A;<p>As a SparkleFormation template is compiled it is dynamically&#x000A;building the data structure defined by the template. Because&#x000A;this data structure is being generated during compilation, the&#x000A;template itself has access to this data and can inspect the&#x000A;state of the data structure as it exists <em>at that specific&#x000A;time</em>. This allows for inspecting previously defined data&#x000A;and using that data for decision making, or to copy/modify into&#x000A;other locations.</p>&#x000A;&#x000A;<h5 id="local-context-data">Local Context Data</h5>&#x000A;&#x000A;<p>When using block style syntax in the DSL an optional parameter&#x000A;can be defined for the block. If provided, AttributeStruct will&#x000A;pass the local AttributeStruct instance to the block when it&#x000A;is executed:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="n">parameters</span> <span class="k">do</span> <span class="o">|</span><span class="n">params</span><span class="o">|</span>&#x000A;    <span class="n">author</span><span class="p">.</span><span class="nf">default</span> <span class="n">params</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"Creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">},</span>&#x000A;    <span class="s2">"Author"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<h5 id="parent-context-data">Parent Context Data</h5>&#x000A;&#x000A;<p>It is possible to access the parent context data from the current&#x000A;context:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">author</span> <span class="k">do</span>&#x000A;    <span class="n">default</span> <span class="n">parent!</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"Creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">},</span>&#x000A;    <span class="s2">"Author"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<h5 id="root-context-data">Root Context Data</h5>&#x000A;&#x000A;<p>It is possible to access the root context data from the current&#x000A;context:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">author</span><span class="p">.</span><span class="nf">default</span> <span class="n">root!</span><span class="p">.</span><span class="nf">parameters</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"Creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">},</span>&#x000A;    <span class="s2">"Author"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<h5 id="raw-access">Raw Access</h5>&#x000A;&#x000A;<p>The raw Hash instance holding the data of the current context&#x000A;can be reached using the <code>data!</code> method:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="k">if</span><span class="p">(</span><span class="n">data!</span><span class="p">[</span><span class="s1">'Creator'</span><span class="p">].</span><span class="nf">default</span> <span class="o">==</span> <span class="s1">'spox'</span><span class="p">)</span>&#x000A;    <span class="n">parameters</span><span class="p">.</span><span class="nf">author</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'xops'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The resultant data structure after compiling:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">{</span>&#x000A;  <span class="s2">"Parameters"</span><span class="p">:</span> <span class="p">{</span>&#x000A;    <span class="s2">"Creator"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"spox"</span>&#x000A;    <span class="p">},</span>&#x000A;    <span class="s2">"Author"</span><span class="p">:</span> <span class="p">{</span>&#x000A;      <span class="s2">"Default"</span><span class="p">:</span> <span class="s2">"xops"</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<blockquote>&#x000A;  <p>NOTE: Because <code>data!</code> returns a Hash instance, no automatic formatting&#x000A;(camel case conversions) will be applied to keys when accessing values.</p>&#x000A;</blockquote>&#x000A;
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

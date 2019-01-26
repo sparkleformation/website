@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: SparklePacks</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sparkle_formation/sparkle-packs.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='SparklePacks' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/'>
+<span class='black'>SparkleFormation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>
+<span class='black'>SparklePacks</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>SparkleFormation DSL</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>SparkleFormation Building Blocks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>Template Anatomy</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/helper-methods.html'>Helper Methods</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Nested Stacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>SparklePacks</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html#cheatsheet-breakdown'>Cheatsheet</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html#requirements'>Requirements</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html#layout'>Layout</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html#usage'>Usage</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html#distribution'>Distribution</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>Inheritance and Merging</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/stack-policies.html'>Stack Policies</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>Provider Restrictions</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/translation.html'>Translation</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>Compile Time Parameters</a>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="sparklepacks">SparklePacks</h2>&#x000A;&#x000A;<p>SparklePacks are a way to package and ship SparkleFormation collections&#x000A;for direct use, or to extend in customized usage. A SparklePack can be&#x000A;composed of all the building blocks defined by SparkleFormation. Once&#x000A;a SparklePack is built, it can then be loaded and registered making&#x000A;its building blocks available in the current usage context. Multiple&#x000A;SparklePacks can be loaded, and SparkleFormation performs its lookup&#x000A;action based on load order (last loaded retains highest precedence).</p>&#x000A;&#x000A;<h3 id="cheatsheet-breakdown">Cheatsheet Breakdown</h3>&#x000A;&#x000A;<ul>&#x000A;  <li>Composed of SparkleFormation any/all building blocks:&#x000A;    <ul>&#x000A;      <li>Components</li>&#x000A;      <li>Dynamics</li>&#x000A;      <li>Registry</li>&#x000A;      <li>Templates</li>&#x000A;    </ul>&#x000A;  </li>&#x000A;  <li>Packaged and distributed for reuse</li>&#x000A;  <li>Supports standalone usage <em>and</em> project integration</li>&#x000A;  <li>Allows loading of multiple SparklePacks&#x000A;    <ul>&#x000A;      <li>SparklePacks affect building block lookup behavior of SparkleFormation</li>&#x000A;      <li>Last loaded SparklePack retains highest precedence</li>&#x000A;    </ul>&#x000A;  </li>&#x000A;</ul>&#x000A;&#x000A;<h3 id="requirements">Requirements</h3>&#x000A;&#x000A;<h4 id="explicit-building-block-methods">Explicit Building Block Methods</h4>&#x000A;&#x000A;<p>The <a href="/docs/sparkle_formation/building-blocks.html#name-based-components">explicit building block methods</a>&#x000A; must be used when creating a SparklePack. Usage of implicit methods (like&#x000A;<code>SparkleFormation.build</code> instead of <code>SparkleFormation.component</code>) is currently working but&#x000A;should be considered un-supported. The explicit methods also allow&#x000A;more flexibility on the layout of files since the file system structure&#x000A;and file naming are decoupled.</p>&#x000A;&#x000A;<h3 id="layout">Layout</h3>&#x000A;&#x000A;<p>A SparklePack is simply a directory containing a <code>sparkleformation</code>&#x000A;subdirectory which contains all distributed building blocks:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>&gt; tree&#x000A;.&#x000A;|____sparkleformation&#x000A;| |____dynamics&#x000A;| |____components&#x000A;| |____registry&#x000A;</code></pre></div>&#x000A;<h3 id="usage">Usage</h3>&#x000A;&#x000A;<p>On instantiation, <code>SparkleFormation</code> will automatically generate a&#x000A;SparklePack based on global configuration and current working directory.&#x000A;A customized pack can be provided on instantiation to override this&#x000A;behavior:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="n">root_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">sfn</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:my_template</span><span class="p">,</span> <span class="ss">:sparkle</span> <span class="o">=&gt;</span> <span class="n">root_pack</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="c1"># Define template</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>It is also possible to add additional SparklePacks to an existing&#x000A;SparkleFormation.</p>&#x000A;&#x000A;<blockquote>&#x000A;  <p>NOTE: The SparklePack used on instantiation of a SparkleFormation&#x000A;instance is considered the <em>root</em> SparklePack and will <em>*always*</em>&#x000A;have the highest precedence.</p>&#x000A;</blockquote>&#x000A;&#x000A;<p>Building from the previous example, adding a additional pack:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="n">root_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">custom_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;&#x000A;<span class="n">sfn</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:my_template</span><span class="p">,</span>&#x000A;  <span class="ss">:sparkle</span> <span class="o">=&gt;</span> <span class="n">root_pack</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">sfn</span><span class="p">.</span><span class="nf">sparkle</span><span class="p">.</span><span class="nf">add_sparkle</span><span class="p">(</span><span class="n">custom_pack</span><span class="p">)</span>&#x000A;</code></pre></div>&#x000A;<p>With this <code>custom_pack</code> added to the collection, the SparkleFormation&#x000A;lookup for building blocks will follow the order:</p>&#x000A;&#x000A;<ol>&#x000A;  <li><code>root_pack</code></li>&#x000A;  <li><code>custom_pack</code></li>&#x000A;</ol>&#x000A;&#x000A;<p>By default new packs added will retain higher precedence than existing&#x000A;packs already added:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="n">root_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">custom_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">override_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;&#x000A;<span class="n">sfn</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:my_template</span><span class="p">,</span>&#x000A;  <span class="ss">:sparkle</span> <span class="o">=&gt;</span> <span class="n">root_pack</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">sfn</span><span class="p">.</span><span class="nf">sparkle</span><span class="p">.</span><span class="nf">add_sparkle</span><span class="p">(</span><span class="n">custom_pack</span><span class="p">)</span>&#x000A;<span class="n">sfn</span><span class="p">.</span><span class="nf">sparkle</span><span class="p">.</span><span class="nf">add_sparkle</span><span class="p">(</span><span class="n">override_pack</span><span class="p">)</span>&#x000A;</code></pre></div>&#x000A;<p>In the above example <code>override_pack</code> holds the second highest precedence&#x000A;(the <code>root_pack</code> always holding the highest). Lookups will now have the&#x000A;following order:</p>&#x000A;&#x000A;<ol>&#x000A;  <li><code>root_pack</code></li>&#x000A;  <li><code>override_pack</code></li>&#x000A;  <li><code>custom_pack</code></li>&#x000A;</ol>&#x000A;&#x000A;<p>It is possible to force a pack to the lowest precedence level when&#x000A;adding:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="n">root_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">custom_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">base_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:root</span> <span class="o">=&gt;</span> <span class="no">PATH_TO_PACK</span>&#x000A;<span class="p">)</span>&#x000A;&#x000A;<span class="n">sfn</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:my_template</span><span class="p">,</span>&#x000A;  <span class="ss">:sparkle</span> <span class="o">=&gt;</span> <span class="n">root_pack</span>&#x000A;<span class="p">)</span>&#x000A;<span class="n">sfn</span><span class="p">.</span><span class="nf">sparkle</span><span class="p">.</span><span class="nf">add_sparkle</span><span class="p">(</span><span class="n">custom_pack</span><span class="p">)</span>&#x000A;<span class="n">sfn</span><span class="p">.</span><span class="nf">sparkle</span><span class="p">.</span><span class="nf">add_sparkle</span><span class="p">(</span><span class="n">base_pack</span><span class="p">,</span> <span class="ss">:low</span><span class="p">)</span>&#x000A;</code></pre></div>&#x000A;<p>This example demonstrates how to add a pack at the lowest precedence&#x000A;level allowing currently registered SparklePacks to retain their&#x000A;existing precedence. Lookups in this example will have the&#x000A;following order:</p>&#x000A;&#x000A;<ol>&#x000A;  <li><code>root_pack</code></li>&#x000A;  <li><code>custom_pack</code></li>&#x000A;  <li><code>base_pack</code></li>&#x000A;</ol>&#x000A;&#x000A;<p>This behavior is <em>non-default</em> so ensure it is the expected behavior&#x000A;within an implementation.</p>&#x000A;&#x000A;<h3 id="distribution">Distribution</h3>&#x000A;&#x000A;<p>SparklePacks are structured such that it is easy to package and&#x000A;distrbute them via RubyGems. An example file structure for <code>my-pack</code>&#x000A;gem:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>&gt; tree&#x000A;.&#x000A;|____my-pack.gemspec&#x000A;|____lib&#x000A;| |____sparkleformation&#x000A;| | |____dynamics&#x000A;| | |____components&#x000A;| | |____registry&#x000A;| |____my-pack.rb&#x000A;</code></pre></div>&#x000A;<p>Then register the pack:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># ./lib/my-pack.rb</span>&#x000A;&#x000A;<span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">register!</span>&#x000A;</code></pre></div>&#x000A;<p>Once registered, packs can be loaded via name:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'my-pack'</span>&#x000A;<span class="n">root_pack</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="o">::</span><span class="no">SparklePack</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s1">'my-pack'</span><span class="p">)</span>&#x000A;&#x000A;<span class="n">sfn</span> <span class="o">=</span> <span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>&#x000A;  <span class="ss">:my_template</span><span class="p">,</span>&#x000A;  <span class="ss">:sparkle</span> <span class="o">=&gt;</span> <span class="n">root_pack</span>&#x000A;<span class="p">)</span>&#x000A;</code></pre></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

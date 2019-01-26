@@ -1,0 +1,862 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'octicons';
+  src: url("/css/octicons/octicons.eot?#iefix") format("embedded-opentype"), url("/css/octicons/octicons.woff") format("woff"), url("/css/octicons/octicons.ttf") format("truetype"), url("/css/octicons/octicons.svg#octicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 13, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon, .mega-octicon {
+  font: normal normal normal 16px/1 octicons;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 25, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.mega-octicon {
+  font-size: 32px; }
+
+/* line 27, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-alert:before {
+  content: '\f02d'; }
+
+/*  */
+/* line 28, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-down:before {
+  content: '\f03f'; }
+
+/*  */
+/* line 29, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-left:before {
+  content: '\f040'; }
+
+/*  */
+/* line 30, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-right:before {
+  content: '\f03e'; }
+
+/*  */
+/* line 31, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-down:before {
+  content: '\f0a0'; }
+
+/*  */
+/* line 32, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-left:before {
+  content: '\f0a1'; }
+
+/*  */
+/* line 33, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-right:before {
+  content: '\f071'; }
+
+/*  */
+/* line 34, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-up:before {
+  content: '\f09f'; }
+
+/*  */
+/* line 35, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-up:before {
+  content: '\f03d'; }
+
+/*  */
+/* line 36, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-microscope:before,
+.octicon-beaker:before {
+  content: '\f0dd'; }
+
+/*  */
+/* line 38, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-bell:before {
+  content: '\f0de'; }
+
+/*  */
+/* line 39, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-book:before {
+  content: '\f007'; }
+
+/*  */
+/* line 40, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-bookmark:before {
+  content: '\f07b'; }
+
+/*  */
+/* line 41, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-briefcase:before {
+  content: '\f0d3'; }
+
+/*  */
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-broadcast:before {
+  content: '\f048'; }
+
+/*  */
+/* line 43, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-browser:before {
+  content: '\f0c5'; }
+
+/*  */
+/* line 44, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-bug:before {
+  content: '\f091'; }
+
+/*  */
+/* line 45, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-calendar:before {
+  content: '\f068'; }
+
+/*  */
+/* line 46, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-check:before {
+  content: '\f03a'; }
+
+/*  */
+/* line 47, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-checklist:before {
+  content: '\f076'; }
+
+/*  */
+/* line 48, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-down:before {
+  content: '\f0a3'; }
+
+/*  */
+/* line 49, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-left:before {
+  content: '\f0a4'; }
+
+/*  */
+/* line 50, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-right:before {
+  content: '\f078'; }
+
+/*  */
+/* line 51, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-up:before {
+  content: '\f0a2'; }
+
+/*  */
+/* line 52, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-circle-slash:before {
+  content: '\f084'; }
+
+/*  */
+/* line 53, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-circuit-board:before {
+  content: '\f0d6'; }
+
+/*  */
+/* line 54, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-clippy:before {
+  content: '\f035'; }
+
+/*  */
+/* line 55, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-clock:before {
+  content: '\f046'; }
+
+/*  */
+/* line 56, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-cloud-download:before {
+  content: '\f00b'; }
+
+/*  */
+/* line 57, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-cloud-upload:before {
+  content: '\f00c'; }
+
+/*  */
+/* line 58, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-code:before {
+  content: '\f05f'; }
+
+/*  */
+/* line 59, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-color-mode:before {
+  content: '\f065'; }
+
+/*  */
+/* line 60, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-comment-add:before,
+.octicon-comment:before {
+  content: '\f02b'; }
+
+/*  */
+/* line 62, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-comment-discussion:before {
+  content: '\f04f'; }
+
+/*  */
+/* line 63, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-credit-card:before {
+  content: '\f045'; }
+
+/*  */
+/* line 64, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-dash:before {
+  content: '\f0ca'; }
+
+/*  */
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-dashboard:before {
+  content: '\f07d'; }
+
+/*  */
+/* line 66, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-database:before {
+  content: '\f096'; }
+
+/*  */
+/* line 67, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-clone:before,
+.octicon-desktop-download:before {
+  content: '\f0dc'; }
+
+/*  */
+/* line 69, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-camera:before {
+  content: '\f056'; }
+
+/*  */
+/* line 70, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-camera-video:before {
+  content: '\f057'; }
+
+/*  */
+/* line 71, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-desktop:before {
+  content: '\f27c'; }
+
+/*  */
+/* line 72, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-mobile:before {
+  content: '\f038'; }
+
+/*  */
+/* line 73, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff:before {
+  content: '\f04d'; }
+
+/*  */
+/* line 74, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-added:before {
+  content: '\f06b'; }
+
+/*  */
+/* line 75, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-ignored:before {
+  content: '\f099'; }
+
+/*  */
+/* line 76, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-modified:before {
+  content: '\f06d'; }
+
+/*  */
+/* line 77, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-removed:before {
+  content: '\f06c'; }
+
+/*  */
+/* line 78, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-renamed:before {
+  content: '\f06e'; }
+
+/*  */
+/* line 79, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-ellipsis:before {
+  content: '\f09a'; }
+
+/*  */
+/* line 80, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-eye-unwatch:before,
+.octicon-eye-watch:before,
+.octicon-eye:before {
+  content: '\f04e'; }
+
+/*  */
+/* line 83, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-binary:before {
+  content: '\f094'; }
+
+/*  */
+/* line 84, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-code:before {
+  content: '\f010'; }
+
+/*  */
+/* line 85, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-directory:before {
+  content: '\f016'; }
+
+/*  */
+/* line 86, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-media:before {
+  content: '\f012'; }
+
+/*  */
+/* line 87, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-pdf:before {
+  content: '\f014'; }
+
+/*  */
+/* line 88, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-submodule:before {
+  content: '\f017'; }
+
+/*  */
+/* line 89, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-symlink-directory:before {
+  content: '\f0b1'; }
+
+/*  */
+/* line 90, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-symlink-file:before {
+  content: '\f0b0'; }
+
+/*  */
+/* line 91, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-text:before {
+  content: '\f011'; }
+
+/*  */
+/* line 92, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-zip:before {
+  content: '\f013'; }
+
+/*  */
+/* line 93, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-flame:before {
+  content: '\f0d2'; }
+
+/*  */
+/* line 94, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-fold:before {
+  content: '\f0cc'; }
+
+/*  */
+/* line 95, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gear:before {
+  content: '\f02f'; }
+
+/*  */
+/* line 96, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gift:before {
+  content: '\f042'; }
+
+/*  */
+/* line 97, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist:before {
+  content: '\f00e'; }
+
+/*  */
+/* line 98, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist-secret:before {
+  content: '\f08c'; }
+
+/*  */
+/* line 99, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-branch-create:before,
+.octicon-git-branch-delete:before,
+.octicon-git-branch:before {
+  content: '\f020'; }
+
+/*  */
+/* line 102, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-commit:before {
+  content: '\f01f'; }
+
+/*  */
+/* line 103, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-compare:before {
+  content: '\f0ac'; }
+
+/*  */
+/* line 104, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-merge:before {
+  content: '\f023'; }
+
+/*  */
+/* line 105, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-pull-request-abandoned:before,
+.octicon-git-pull-request:before {
+  content: '\f009'; }
+
+/*  */
+/* line 107, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-globe:before {
+  content: '\f0b6'; }
+
+/*  */
+/* line 108, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-graph:before {
+  content: '\f043'; }
+
+/*  */
+/* line 109, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-heart:before {
+  content: '\2665'; }
+
+/* ♥ */
+/* line 110, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-history:before {
+  content: '\f07e'; }
+
+/*  */
+/* line 111, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-home:before {
+  content: '\f08d'; }
+
+/*  */
+/* line 112, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-horizontal-rule:before {
+  content: '\f070'; }
+
+/*  */
+/* line 113, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-hubot:before {
+  content: '\f09d'; }
+
+/*  */
+/* line 114, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-inbox:before {
+  content: '\f0cf'; }
+
+/*  */
+/* line 115, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-info:before {
+  content: '\f059'; }
+
+/*  */
+/* line 116, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-issue-closed:before {
+  content: '\f028'; }
+
+/*  */
+/* line 117, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-issue-opened:before {
+  content: '\f026'; }
+
+/*  */
+/* line 118, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-issue-reopened:before {
+  content: '\f027'; }
+
+/*  */
+/* line 119, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-jersey:before {
+  content: '\f019'; }
+
+/*  */
+/* line 120, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-key:before {
+  content: '\f049'; }
+
+/*  */
+/* line 121, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-keyboard:before {
+  content: '\f00d'; }
+
+/*  */
+/* line 122, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-law:before {
+  content: '\f0d8'; }
+
+/*  */
+/* line 123, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-light-bulb:before {
+  content: '\f000'; }
+
+/*  */
+/* line 124, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-link:before {
+  content: '\f05c'; }
+
+/*  */
+/* line 125, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-link-external:before {
+  content: '\f07f'; }
+
+/*  */
+/* line 126, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-list-ordered:before {
+  content: '\f062'; }
+
+/*  */
+/* line 127, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-list-unordered:before {
+  content: '\f061'; }
+
+/*  */
+/* line 128, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-location:before {
+  content: '\f060'; }
+
+/*  */
+/* line 129, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist-private:before,
+.octicon-mirror-private:before,
+.octicon-git-fork-private:before,
+.octicon-lock:before {
+  content: '\f06a'; }
+
+/*  */
+/* line 133, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-logo-github:before {
+  content: '\f092'; }
+
+/*  */
+/* line 134, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mail:before {
+  content: '\f03b'; }
+
+/*  */
+/* line 135, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mail-read:before {
+  content: '\f03c'; }
+
+/*  */
+/* line 136, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mail-reply:before {
+  content: '\f051'; }
+
+/*  */
+/* line 137, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mark-github:before {
+  content: '\f00a'; }
+
+/*  */
+/* line 138, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-markdown:before {
+  content: '\f0c9'; }
+
+/*  */
+/* line 139, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-megaphone:before {
+  content: '\f077'; }
+
+/*  */
+/* line 140, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mention:before {
+  content: '\f0be'; }
+
+/*  */
+/* line 141, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-milestone:before {
+  content: '\f075'; }
+
+/*  */
+/* line 142, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mirror-public:before,
+.octicon-mirror:before {
+  content: '\f024'; }
+
+/*  */
+/* line 144, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mortar-board:before {
+  content: '\f0d7'; }
+
+/*  */
+/* line 145, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mute:before {
+  content: '\f080'; }
+
+/*  */
+/* line 146, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-no-newline:before {
+  content: '\f09c'; }
+
+/*  */
+/* line 147, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-octoface:before {
+  content: '\f008'; }
+
+/*  */
+/* line 148, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-organization:before {
+  content: '\f037'; }
+
+/*  */
+/* line 149, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-package:before {
+  content: '\f0c4'; }
+
+/*  */
+/* line 150, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-paintcan:before {
+  content: '\f0d1'; }
+
+/*  */
+/* line 151, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-pencil:before {
+  content: '\f058'; }
+
+/*  */
+/* line 152, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-person-add:before,
+.octicon-person-follow:before,
+.octicon-person:before {
+  content: '\f018'; }
+
+/*  */
+/* line 155, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-pin:before {
+  content: '\f041'; }
+
+/*  */
+/* line 156, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-plug:before {
+  content: '\f0d4'; }
+
+/*  */
+/* line 157, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-create:before,
+.octicon-gist-new:before,
+.octicon-file-directory-create:before,
+.octicon-file-add:before,
+.octicon-plus:before {
+  content: '\f05d'; }
+
+/*  */
+/* line 162, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-primitive-dot:before {
+  content: '\f052'; }
+
+/*  */
+/* line 163, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-primitive-square:before {
+  content: '\f053'; }
+
+/*  */
+/* line 164, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-pulse:before {
+  content: '\f085'; }
+
+/*  */
+/* line 165, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-question:before {
+  content: '\f02c'; }
+
+/*  */
+/* line 166, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-quote:before {
+  content: '\f063'; }
+
+/*  */
+/* line 167, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-radio-tower:before {
+  content: '\f030'; }
+
+/*  */
+/* line 168, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-delete:before,
+.octicon-repo:before {
+  content: '\f001'; }
+
+/*  */
+/* line 170, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-clone:before {
+  content: '\f04c'; }
+
+/*  */
+/* line 171, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-force-push:before {
+  content: '\f04a'; }
+
+/*  */
+/* line 172, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist-fork:before,
+.octicon-repo-forked:before {
+  content: '\f002'; }
+
+/*  */
+/* line 174, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-pull:before {
+  content: '\f006'; }
+
+/*  */
+/* line 175, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-push:before {
+  content: '\f005'; }
+
+/*  */
+/* line 176, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-rocket:before {
+  content: '\f033'; }
+
+/*  */
+/* line 177, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-rss:before {
+  content: '\f034'; }
+
+/*  */
+/* line 178, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-ruby:before {
+  content: '\f047'; }
+
+/*  */
+/* line 179, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-screen-full:before {
+  content: '\f066'; }
+
+/*  */
+/* line 180, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-screen-normal:before {
+  content: '\f067'; }
+
+/*  */
+/* line 181, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-search-save:before,
+.octicon-search:before {
+  content: '\f02e'; }
+
+/*  */
+/* line 183, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-server:before {
+  content: '\f097'; }
+
+/*  */
+/* line 184, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-settings:before {
+  content: '\f07c'; }
+
+/*  */
+/* line 185, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-shield:before {
+  content: '\f0e1'; }
+
+/*  */
+/* line 186, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-log-in:before,
+.octicon-sign-in:before {
+  content: '\f036'; }
+
+/*  */
+/* line 188, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-log-out:before,
+.octicon-sign-out:before {
+  content: '\f032'; }
+
+/*  */
+/* line 190, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-squirrel:before {
+  content: '\f0b2'; }
+
+/*  */
+/* line 191, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-star-add:before,
+.octicon-star-delete:before,
+.octicon-star:before {
+  content: '\f02a'; }
+
+/*  */
+/* line 194, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-stop:before {
+  content: '\f08f'; }
+
+/*  */
+/* line 195, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-sync:before,
+.octicon-sync:before {
+  content: '\f087'; }
+
+/*  */
+/* line 197, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-tag-remove:before,
+.octicon-tag-add:before,
+.octicon-tag:before {
+  content: '\f015'; }
+
+/*  */
+/* line 200, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-telescope:before {
+  content: '\f088'; }
+
+/*  */
+/* line 201, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-terminal:before {
+  content: '\f0c8'; }
+
+/*  */
+/* line 202, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-three-bars:before {
+  content: '\f05e'; }
+
+/*  */
+/* line 203, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-thumbsdown:before {
+  content: '\f0db'; }
+
+/*  */
+/* line 204, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-thumbsup:before {
+  content: '\f0da'; }
+
+/*  */
+/* line 205, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-tools:before {
+  content: '\f031'; }
+
+/*  */
+/* line 206, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-trashcan:before {
+  content: '\f0d0'; }
+
+/*  */
+/* line 207, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-down:before {
+  content: '\f05b'; }
+
+/*  */
+/* line 208, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-left:before {
+  content: '\f044'; }
+
+/*  */
+/* line 209, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-right:before {
+  content: '\f05a'; }
+
+/*  */
+/* line 210, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-up:before {
+  content: '\f0aa'; }
+
+/*  */
+/* line 211, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-unfold:before {
+  content: '\f039'; }
+
+/*  */
+/* line 212, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-unmute:before {
+  content: '\f0ba'; }
+
+/*  */
+/* line 213, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-versions:before {
+  content: '\f064'; }
+
+/*  */
+/* line 214, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-watch:before {
+  content: '\f0e0'; }
+
+/*  */
+/* line 215, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-remove-close:before,
+.octicon-x:before {
+  content: '\f081'; }
+
+/*  */
+/* line 217, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-zap:before {
+  content: '\26A1'; }
+
+/* ⚡ */

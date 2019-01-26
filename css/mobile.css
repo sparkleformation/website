@@ -1,0 +1,33 @@
+@media (max-device-width: 1024px) {
+  /* line 2, /home/spox/Projects/sparkleformation/website/source/css/mobile.scss */
+  pre,
+  code,
+  kbd {
+    font-family: "Courier New", monospace, serif;
+    font-weight: 600; }
+
+  /* line 9, /home/spox/Projects/sparkleformation/website/source/css/mobile.scss */
+  h1 {
+    font-size: 1.7em;
+    font-weight: bold; }
+
+  /* line 14, /home/spox/Projects/sparkleformation/website/source/css/mobile.scss */
+  h2 {
+    font-size: 1.7em; }
+
+  /* line 18, /home/spox/Projects/sparkleformation/website/source/css/mobile.scss */
+  h3 {
+    font-size: 1.6em; }
+
+  /* line 22, /home/spox/Projects/sparkleformation/website/source/css/mobile.scss */
+  h4 {
+    font-size: 1.5em; }
+
+  /* line 26, /home/spox/Projects/sparkleformation/website/source/css/mobile.scss */
+  h5 {
+    font-size: 1.4em; }
+
+  /* line 30, /home/spox/Projects/sparkleformation/website/source/css/mobile.scss */
+  h6 {
+    font-size: 1.3em;
+    font-weight: bold; } }

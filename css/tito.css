@@ -1,0 +1,80 @@
+/* line 1, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button, .button-default, .button-full-width, .button-large, .tito-submit-wrapper .tito-submit,
+.tito-submit-wrapper .tito-submit:hover {
+  display: inline-block;
+  background-color: inherit;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 500;
+  margin: 15px 0px; }
+
+/* line 10, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button:hover, .button-default:hover, .button-full-width:hover, .button-large:hover, .tito-submit-wrapper .tito-submit:hover,
+.button:focus,
+.button-default:focus,
+.button-full-width:focus,
+.button-large:focus,
+.tito-submit-wrapper .tito-submit:focus,
+.button:visited,
+.button-default:visited,
+.button-full-width:visited,
+.button-large:visited,
+.tito-submit-wrapper .tito-submit:visited {
+  text-decoration: none; }
+
+/* line 22, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button-default, .button-full-width {
+  border-width: 4px;
+  padding: 20px 30px;
+  font-size: 24px; }
+
+/* line 29, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button-large {
+  border-width: 4px;
+  padding: 30px 40px;
+  font-size: 2.0em; }
+
+/* line 36, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button-full-width {
+  width: 100%; }
+
+/* line 3, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-wrapper {
+  background-color: transparent;
+  border: none;
+  max-width: 100% !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+/* line 13, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-ticket-list {
+  margin: 0px; }
+
+/* line 17, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-ticket-name-wrapper,
+.tito-ticket-price-quantity-wrapper {
+  border-bottom: none;
+  padding-bottom: 20px; }
+
+/* line 26, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-ticket-description {
+  font-size: 1.0em; }
+
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-discount-code {
+  display: none; }
+
+/* line 46, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-notch {
+  border: none; }
+
+/* line 50, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-badge-link {
+  display: none; }
+
+/* line 54, /home/spox/Projects/sparkleformation/website/source/css/tito.scss */
+.tito-submit-wrapper .tito-submit,
+.tito-submit-wrapper .tito-submit:hover {
+  border-radius: 0px; }

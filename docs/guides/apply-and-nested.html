@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: Stack Dependencies</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/guides/apply-and-nested.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='Stack Dependencies' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/guides/'>
+<span class='black'>Guides</span>
+</a>
+</li>
+<li>
+<a href='/docs/guides/apply-and-nested.html'>
+<span class='black'>Stack Dependencies</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+<ul>
+<li>
+<a href='/docs/guides/getting-started.html'>Getting Started</a>
+</li>
+
+<li>
+<a href='/docs/guides/apply-and-nested.html'>Stack Dependencies</a>
+<ul>
+<li>
+<a href='/docs/guides/apply-and-nested.html#overview'>Overview</a>
+</li>
+<li>
+<a href='/docs/guides/apply-and-nested.html#apply-stack-implementation'>Apply stack</a>
+</li>
+<li>
+<a href='/docs/guides/apply-and-nested.html#nested-stack-implementation'>Nested stack</a>
+</li>
+<li>
+<a href='/docs/guides/apply-and-nested.html#apply-nested-stack'>Apply nested stack</a>
+</li>
+<li>
+<a href='/docs/guides/apply-and-nested.html#cross-location'>Cross location</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/guides/tips-and-tricks.html'>Tips and Tricks</a>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="overview">Overview</h2>&#x000A;&#x000A;<h3 id="apply-stack">Apply stack</h3>&#x000A;&#x000A;<p>The SparkleFormation CLI includes functionality to ease the sharing&#x000A;of resources between isolated stacks. This functionality enables&#x000A;groupings of similar resources which can define logical units of&#x000A;a full architecture. The sharing is accomplished using a combination&#x000A;of stack outputs and stack parameters. This feature is commonly&#x000A;referred to as the <em>apply stack</em> functionality.</p>&#x000A;&#x000A;<p>One drawback of the <em>apply stack</em> functionality is that it introduces&#x000A;dependencies between disparate stacks. These dependencies must be&#x000A;manually resolved when resource modifications occur. When an infrastructure&#x000A;is composed of few stacks, the <em>apply stack</em> approach can be sufficient&#x000A;to manage stack dependencies leaving the user to ensure updates are&#x000A;properly applied. For larger implementations composed of many interdependent&#x000A;stacks, the <em>nested stack</em> functionality is recommended.</p>&#x000A;&#x000A;<h3 id="nested-stack">Nested stack</h3>&#x000A;&#x000A;<p><em>Nested stack</em> functionality is a generic feature provided by the SparkleFormation&#x000A;library which the SparkleFormation CLI then specializes based on the target provider.&#x000A;The <em>nested stack</em> functionality utilizes a core feature provided by orchestration&#x000A;APIs. This features allows nesting stack resources within a stack allowing a&#x000A;parent stack to have many child stacks. By nesting stack resources, the provider&#x000A;API will be aware of child stack interdependencies and automatically apply updates&#x000A;when resources have been modified. This removes the requirement of stack updates&#x000A;being tracked and applied manually.</p>&#x000A;&#x000A;<p>The behavior of the <em>nested stack</em> functionality is based directly on the&#x000A;behavior of the <em>apply stack</em> functionality. This commonality in behavior&#x000A;allows for initial testing development using the <em>apply stack</em> functionality&#x000A;and, once stable, migrating to <em>nested stack</em> functionality without requiring any&#x000A;modifications to existing templates. The commonality also allows for the two&#x000A;functionalities to be mixed in practice.</p>&#x000A;&#x000A;<p>This guide will first display template implementations using the <em>apply stack</em>&#x000A;functionality. The example templates will then be used to provide a <em>nested stack</em>&#x000A;implementation.</p>&#x000A;&#x000A;<p><em>NOTE: This guide targets the AWS provider for simplicity to allow focus on the&#x000A;features discussed. All providers support this behavior.</em></p>&#x000A;&#x000A;<h2 id="apply-stack-implementation">Apply stack implementation</h2>&#x000A;&#x000A;<p>Lets start by defining a simple infrastructure. Our infrastructure will be composed&#x000A;of a “network” and a collection of “computes” that utilizes the network. This&#x000A;infrastructure can be easily defined within two units:</p>&#x000A;&#x000A;<ol>&#x000A;  <li>network</li>&#x000A;  <li>computes</li>&#x000A;</ol>&#x000A;&#x000A;<p>Lets start by creating a simple <code>network</code> template.</p>&#x000A;&#x000A;<p>Create a new file: <code>./sparkleformation/network.rb</code></p>&#x000A;&#x000A;<h4 id="template-sparkles-aws">Template sparkles AWS</h4>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;&#x000A;  <span class="n">parameters</span> <span class="k">do</span>&#x000A;    <span class="n">cidr_prefix</span> <span class="k">do</span>&#x000A;      <span class="n">type</span> <span class="s1">'String'</span>&#x000A;      <span class="n">default</span> <span class="s1">'172.20'</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_vpc</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">cidr_block</span> <span class="n">join!</span><span class="p">(</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:cidr_prefix</span><span class="p">),</span> <span class="s1">'.0.0/24'</span><span class="p">)</span>&#x000A;      <span class="n">enable_dns_support</span> <span class="kp">true</span>&#x000A;      <span class="n">enable_dns_hostnames</span> <span class="kp">true</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_dhcp_options</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">domain_name</span> <span class="n">join!</span><span class="p">(</span><span class="n">region!</span><span class="p">,</span> <span class="s1">'compute.internal'</span><span class="p">)</span>&#x000A;      <span class="n">domain_name_servers</span> <span class="p">[</span><span class="s1">'AmazonProvidedDNS'</span><span class="p">]</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_vpc_dhcp_options_association</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">dhcp_options_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_dhcp_options</span><span class="p">)</span>&#x000A;      <span class="n">vpc_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_vpc</span><span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_internet_gateway</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_vpc_gateway_attachment</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">internet_gateway_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_internet_gateway</span><span class="p">)</span>&#x000A;      <span class="n">vpc_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_vpc</span><span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_route_table</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span><span class="p">.</span><span class="nf">vpc_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_vpc</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_route</span><span class="p">,</span> <span class="ss">:network_public</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">destination_cidr_block</span> <span class="s1">'0.0.0.0/0'</span>&#x000A;      <span class="n">gateway_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_internet_gateway</span><span class="p">)</span>&#x000A;      <span class="n">route_table_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_route_table</span><span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_subnet</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">availability_zone</span> <span class="nb">select</span><span class="o">!</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">azs!</span><span class="p">)</span>&#x000A;      <span class="n">cidr_block</span> <span class="n">join!</span><span class="p">(</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:cidr_prefix</span><span class="p">),</span> <span class="s1">'.0.0/24'</span><span class="p">)</span>&#x000A;      <span class="n">vpc_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_vpc</span><span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_subnet_route_table_association</span><span class="p">,</span> <span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">route_table_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_route_table</span><span class="p">)</span>&#x000A;      <span class="n">subnet_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_subnet</span><span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">outputs</span> <span class="k">do</span>&#x000A;    <span class="n">network_vpc_id</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_vpc</span><span class="p">)</span>&#x000A;    <span class="n">network_subnet_id</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_subnet</span><span class="p">)</span>&#x000A;    <span class="n">network_route_table</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_route_table</span><span class="p">)</span>&#x000A;    <span class="n">network_cidr</span><span class="p">.</span><span class="nf">value</span> <span class="n">join!</span><span class="p">(</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:cidr_prefix</span><span class="p">),</span> <span class="s1">'.0.0/24'</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Here we have an extremely simple VPC defined for our infrastructure. It is&#x000A;important to note the outputs defined within our <code>network</code> template. These&#x000A;outputs are values that will be required for other resources to effectively&#x000A;utilize the VPC. With the <code>network</code> template defined, we can create that unit&#x000A;of our infrastructure:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ bundle exec sfn create sparkle-guide-network --file network&#x000A;</code></pre></div>&#x000A;<p>Having successfully built the <code>network</code> unit of the infrastructure, we can&#x000A;now compose the <code>computes</code> template.</p>&#x000A;&#x000A;<p>Create a new file: <code>./sparkleformation/computes.rb</code></p>&#x000A;&#x000A;<h4 id="template-sparkles-aws-1">Template sparkles AWS</h4>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:computes</span><span class="p">)</span> <span class="k">do</span>&#x000A;&#x000A;  <span class="n">parameters</span> <span class="k">do</span>&#x000A;    <span class="n">ssh_key_name</span><span class="p">.</span><span class="nf">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">network_vpc_id</span><span class="p">.</span><span class="nf">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">network_subnet_id</span><span class="p">.</span><span class="nf">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">image_id_name</span> <span class="k">do</span>&#x000A;        <span class="n">type</span> <span class="s1">'String'</span>&#x000A;        <span class="n">default</span> <span class="s1">'ami-63ac5803'</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_security_group</span><span class="p">,</span> <span class="ss">:compute</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">group_description</span> <span class="s1">'SSH Access'</span>&#x000A;      <span class="n">security_group_ingress</span> <span class="k">do</span>&#x000A;        <span class="n">cidr_ip</span> <span class="s1">'0.0.0.0/0'</span>&#x000A;        <span class="n">from_port</span> <span class="mi">22</span>&#x000A;        <span class="n">to_port</span> <span class="mi">22</span>&#x000A;        <span class="n">ip_protocol</span> <span class="s1">'tcp'</span>&#x000A;      <span class="k">end</span>&#x000A;      <span class="n">vpc_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_vpc_id</span><span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:micro</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">image_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:image_id_name</span><span class="p">)</span>&#x000A;      <span class="n">instance_type</span> <span class="s1">'t2.micro'</span>&#x000A;      <span class="n">key_name</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:ssh_key_name</span><span class="p">)</span>&#x000A;      <span class="n">network_interfaces</span> <span class="n">array!</span><span class="p">(</span>&#x000A;        <span class="o">-&gt;</span><span class="p">{</span>&#x000A;          <span class="n">device_index</span> <span class="mi">0</span>&#x000A;          <span class="n">associate_public_ip_address</span> <span class="s1">'true'</span>&#x000A;          <span class="n">subnet_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_subnet_id</span><span class="p">)</span>&#x000A;          <span class="n">group_set</span> <span class="p">[</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:compute_ec2_security_group</span><span class="p">)]</span>&#x000A;        <span class="p">}</span>&#x000A;      <span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:small</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">image_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:image_id_name</span><span class="p">)</span>&#x000A;      <span class="n">instance_type</span> <span class="s1">'t2.micro'</span>&#x000A;      <span class="n">key_name</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:ssh_key_name</span><span class="p">)</span>&#x000A;      <span class="n">network_interfaces</span> <span class="n">array!</span><span class="p">(</span>&#x000A;        <span class="o">-&gt;</span><span class="p">{</span>&#x000A;          <span class="n">device_index</span> <span class="mi">0</span>&#x000A;          <span class="n">associate_public_ip_address</span> <span class="s1">'true'</span>&#x000A;          <span class="n">subnet_id</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_subnet_id</span><span class="p">)</span>&#x000A;          <span class="n">group_set</span> <span class="p">[</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:compute_ec2_security_group</span><span class="p">)]</span>&#x000A;        <span class="p">}</span>&#x000A;      <span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="n">outputs</span> <span class="k">do</span>&#x000A;    <span class="n">micro_address</span><span class="p">.</span><span class="nf">value</span> <span class="kp">attr</span><span class="o">!</span><span class="p">(</span><span class="ss">:micro_ec2_instance</span><span class="p">,</span> <span class="ss">:public_ip</span><span class="p">)</span>&#x000A;    <span class="n">small_address</span><span class="p">.</span><span class="nf">value</span> <span class="kp">attr</span><span class="o">!</span><span class="p">(</span><span class="ss">:small_ec2_instance</span><span class="p">,</span> <span class="ss">:public_ip</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Our <code>computes</code> template will create one micro and one small EC2&#x000A;instance and output the public IP addresses of each resource. To&#x000A;build the EC2 instances into the VPC created in the <code>sparkle-guide-network</code>&#x000A;stack we need two pieces of information:</p>&#x000A;&#x000A;<ul>&#x000A;  <li>VPC ID</li>&#x000A;  <li>VPC subnet ID</li>&#x000A;</ul>&#x000A;&#x000A;<p>In our <code>computes</code> template we define two parameters for the required&#x000A;VPC information: <code>network_vpc_id</code> and <code>network_subnet_id</code>. When we&#x000A;create a stack using this template we can copy the output values from the&#x000A;<code>sparkle-guide-network</code> stack and paste them into these parameters, but&#x000A;that is extremely cumbersome. The SparkleFormation CLI instead allows&#x000A;“applying” a stack on creation or update.</p>&#x000A;&#x000A;<p>Notice that the output names in our <code>network</code> template match the parameter&#x000A;names in our <code>computes</code> template.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># From ./sparkleformation/network.rb</span>&#x000A;  <span class="n">outputs</span> <span class="k">do</span>&#x000A;    <span class="n">network_vpc_id</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_vpc</span><span class="p">)</span>&#x000A;    <span class="n">network_subnet_id</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_subnet</span><span class="p">)</span>&#x000A;    <span class="n">network_route_table</span><span class="p">.</span><span class="nf">value</span> <span class="n">ref!</span><span class="p">(</span><span class="ss">:network_ec2_route_table</span><span class="p">)</span>&#x000A;    <span class="n">network_cidr</span><span class="p">.</span><span class="nf">value</span> <span class="n">join!</span><span class="p">(</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:cidr_prefix</span><span class="p">,</span> <span class="s1">'.0.0/24'</span><span class="p">))</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;<span class="c1"># From ./sparkleformation/computes.rb</span>&#x000A;  <span class="n">parameters</span> <span class="k">do</span>&#x000A;    <span class="n">ssh_key_name</span><span class="p">.</span><span class="nf">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">network_vpc_id</span><span class="p">.</span><span class="nf">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">network_subnet_id</span><span class="p">.</span><span class="nf">type</span> <span class="s1">'String'</span>&#x000A;  <span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The apply stack functionality will automatically collect outputs from&#x000A;the stack names provided and use them to seed the parameters of the&#x000A;stack being created or updated. This means instead of having to copy&#x000A;and paste the VPC ID and subnet ID values, we can instruct the SparkleFormation&#x000A;CLI to automatically use the outputs of our <code>sparkle-guide-network</code> stack:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ bundle exec sfn create sparkle-guide-computes --file computes --apply-stack sparkle-guide-network&#x000A;</code></pre></div>&#x000A;<p>During the create process, the SparkleFormation CLI will prompt for parameters. The&#x000A;default values for the VPC ID and subnet ID will be automatically inserted, matching&#x000A;the outputs from the <code>sparkle-guide-network</code>.</p>&#x000A;&#x000A;<p>You can destroy the sparkle-guide-compute and sparkle-guide-network stacks as they will not be used in the next section.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn destroy sparkle-guide-computes&#x000A;$ sfn destroy sparkle-guide-network&#x000A;</code></pre></div>&#x000A;<h2 id="nested-stack-implementation">Nested stack implementation</h2>&#x000A;&#x000A;<p>Now that our infrastructure has been successfully created using disparate stacks, lets&#x000A;combine them to create a single <code>infrastructure</code> unit composed of sub-units. Using&#x000A;nested stacks requires a bucket to store templates. Create a bucket in S3 and then&#x000A;add the following to the <code>.sfn</code> configuration file:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;  <span class="n">nesting_bucket</span> <span class="s1">'NAME_OF_BUCKET'</span>&#x000A;  <span class="o">...</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>With the required bucket in place and SparkleFormation CLI configured we can&#x000A;now create our <code>infrastructure</code> template.</p>&#x000A;&#x000A;<p>Create a new file: <code>./sparkleformation/infrastructure.rb</code></p>&#x000A;&#x000A;<h4 id="template-sparkles-aws-2">Template sparkles AWS</h4>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:infrastructure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">nest!</span><span class="p">(</span><span class="ss">:network</span><span class="p">,</span> <span class="ss">:infra</span><span class="p">)</span>&#x000A;  <span class="n">nest!</span><span class="p">(</span><span class="ss">:computes</span><span class="p">,</span> <span class="ss">:infra</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>This new <code>infrastructure</code> template is using SparkleFormation’s builtin nesting&#x000A;functionality to create stack resources within our <code>infrastructure</code> template&#x000A;composed of our <code>network</code> and <code>computes</code> template. To see the conceptual result&#x000A;of this nesting, we can print the <code>infrastructure</code> template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ bundle exec sfn print --file infrastructure&#x000A;</code></pre></div>&#x000A;<p>There are a few things of note in this output. First, the <code>Stack</code> property is&#x000A;not a real resource property. It is used by SparkleFormation for template processing&#x000A;and is included in print functions to display the template in its entirety. Next,&#x000A;the generated URLs are not real URLs. This is due to the SparkleFormation CLI not&#x000A;actually storing the templates in the remote bucket. Lastly, and most importantly,&#x000A;the parameters property of the <code>ComputesInfra</code> resource.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight json"><code><span class="s2">"Parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;  </span><span class="s2">"NetworkVpcId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="s2">"Fn::GetAtt"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">&#x000A;      </span><span class="s2">"NetworkInfra"</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="s2">"Outputs.NetworkVpcId"</span><span class="w">&#x000A;    </span><span class="p">]</span><span class="w">&#x000A;  </span><span class="p">},</span><span class="w">&#x000A;  </span><span class="s2">"NetworkSubnetId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="s2">"Fn::GetAtt"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">&#x000A;      </span><span class="s2">"NetworkInfra"</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="s2">"Outputs.NetworkSubnetId"</span><span class="w">&#x000A;    </span><span class="p">]</span><span class="w">&#x000A;  </span><span class="p">}</span><span class="w">&#x000A;</span><span class="p">}</span><span class="w">&#x000A;</span></code></pre></div>&#x000A;<p>SparkleFormation registers outputs when processing templates and will automatically&#x000A;map outputs to subsequent stack resource parameters if they match. Cross stack resource&#x000A;dependencies are now explicitly defined allowing the orchestration API to automatically&#x000A;determine creation order as well as triggering updates when required.</p>&#x000A;&#x000A;<p>Now we can create our full infrastructure with a single command:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ bundle exec sfn create sparkle-guide-infrastructure --file infrastructure&#x000A;</code></pre></div>&#x000A;<p>As SparkleFormation processes the nested templates for the <code>create</code> command, the SparkleFormation&#x000A;CLI will extract the nested templates, store them in the configured nesting bucket, and updates&#x000A;the template location URL in the resource.</p>&#x000A;&#x000A;<p>Using nested templates, <code>update</code> commands follow the same behavior as <code>create</code> commands. All nested&#x000A;templates are extracted and automatically uploaded prior to execution of the <code>update</code> request with&#x000A;the orchestration API. This results in <em>all</em> nested stacks being automatically updated by the API&#x000A;as required based on dependent resource modifications.</p>&#x000A;&#x000A;<h2 id="apply-nested-stack">Apply nested stack</h2>&#x000A;&#x000A;<p>Nested stacks can be applied to disparate stacks in the same manner described in the apply&#x000A;stack implementation section. When the stack to be applied is a nested stack, SparkleFormation&#x000A;CLI will gather outputs from all the nested stacks, and then apply to the target command. This&#x000A;means using the <code>sparkle-guide-infrastructure</code> stack we previously built can be used for creating&#x000A;new <code>computes</code> stacks without being nested into the <code>infrastructure</code> template.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ bundle exec sfn create sparkle-guide-computes-infra --file computes --apply-stack sparkle-guide-infrastructure&#x000A;</code></pre></div>&#x000A;<p>The ability to apply nested stacks to disparate stacks make it easy to provide resources to new&#x000A;stacks, or to test building new stacks in isolation before being nested into the root stack.</p>&#x000A;&#x000A;<p>You can destroy the all the <code>infrastructure</code> related stacks with the command:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>sfn destroy sparkle-guide-infrastructure&#x000A;</code></pre></div>&#x000A;<h2 id="cross-location">Cross location</h2>&#x000A;&#x000A;<p>SparkleFormation supports accessing stacks in other locations when using the&#x000A;apply stack functionality. This is done by configuring named locations within&#x000A;the <code>.sfn</code> configuration file and then referencing the location when applying&#x000A;the stack. Using this example <code>.sfn</code> configuration file:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">credentials</span> <span class="k">do</span>&#x000A;    <span class="n">provider</span> <span class="ss">:aws</span>&#x000A;    <span class="n">aws_access_key_id</span> <span class="s1">'KEY'</span>&#x000A;    <span class="n">aws_secret_access_key</span> <span class="s1">'SECRET'</span>&#x000A;    <span class="n">aws_region</span> <span class="s1">'us-east-1'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">locations</span> <span class="k">do</span>&#x000A;    <span class="n">west_stacks</span> <span class="k">do</span>&#x000A;      <span class="n">provider</span> <span class="ss">:aws</span>&#x000A;      <span class="n">aws_access_key_id</span> <span class="s1">'KEY'</span>&#x000A;      <span class="n">aws_secret_access_key</span> <span class="s1">'SECRET'</span>&#x000A;      <span class="n">aws_region</span> <span class="s1">'us-west-2'</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>This configuration connects to the AWS API in us-east-1. It also includes configuration&#x000A;for connecting to us-west-2 via a named location of <code>west_stacks</code>. This allows referencing&#x000A;stacks located in us-west-2 when using the apply stack functionality. Assume a new stack&#x000A;is being created in us-east-1 (my-stack) and the outputs from other-stack in us-west-2&#x000A;should be applied. This can be accomplished with the following command:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>sfn create my-stack --apply-stack west_stacks__my-stack&#x000A;</code></pre></div>&#x000A;<p>When the stack is created sfn will first connect to the us-west-2 API and gather the&#x000A;outputs from other-stack, then it will connect to us-east-1 to create the new stack.</p>&#x000A;&#x000A;<p><em>NOTE: Custom locations are not required to have a common provider.</em></p>&#x000A;
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

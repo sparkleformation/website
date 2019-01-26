@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: </title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='SparkleFormation' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<link href="/css/index.css" rel="stylesheet" />
+<div class='banner section theme-bg-color-primary'>
+<link href="/css/section.css" rel="stylesheet" />
+<div class='container'>
+<div>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-image'>
+<img class='center-block img-responsive' src='img/logo-white.png'>
+
+</div>
+</div>
+
+</div>
+
+<div class='text-center col-md-offset-1 col-md-10'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h2>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</h2>
+</div>
+<div class='content-heading'>
+<h4>
+<span>Compose your infrastructure.</span>
+</h4>
+</div>
+
+<div class='content-body'>
+<span>
+<p>SparkleFormation provisions, modifies, and destroys stacks in a predictable &amp; repeatable manner. Deploy individual or nested resource collections to manage your infrastructure from a single API call.</p>
+
+
+</span>
+
+<span>
+<p>Compose your infrastructure. Commit to source control. Tag the release. Provision it.</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div class='text-center'>
+<link href="/css/button.css" rel="stylesheet" />
+<a class='button button-default' href='#components'>
+<span>Learn More</span>
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class='section workflow' id='workflow'>
+<link href="/css/section.css" rel="stylesheet" />
+<div class='container'>
+<input id='demo-1-input' name='demo-1-input' type='hidden' value=' sfn create infrastructure-vpc'>
+<input id='demo-1-prompts' name='demo-1-prompts' type='hidden' value='[Sfn]: Cloud Formation: create
+[Sfn]:   -&gt; Name: infrastructure-vpc
+[Sfn]: Vpc Cidr [10.0.0.0/16]:
+[Sfn]: Dns Support [true]:
+[Sfn]: Dns Hostnames [true]:
+[Sfn]: Instance Tenancy [default]:
+[Sfn]: Public Us West2a Subnet Cidr [10.0.0.0/24]:
+[Sfn]: Public Us West2b Subnet Cidr [10.0.1.0/24]:
+[Sfn]: Public Us West2c Subnet Cidr [10.0.2.0/24]:
+[Sfn]: Events for Stack: infrastructure-vpc
+'>
+<input id='demo-1-events' name='demo-1-events' type='hidden' value='Time                      Resource Logical Id   Resource Status
+2015-09-29 21:06:20 UTC   infrastructure-vpc    CREATE_IN_PROGRESS
+2015-09-29 21:07:29 UTC   infrastructure-vpc    CREATE_COMPLETE
+'>
+<input id='demo-1-output' name='demo-1-output' type='hidden' value='[Sfn]: Stack create complete: SUCCESS
+[Sfn]: Stack description of infrastructure-vpc:
+[Sfn]: Outputs for stack: infrastructure-vpc
+[Sfn]:    Vpc Id: vpc-e2581487
+[Sfn]:    Vpc Cidr: 10.0.0.0/16
+[Sfn]:    Public Route Table: rtb-69194d0c
+[Sfn]:    Private Route Table: rtb-6e194d0b
+[Sfn]:    Internet Gateway: igw-d3911ab6
+[Sfn]:    Public Us West2a Subnet: subnet-1a15487f
+[Sfn]:    Public Us West2b Subnet: subnet-11ed9d66
+[Sfn]:    Public Us West2c Subnet: subnet-d320aa8a
+'>
+
+<div class='row content-row'>
+<div class='col-sm-12 col-sm-offset-0'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h4>
+<span>Workflow</span>
+</h4>
+</div>
+
+<div class='content-body'>
+<span>
+<p>Describe your entire <underline>infrastructure as code</underline>, then provision it with a single command.</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div class='col-sm-12 col-sm-offset-0' id='sfn-demo'>
+<div class='window'>
+<link href="/css/window.css" rel="stylesheet" />
+<div class='window-frame'>
+<span class='window-button'></span>
+<span class='window-button'></span>
+<span class='window-button'></span>
+</div>
+<div class='window-content'>
+<div class='window-body'>
+<pre class='highlight shell'><code>$</code></pre>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class='col-sm-4 col-sm-offset-0'>
+<script src="/js/sfn-demo.js"></script>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class='components section theme-bg-neutral' id='components'>
+<link href="/css/section.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='text-center col-sm-offset-0 col-sm-6'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h1>
+<span class='fa fa-code xl-icon'></span>
+<span></span>
+</h1>
+</div>
+<div class='content-heading'>
+<h5>
+<span>SparkleFormation</span>
+</h5>
+</div>
+<div class='content-heading'>
+<h6>
+<span>Library & DSL</span>
+</h6>
+</div>
+
+<div class='content-body'>
+<div class='product-description'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p>SparkleFormation is a Ruby DSL library for programmatically composing template files commonly used by IaaS orchestration APIs. It has builtin helper methods targeting the AWS CloudFormation API and includes translations for other providers (e.g. Rackspace, OpenStack, etc).</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div>
+<p>
+<a href='/docs/sparkle_formation/'>Learn more ></a>
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class='text-center col-sm-offset-0 col-sm-6'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h1>
+<span class='fa fa-terminal xl-icon'></span>
+<span></span>
+</h1>
+</div>
+<div class='content-heading'>
+<h5>
+<span>SparkleFormation</span>
+</h5>
+</div>
+<div class='content-heading'>
+<h6>
+<span>CLI Tool</span>
+</h6>
+</div>
+
+<div class='content-body'>
+<div class='product-description'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p>The SparkleFormation CLI (<kbd>sfn</kbd>) is a command line interface for remote orchestration APIs. <kbd>sfn</kbd> provides support for all SparkleFormation features, including template compilation, resource discovery, and complex stack operations.</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div>
+<p>
+<a href='/docs/sfn/'>Learn more ></a>
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class='platforms section theme-bg-default' id='platforms'>
+<link href="/css/section.css" rel="stylesheet" />
+<div class='container'>
+<div>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h2>
+<span>Supported Platforms</span>
+</h2>
+</div>
+
+<div class='content-body'>
+<span>
+<p>SparkleFormation and <code>sfn</code> provide support for templating and API interactions with every major cloud platform: <a href="https://aws.amazon.com/cloudformation/">Amazon Web Services (CloudFormation)</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/">Microsoft Azure (Resource Manager)</a>, <a href="http://docs.hpcloud.com/eucalyptus/4.2.1/cloudformation/cf_overview.html">HPE Helion Eucalyptus (CloudFormation)</a>, <a href="https://cloud.google.com/deployment-manager/overview">Google Cloud Platform (Cloud Deployment Manager)</a>, <a href="https://wiki.openstack.org/wiki/Heat">OpenStack (HEAT)</a>, <a href="https://www.rackspace.com/en-us/cloud/orchestration">Rackspace (Cloud Orchestration)</a>, and <a href="https://www.terraform.io">Terraform</a>.</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div>
+<div class='tabular'>
+<div class='table-responsive'>
+<link href="/css/table.css" rel="stylesheet" />
+<table class='table table-hover'>
+<thead>
+<tr>
+<th class='col-sm-6 mobile-scroll-indicator' style='font-weight: bold;'>
+<span></span>
+</th>
+<th class='col-sm-1'>
+<span>AWS</span>
+</th>
+<th class='col-sm-1'>
+<span>Azure</span>
+</th>
+<th class='col-sm-1'>
+<span>Eucalyptus</span>
+</th>
+<th class='col-sm-1'>
+<span>Google</span>
+</th>
+<th class='col-sm-1'>
+<span>OpenStack</span>
+</th>
+<th class='col-sm-1'>
+<span>Rackspace</span>
+</th>
+<th class='col-sm-1'>
+<span>Terraform</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span>
+<p><a href="/docs/sfn/commands.html#stack-create">Create stacks</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<span>
+<p><a href="/docs/guides/apply-and-nested.html#nested-stack-implementation">Create nested stacks</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<span>
+<p><a href="/docs/guides/apply-and-nested.html#apply-stack-implementation">Link stacks</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<span>
+<p><a href="/docs/sfn/commands.html#stack-destroy">Delete stacks</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<span>
+<p><a href="/docs/sfn/commands.html#stack-describe">Describe stacks</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<span>
+<p><a href="/docs/sfn/commands.html#stack-inspection">Inspect stacks</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p>(limited)</p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p>(limited)</p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<span>
+<p><a href="/docs/sfn/commands.html#stack-update">Stack update planning</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<span>
+<p><a href="/docs/sfn/commands.html#template-graphs">Stack graphing</a></p>
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+<p><span class="fa fa-check"></span></p>
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+<td>
+<span>
+
+
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class='features section theme-bg-neutral' id='features'>
+<link href="/css/section.css" rel="stylesheet" />
+<div class='container'>
+<div>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h3>
+<span>Features</span>
+</h3>
+</div>
+
+</div>
+
+</div>
+
+<div class='row content-row'>
+<div class='col-sm-6 col-sm-offset-0'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h4>
+<span class='fa fa-file-code-o'></span>
+<span>Comprehensive DSL</span>
+</h4>
+</div>
+
+<div class='content-body'>
+<div class='feature-description'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p>Serialized data (e.g. JSON, XML, YAML) is great for computers, but painful for humans. SparkleFormation's DSL allows you to describe infrastructure programatically then generate native orchestration templates. Its programatic approach to composition allows reuse of common patterns and enforcement of organizational standards across templates, while maintaining zero-day support for all features.</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div>
+<p>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>Learn more ></a>
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class='col-sm-6 col-sm-offset-0'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h4>
+<span class='octicon octicon-terminal'></span>
+<span>Powerful CLI Tooling</span>
+</h4>
+</div>
+
+<div class='content-body'>
+<div class='feature-description'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p>SparkleFormation's CLI tool provides sophisticated orchestration API interaction and template management.</p>
+
+
+</span>
+
+<div>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<i class='list-icon octicon octicon-telescope'></i>
+<span>
+<p>Create, Update, and Destroy Stacks</p>
+
+
+</span>
+
+</li>
+<li>
+<i class='list-icon octicon octicon-telescope'></i>
+<span>
+<p>Process templates written in the DSL</p>
+
+
+</span>
+
+</li>
+<li>
+<i class='list-icon octicon octicon-telescope'></i>
+<span>
+<p>Discover Stack Metadata and Outputs</p>
+
+
+</span>
+
+</li>
+<li>
+<i class='list-icon octicon octicon-telescope'></i>
+<span>
+<p>Inspect Stack Resources</p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div>
+<p>
+<a href='/docs/sfn/'>Learn more ></a>
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='row content-row'>
+<div class='col-sm-6 col-sm-offset-0'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h4>
+<span class='fa fa-server'></span>
+<span>Nested Stacks</span>
+</h4>
+</div>
+
+<div class='content-body'>
+<div class='feature-description'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p>With nested stack support, multiple infrastructure stacks can be grouped into a single template. This allows you to logically compartmentalize resources for independent development and testing, while you maintain an entire infrastructure via a single point of entry. Nested stacks automatically detect and propagate changes to child stacks as required to maintain the expected infrastructure state.</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div>
+<p>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Learn more ></a>
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class='col-sm-6 col-sm-offset-0'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+<div class='content-heading'>
+<h4>
+<span class='fa fa-toggle-on'></span>
+<span>Stack Policies</span>
+</h4>
+</div>
+
+<div class='content-body'>
+<div class='feature-description'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p>SparkleFormation includes support for AWS Stack Policies to add an extra layer of control and security.Policies restrict or allow actions on specific stack resources. The CLI tool extracts policies described in DSL written templates and applies them to the stack via the API. This allows you to maintain a record of stack policies inline with your template code in source control.</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+<div>
+<p>
+<a href='/docs/sparkle_formation/stack-policies.html'>Learn more ></a>
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

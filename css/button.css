@@ -1,0 +1,36 @@
+/* line 1, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button, .button-default, .button-full-width, .button-large {
+  display: inline-block;
+  background-color: inherit;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 500;
+  margin: 15px 0px; }
+
+/* line 10, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button:hover, .button-default:hover, .button-full-width:hover, .button-large:hover,
+.button:focus,
+.button-default:focus,
+.button-full-width:focus,
+.button-large:focus,
+.button:visited,
+.button-default:visited,
+.button-full-width:visited,
+.button-large:visited {
+  text-decoration: none; }
+
+/* line 22, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button-default, .button-full-width {
+  border-width: 4px;
+  padding: 20px 30px;
+  font-size: 24px; }
+
+/* line 29, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button-large {
+  border-width: 4px;
+  padding: 30px 40px;
+  font-size: 2.0em; }
+
+/* line 36, /home/spox/Projects/sparkleformation/website/source/css/button.scss */
+.button-full-width {
+  width: 100%; }

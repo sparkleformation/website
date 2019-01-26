@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: Inheritance and Merging</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sparkle_formation/inheritance-merging.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='Inheritance and Merging' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/'>
+<span class='black'>SparkleFormation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>
+<span class='black'>Inheritance and Merging</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>SparkleFormation DSL</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>SparkleFormation Building Blocks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>Template Anatomy</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/helper-methods.html'>Helper Methods</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Nested Stacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>Inheritance and Merging</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html#template-inheritance'>Template Inheritance</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html#template-merging'>Template Merging</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html#component-and-dynamic-merging'>Component and Dynamic Merging</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html#registry-items'>Registry Items</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/stack-policies.html'>Stack Policies</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>Provider Restrictions</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/translation.html'>Translation</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>Compile Time Parameters</a>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="inheritance-and-merging">Inheritance and Merging</h2>&#x000A;&#x000A;<p>SparkleFormation includes functionality allowing SparklePacks to&#x000A;interact with previous layers when a file is requested from the&#x000A;collection. This functionality makes it easy to slightly modify&#x000A;files provided within previously registered SparklePacks without&#x000A;having to recreate the entire contents of the file. It also allows&#x000A;for creation of new templates based on existing templates.</p>&#x000A;&#x000A;<h3 id="template-inheritance">Template Inheritance</h3>&#x000A;&#x000A;<p>Template inheritance allows a new template to inherit the data structures&#x000A;of an existing template. For example, lets start with a simple template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:simple</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">simple_template</span> <span class="kp">true</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The dumped result of this template is:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">&#x000A;  </span><span class="s2">"SimpleTemplate"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">&#x000A;</span><span class="p">}</span><span class="w">&#x000A;</span></code></pre></div>&#x000A;<p>Suppose that we wanted create a new template that was composed of everything&#x000A;described in the <code>simple</code> template, but had an extra addition. Instead of&#x000A;re-creating the contents in a new file, or attempting to break out components&#x000A;or dynamics that may not be ideal, we can inherit the template instead:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:advanced</span><span class="p">,</span> <span class="ss">:inherit</span> <span class="o">=&gt;</span> <span class="ss">:simple</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">advanced</span><span class="p">.</span><span class="nf">item</span> <span class="s1">'added'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>When this template is dumped, it will inherit the <code>simple</code> template and&#x000A;add on to the resultant data structure giving the result:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">&#x000A;  </span><span class="s2">"SimpleTemplate"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">&#x000A;  </span><span class="s2">"Advanced"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="s2">"Item"</span><span class="p">:</span><span class="w"> </span><span class="s2">"added"</span><span class="w">&#x000A;  </span><span class="p">}</span><span class="w">&#x000A;</span><span class="p">}</span><span class="w">&#x000A;</span></code></pre></div>&#x000A;<p>Inheritance is not restricted to templates at a common level. A new&#x000A;template can inherit templates provided by SparklePacks.</p>&#x000A;&#x000A;<h3 id="template-merging">Template Merging</h3>&#x000A;&#x000A;<p>Template merging is only applicable when SparklePacks are in use. Template&#x000A;merging allows direct modification of a specific named template. This strategy&#x000A;is extremely useful when packs may be layering functionality into a template,&#x000A;or the root pack wants to make a specific adjustment without creating a new&#x000A;template.</p>&#x000A;&#x000A;<p>The default behavior of SparkleFormation when a SparklePack provides a template with&#x000A;the same name as a previously loaded SparklePack, it will overwrite the original&#x000A;template. In some cases, this may not be the desired effect. If a pack would like&#x000A;to make a simple adjustment to the template, this would require duplicating the&#x000A;contents of the original template and appending the customization. Merging allows&#x000A;adding customization without recreation.</p>&#x000A;&#x000A;<p>Lets assume we have a core SparklePack loaded and it provides us with the <code>simple</code>&#x000A;template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:simple</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">simple_template</span> <span class="kp">true</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Now in our root SparklePack we want to make an adjustment to the <code>simple</code> template&#x000A;directly. We can do this by merging:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:simple</span><span class="p">,</span> <span class="ss">:layering</span> <span class="o">=&gt;</span> <span class="ss">:merge</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">modifier</span> <span class="s1">'spox'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>When we dump the <code>simple</code> template now we get:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">&#x000A;  </span><span class="s2">"SimpleTemplate"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">&#x000A;  </span><span class="s2">"Modifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"spox"</span><span class="w">&#x000A;</span><span class="p">}</span><span class="w">&#x000A;</span></code></pre></div>&#x000A;<p>This sort of merging make two strategies possible:</p>&#x000A;&#x000A;<ol>&#x000A;  <li>Modifying the final result of a template for a specific need</li>&#x000A;  <li>Modifying at serveral layers to allow SparklePacks to be additive</li>&#x000A;</ol>&#x000A;&#x000A;<h3 id="component-and-dynamic-merging">Component and Dynamic Merging</h3>&#x000A;&#x000A;<p>Merging behavior for components and dynamics follows the same pattern as templates.&#x000A;Adding the <code>:layering =&gt; :merge</code> option will cause the item to be merged instead&#x000A;of overwritten.</p>&#x000A;&#x000A;<p>For components:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">component</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:layering</span> <span class="o">=&gt;</span> <span class="ss">:merge</span><span class="p">)</span>&#x000A;</code></pre></div>&#x000A;<p>and dynamics:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">dynamic</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:layering</span> <span class="o">=&gt;</span> <span class="ss">:merge</span><span class="p">)</span>&#x000A;</code></pre></div>&#x000A;<h4 id="dynamic-return-value">Dynamic return value</h4>&#x000A;&#x000A;<p>The return value of a dynamic cannot be inferred. This is due to the freeform nature&#x000A;of dynamics leaving the resulting return value up to the author of the dynamic. When&#x000A;merging dynamics it can be easy to return the wrong value. The library <em>could</em> take&#x000A;care of this and always return the context provided by the initial dynamic, but this&#x000A;behavior is problematic: merges could remove the original context, or may want to&#x000A;change the return context completely. Returning the proper value is left to the&#x000A;author, but SparkleFormation makes it easy to return the previous context.</p>&#x000A;&#x000A;<p>When the dynamics are merged, SparkleFormation will include an extra key in the&#x000A;options <code>Hash</code> for the dynamic: <code>:previous_layer_result</code>. Now a dynamic can merge&#x000A;in extra changes, and ensure the correct value is returned from the call:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">dynamic</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:layering</span> <span class="o">=&gt;</span> <span class="ss">:merge</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="nb">name</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">{}</span><span class="o">|</span>&#x000A;  <span class="n">new</span><span class="p">.</span><span class="nf">things</span><span class="p">.</span><span class="nf">added</span> <span class="s1">'here'</span>&#x000A;  <span class="n">args</span><span class="p">[</span><span class="ss">:previous_layer_result</span><span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h3 id="registry-items">Registry Items</h3>&#x000A;&#x000A;<p>Registry items are exempt from the merging behavior described above. Registry items&#x000A;are always overwritten when redefined in higher level SparklePacks.</p>&#x000A;
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

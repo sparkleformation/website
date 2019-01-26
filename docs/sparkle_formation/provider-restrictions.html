@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: Provider Restrictions</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sparkle_formation/provider-restrictions.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='Provider Restrictions' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/'>
+<span class='black'>SparkleFormation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>
+<span class='black'>Provider Restrictions</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>SparkleFormation DSL</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>SparkleFormation Building Blocks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>Template Anatomy</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/helper-methods.html'>Helper Methods</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Nested Stacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>Inheritance and Merging</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/stack-policies.html'>Stack Policies</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>Provider Restrictions</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html#provider-restrictions'>Provider Restrictions</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html#setting-provider-restrictions'>Setting Provider Restrictions</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html#building-block-uniqueness'>Building Block Uniqueness</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html#sharing-building-blocks'>Sharing Building Blocks</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/translation.html'>Translation</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>Compile Time Parameters</a>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="provider-restrictions">Provider Restrictions</h2>&#x000A;&#x000A;<p>SparkleFormation supports generating templates for multiple&#x000A;orchestration APIs. By default all building blocks are assigned&#x000A;<code>:aws</code> as a provider. As a template is compiled and building&#x000A;block items are requested, the provider restriction is enforced&#x000A;during lookup. This restriction helps to enforce correctly structured&#x000A;template by only allowing building blocks with like providers to&#x000A;interact with each other ensuring a properly compiled template.</p>&#x000A;&#x000A;<h2 id="setting-provider-restriction">Setting Provider Restriction</h2>&#x000A;&#x000A;<p>Provider restrictions are set using a common pattern among all&#x000A;building blocks:</p>&#x000A;&#x000A;<h3 id="template">Template</h3>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:my_template</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:azure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<h3 id="component">Component</h3>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">component</span><span class="p">(</span><span class="ss">:my_component</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:azure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<h3 id="dynamic">Dynamic</h3>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">dynamic</span><span class="p">(</span><span class="ss">:my_dynamic</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:azure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<h3 id="registry">Registry</h3>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SfnRegistry</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="ss">:my_item</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:azure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<h2 id="building-block-uniqueness">Building Block Uniqueness</h2>&#x000A;&#x000A;<h3 id="name-collision-failure">Name Collision Failure</h3>&#x000A;&#x000A;<p>The uniqueness of a building block is based on the combination of&#x000A;the building block’s name and defined provider. This allows common&#x000A;naming schemes to be applied for multiple providers within the same&#x000A;runtime. For example, given a template named <code>:network</code> defined&#x000A;as:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:network</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<p>the uniqueness of this template is defined by <code>:network</code> within&#x000A;the <code>:aws</code> provider (because the <code>:aws</code> provider is the default). This&#x000A;means that defining another template with the provider explicitly defined&#x000A;for <code>:aws</code> will fail:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:network</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:aws</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<p>The failure is due to the fact that the names of these two templates is&#x000A;effectively equivalent.</p>&#x000A;&#x000A;<h3 id="common-name-unique-provider">Common Name Unique Provider</h3>&#x000A;&#x000A;<p>Using the previous example of a <code>:network</code> template, we can define our&#x000A;template and explicitly set the provider for clarity:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:network</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:aws</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<p>Now if we want to provide a template for a different provider (OpenStack&#x000A;for instance) we can use the same template name but specify a different&#x000A;target provider:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:network</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:heat</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;</code></pre></div>&#x000A;<p>Two templates with a common name (<code>:network</code>) now exist within our runtime&#x000A;because while the name is common, the providers are different. This functionality&#x000A;applies to all the SparkleFormation building blocks and is important for allowing&#x000A;a common interface for user interactions while allowing provider specific implementations.</p>&#x000A;&#x000A;<h2 id="sharing-building-blocks">Sharing Building Blocks</h2>&#x000A;&#x000A;<p>Building blocks may not always need to be restricted to a specific provider. The&#x000A;provider value used for building block lookup can be overridden. Using this&#x000A;override functionality allows for sharing building blocks between providers. For&#x000A;example, lets define a pseudo-template for AWS that sets a value using a registry&#x000A;item:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SfnRegistry</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="ss">:creator</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="s1">'spox'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">owner</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Now if the same pseudo-template with a provider set to <code>:azure</code> is defined:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:azure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">owner</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>it will fail. The failure is due to the implicitly set provider (<code>:aws</code>) on the registry&#x000A;item. To allow sharing of the registry item, we <em>can</em> override the lookup to use&#x000A;<code>:aws</code> as the provider:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:azure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">owner</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:aws</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>but this doesn’t make logical sense within the layout as the registry item itself&#x000A;isn’t restricted to the AWS provider in any way. A better approach would be defining&#x000A;a shared provider and using that value for the override. Refactoring would provide&#x000A;a registry item:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SfnRegistry</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="ss">:creator</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:shared</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="s1">'spox'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>With the provider set, the two templates can now be updated to use the override:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">owner</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:shared</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>and:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:azure</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">owner</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">,</span> <span class="ss">:provider</span> <span class="o">=&gt;</span> <span class="ss">:shared</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

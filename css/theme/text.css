@@ -1,0 +1,64 @@
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.theme-default-text {
+  font-size: 1.75em;
+  line-height: 1.875em; }
+
+/* line 9, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h1 {
+  font-size: 3.0em;
+  font-weight: bold; }
+
+/* line 14, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h2 {
+  font-size: 2.5em; }
+
+/* line 18, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h3 {
+  font-size: 2.0em; }
+
+/* line 22, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h4 {
+  font-size: 1.75em; }
+
+/* line 26, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h5 {
+  font-size: 1.5em; }
+
+/* line 30, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h6 {
+  font-size: 1.25em;
+  font-weight: bold; }
+
+/* line 35, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none; }
+
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.brand {
+  font-family: 'DIN Medium', sans-serif; }
+
+/* line 46, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.strong {
+  font-weight: bold; }
+
+/* line 50, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.thin {
+  font-weight: 100; }
+
+/* line 54, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+underline {
+  text-decoration: underline; }
+
+/* line 58, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+pre,
+pre * {
+  overflow: auto !important;
+  white-space: pre !important;
+  word-wrap: normal; }
+
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+strong {
+  text-decoration: underline; }

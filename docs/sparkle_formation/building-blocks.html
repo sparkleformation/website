@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: SparkleFormation Building Blocks</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sparkle_formation/building-blocks.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='SparkleFormation Building Blocks' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/'>
+<span class='black'>SparkleFormation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>
+<span class='black'>SparkleFormation Building Blocks</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>SparkleFormation DSL</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>SparkleFormation Building Blocks</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html#components'>Components</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html#dynamics'>Dynamics</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html#registry'>Registry</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html#templates'>Templates</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>Template Anatomy</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/helper-methods.html'>Helper Methods</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Nested Stacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>Inheritance and Merging</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/stack-policies.html'>Stack Policies</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>Provider Restrictions</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/translation.html'>Translation</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>Compile Time Parameters</a>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="sparkleformation-building-blocks">SparkleFormation Building Blocks</h2>&#x000A;&#x000A;<h3 id="building-blocks">Building Blocks</h3>&#x000A;&#x000A;<p>SparkleFormation provides a collection of building blocks to&#x000A;assist in applying <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> concepts to template generation. The&#x000A;building blocks provided by SparkleFormation are:</p>&#x000A;&#x000A;<ul>&#x000A;  <li><a href="#components">Components</a></li>&#x000A;  <li><a href="#dynamics">Dynamics</a></li>&#x000A;  <li><a href="#registry">Registry</a></li>&#x000A;  <li><a href="#templates">Templates</a></li>&#x000A;</ul>&#x000A;&#x000A;<h3 id="components">Components</h3>&#x000A;&#x000A;<p>Components are static pieces of template that are inserted once.&#x000A;They do not provide any dynamic functionality and are intended&#x000A;for common static content. Components are the second set of items&#x000A;loaded during template compilation and are evaluated in the order&#x000A;defined.</p>&#x000A;&#x000A;<p>An example component for an AWS CloudFormation based implementation&#x000A;may contain the template versioning information and a common stack&#x000A;output value:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">component</span><span class="p">(</span><span class="ss">:common</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">set!</span><span class="p">(</span><span class="s1">'AWSTemplateFormatVersion'</span><span class="p">,</span> <span class="s1">'2010-09-09'</span><span class="p">)</span>&#x000A;&#x000A;  <span class="n">outputs</span><span class="p">.</span><span class="nf">creator</span> <span class="k">do</span>&#x000A;    <span class="n">description</span> <span class="s1">'Stack creator'</span>&#x000A;    <span class="n">value</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'USER'</span><span class="p">]</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>There are two supported ways of creating components:</p>&#x000A;&#x000A;<ul>&#x000A;  <li>Path based components</li>&#x000A;  <li>Name based components</li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="path-based-components">Path based components</h4>&#x000A;&#x000A;<p>Path based components are components that infer their name based on&#x000A;the base name of a file. These types of components use the <code>SparkleFormation.build</code>&#x000A;method, which does not accept a name argument. For example:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># components/common.rb</span>&#x000A;<span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">build</span> <span class="k">do</span>&#x000A;   <span class="o">...</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The name of this component will be <code>common</code>.</p>&#x000A;&#x000A;<h4 id="name-based-components">Name based components</h4>&#x000A;&#x000A;<p>Name based components are components whose names are explicitly&#x000A;defined. These types of components use the <code>SparkleFormation.component</code>&#x000A;method, which accepts a name argument. For example:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># components/my-common-component.rb</span>&#x000A;<span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">component</span><span class="p">(</span><span class="ss">:core</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The name of this component will be <code>core</code> as it is explicitly provided&#x000A;when creating the component. These name based components are specifically&#x000A;geared towards usage in “sparkle packs” or any other implementations where&#x000A;a single file may provide multiple components or building blocks, or where&#x000A;the file name may be required to be different from the name of the component.</p>&#x000A;&#x000A;<h3 id="dynamics">Dynamics</h3>&#x000A;&#x000A;<p>Dynamics are reusable blocks of code that can be applied multiple times&#x000A;within the same template to provide multiple discrete sets of content.&#x000A;They provide the ability to refactor common template content out into&#x000A;reusable and configurable dynamics that can then be re-inserted using&#x000A;customized naming structures. Dynamics <em>always</em> explicitly define their&#x000A;name when creating unlike components which optionally supports explict&#x000A;naming.</p>&#x000A;&#x000A;<p>Dynamics are registered blocks which accept two parameters:</p>&#x000A;&#x000A;<ol>&#x000A;  <li>Name for the dynamic call</li>&#x000A;  <li>Configuration Hash for the dynamic call</li>&#x000A;</ol>&#x000A;&#x000A;<p>Here is an example dynamic:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># dynamics/node.rb</span>&#x000A;<span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">dynamic</span><span class="p">(</span><span class="ss">:node</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">_name</span><span class="p">,</span> <span class="n">_config</span><span class="o">=</span><span class="p">{}</span><span class="o">|</span>&#x000A;  <span class="k">unless</span><span class="p">(</span><span class="n">_config</span><span class="p">[</span><span class="ss">:ssh_key</span><span class="p">])</span>&#x000A;    <span class="n">parameters</span><span class="p">.</span><span class="nf">set!</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="n">_name</span><span class="si">}</span><span class="s2">_ssh_key"</span><span class="p">.</span><span class="nf">to_sym</span><span class="p">)</span> <span class="k">do</span>&#x000A;      <span class="n">type</span> <span class="s1">'String'</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="n">_name</span><span class="p">).</span><span class="nf">properties</span> <span class="k">do</span>&#x000A;    <span class="n">key_name</span> <span class="n">_config</span><span class="p">[</span><span class="ss">:ssh_key</span><span class="p">]</span> <span class="p">?</span> <span class="n">_config</span><span class="p">[:</span><span class="n">ssh_key</span><span class="p">]</span> <span class="p">:</span> <span class="n">ref!</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="n">_name</span><span class="si">}</span><span class="s2">_ssh_key"</span><span class="p">.</span><span class="nf">to_sym</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p><em>NOTE: The underscore (<code>_</code>) prefix on the parameter names are simply a convention&#x000A;and not required. It is a convention to make it easier to identify variables&#x000A;used within the dynamic, and its usage is completely author dependent.</em></p>&#x000A;&#x000A;<p>The dynamic defines two parameters: <code>_name</code> and <code>_config</code>. The <code>_config</code>&#x000A;parameter is defaulted to an empty Hash allowing the dynamic call to optionally&#x000A;accept a configuration Hash. With this dynamic in place, it can be called&#x000A;multiple times within a template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:node_stack</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:node</span><span class="p">,</span> <span class="ss">:fubar</span><span class="p">)</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:node</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">,</span> <span class="ss">:ssh_key</span> <span class="o">=&gt;</span> <span class="s1">'default'</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h4 id="builtin-dynamics">Builtin Dynamics</h4>&#x000A;&#x000A;<p>SparkleFormation includes a lookup of known AWS resources which can be accessed&#x000A;using the <code>dynamic!</code> method. This lookup is provided simply as a convenience&#x000A;to speed development and compact implementations. When a builtin is inserted,&#x000A;it will automatically set the <code>type</code> of the resource and evaluate an optionally&#x000A;provided block within the resource. The following templates will generate&#x000A;equivalent results when compiled:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:with_dynamic</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:fubar</span><span class="p">).</span><span class="nf">properties</span><span class="p">.</span><span class="nf">key_name</span> <span class="s1">'default'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:without_dynamic</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">resources</span><span class="p">.</span><span class="nf">fubar_ec2_instance</span> <span class="k">do</span>&#x000A;    <span class="n">type</span> <span class="s1">'AWS::EC2::Instance'</span>&#x000A;    <span class="n">properties</span><span class="p">.</span><span class="nf">key_name</span> <span class="s1">'default'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h5 id="builtin-lookup-behavior">Builtin Lookup Behavior</h5>&#x000A;&#x000A;<p>Builtin lookups are based on the resource type. Resource matching is performed&#x000A;using a <em>suffix based</em> match. When searching for matching types, the <em>first</em>&#x000A;match is used. For example:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:class_only</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>When the lookup is performed, this will match the <code>AWS::EC2::Instance</code> resource.&#x000A;This may not be the correct match, however, since there is also an&#x000A;<code>AWS::OpsWorks::Instance</code> resource type. The correct lookup can be forced (if&#x000A;the <code>OpsWorks</code> resource is the desired resource) by providing the namespace&#x000A;prefix:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:with_namespace</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:opsworks_instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>This can also be taken a step further by including the <code>AWS</code> namespace as well:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:with_namespace</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:aws_opsworks_instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>but will likely be a bit superfluous. It is also important to note the name&#x000A;of the generated resource is dependent on the value of the first parameter.&#x000A;The resultant resource names from the above three examples will be:</p>&#x000A;&#x000A;<ul>&#x000A;  <li>FoobarInstance</li>&#x000A;  <li>FoobarOpsworksInstance</li>&#x000A;  <li>FoobarAwsOpsworksInstance</li>&#x000A;</ul>&#x000A;&#x000A;<p>The value used for the suffix of the resource name can be provided with&#x000A;the <code>dynamic!</code> call:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:with_namespace</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:aws_opsworks_instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">,</span>&#x000A;    <span class="ss">:resource_name_suffix</span> <span class="o">=&gt;</span> <span class="ss">:instance</span>&#x000A;  <span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>which will result in a resource name: <code>FoobarInstance</code></p>&#x000A;&#x000A;<h5 id="dynamic-return-context">Dynamic Return Context</h5>&#x000A;&#x000A;<p>When defining custom dynamics, the result of the dynamic block is important.&#x000A;A dynamic can make multiple modifications to a template when inserted. For&#x000A;example, addition of parameters, resources, and/or outputs. It is important&#x000A;to use the values returned from the dynamic block to prevent surprises.&#x000A;When the <code>dynamic!</code> is called and provided a block, the block is evaluated&#x000A;within the context returned from the <code>dynamic!</code>.</p>&#x000A;&#x000A;<p>For example, this is an improper implementation of a dynamic:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">dynamic</span><span class="p">(</span><span class="ss">:bad_dynamic</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">_name</span><span class="p">,</span> <span class="n">_config</span><span class="o">|</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="n">_name</span><span class="p">)</span>&#x000A;  <span class="n">outputs</span> <span class="k">do</span>&#x000A;    <span class="n">address</span><span class="p">.</span><span class="nf">value</span> <span class="kp">attr</span><span class="o">!</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="n">_name</span><span class="si">}</span><span class="s2">_ec2_instance"</span><span class="p">.</span><span class="nf">to_sym</span><span class="p">,</span> <span class="ss">:public_ip</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>If a template attempts to use this dynamic and make an override modification&#x000A;to the instance:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:failed_template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:bad_dynamic</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span><span class="p">.</span><span class="nf">key_name</span> <span class="s1">'default'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The <code>properties.key_name</code> will be evaluated within the context of the <code>outputs</code>&#x000A;because it is the returned value of the dynamic block. Instead the dynamic should&#x000A;return the context of the referenced resource (if applicable). To make the&#x000A;dynamic act as expected, the resource must be returned from the block.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">dynamic</span><span class="p">(</span><span class="ss">:good_dynamic</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">_name</span><span class="p">,</span> <span class="n">_config</span><span class="o">|</span>&#x000A;  <span class="n">_resource</span> <span class="o">=</span> <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="n">_name</span><span class="p">)</span>&#x000A;  <span class="n">outputs</span> <span class="k">do</span>&#x000A;    <span class="n">address</span><span class="p">.</span><span class="nf">value</span> <span class="kp">attr</span><span class="o">!</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="n">_name</span><span class="si">}</span><span class="s2">_ec2_instance"</span><span class="p">.</span><span class="nf">to_sym</span><span class="p">,</span> <span class="ss">:public_ip</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">_resource</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>This will ensure the instance resource is the context returned. The blocks provided&#x000A;will work as expected:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:successful_template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:good_dynamic</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span><span class="p">.</span><span class="nf">key_name</span> <span class="s1">'default'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h5 id="dynamic-lookup-behavior">Dynamic Lookup Behavior</h5>&#x000A;&#x000A;<p>Dynamics can be loaded from multiple locations. When SparkleFormation performs&#x000A;a dynamic lookup, the following locations are checked in order of precedence:</p>&#x000A;&#x000A;<ol>&#x000A;  <li>Implementation local <code>dynamics</code> directory</li>&#x000A;  <li>SparklePack dynamics with reverse load order precedence</li>&#x000A;  <li>Builtin dynamics lookup table</li>&#x000A;</ol>&#x000A;&#x000A;<h3 id="registry">Registry</h3>&#x000A;&#x000A;<p>Registry entries are lightweight dynamics that are useful for storing items that&#x000A;may be used in multiple locations. For example, the valid sizes of an instance&#x000A;within an infrastructure will generally be restricted to a specific list.&#x000A;This list can be stored within a registry to provide a single point of&#x000A;contact for any changes:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SfnRegistry</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="ss">:instance_sizes</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="p">[</span>&#x000A;    <span class="s1">'m3.large'</span><span class="p">,</span>&#x000A;    <span class="s1">'m3.medium'</span><span class="p">,</span>&#x000A;    <span class="s1">'t2.medium'</span>&#x000A;  <span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;<span class="no">SfnRegistry</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="ss">:instance_size_default</span><span class="p">){</span> <span class="s1">'m3.medium'</span> <span class="p">}</span>&#x000A;</code></pre></div>&#x000A;<p>With the array registered as <code>registry!(:instance_sizes)</code>, we can now reference it:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:instance_stack</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">instance_size</span> <span class="k">do</span>&#x000A;    <span class="n">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">allowed_values</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:instance_sizes</span><span class="p">)</span>&#x000A;    <span class="n">default</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:instance_size_default</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Additional parameters can be passed into registry methods</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SfnRegistry</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="ss">:instance_size_default</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">args</span><span class="o">=</span><span class="p">{}</span><span class="o">|</span>&#x000A;  <span class="n">args</span><span class="p">[</span><span class="ss">:class</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"."</span> <span class="o">+</span> <span class="n">args</span><span class="p">[</span><span class="ss">:size</span><span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>And references in your template</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:instance_stack</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">instance_size</span> <span class="k">do</span>&#x000A;    <span class="n">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">allowed_values</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:instance_sizes</span><span class="p">)</span>&#x000A;    <span class="n">default</span> <span class="n">registry!</span><span class="p">(</span><span class="ss">:instance_size_default</span><span class="p">,</span> <span class="ss">:class</span> <span class="o">=&gt;</span> <span class="s1">'m3'</span><span class="p">,</span> <span class="ss">:size</span> <span class="o">=&gt;</span> <span class="s1">'large'</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>InstanceSize will then be given a default value of ‘m3.large’</p>&#x000A;&#x000A;<h3 id="templates">Templates</h3>&#x000A;&#x000A;<p>Templates are the files that pull all the building blocks together to produce&#x000A;a final data structure that will be serialized into a document. This data structure&#x000A;can be submitted to an orchestration API.</p>&#x000A;&#x000A;<p>There are three stages of template compilation:</p>&#x000A;&#x000A;<ol>&#x000A;  <li>Evaluate optional block given on instantiation</li>&#x000A;  <li>Evaluate any loaded components</li>&#x000A;  <li>Evaluate <code>override</code> block</li>&#x000A;</ol>&#x000A;&#x000A;<h4 id="instantiation-block">Instantiation Block</h4>&#x000A;&#x000A;<p>A block provided on instantiation is the first block evaluated:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:my_template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h4 id="loaded-components">Loaded Components</h4>&#x000A;&#x000A;<p>Components are evaluated in the order they are added to the template via&#x000A;the <code>load</code> method:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:my_template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span>&#x000A;<span class="k">end</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="ss">:common</span><span class="p">,</span> <span class="ss">:special</span><span class="p">)</span>&#x000A;</code></pre></div>&#x000A;<p>On compilation, this will evaluate the instantiation block first, the <code>common</code>&#x000A;component second, and finally the <code>special</code> component.</p>&#x000A;&#x000A;<h4 id="overrides">Overrides</h4>&#x000A;&#x000A;<p>Override blocks are the final blocks evaluated during compilation:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:my_template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span>&#x000A;<span class="k">end</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="ss">:common</span><span class="p">,</span> <span class="ss">:special</span><span class="p">).</span><span class="nf">overrides</span> <span class="k">do</span>&#x000A;  <span class="n">resources</span><span class="p">.</span><span class="nf">foobar_ec2_instance</span><span class="p">.</span><span class="nf">properties</span><span class="p">.</span><span class="nf">key_name</span> <span class="s1">'default'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

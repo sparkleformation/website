@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: Callbacks</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sfn/callbacks.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='Callbacks' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sfn/'>
+<span class='black'>sfn</span>
+</a>
+</li>
+<li>
+<a href='/docs/sfn/callbacks.html'>
+<span class='black'>Callbacks</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+<ul>
+<li>
+<a href='/docs/sfn/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sfn/configuration.html'>Configuration</a>
+</li>
+
+<li>
+<a href='/docs/sfn/usage.html'>Usage</a>
+</li>
+
+<li>
+<a href='/docs/sfn/commands.html'>CLI Commands</a>
+</li>
+
+<li>
+<a href='/docs/sfn/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sfn/command-config.html'>Configuration</a>
+</li>
+
+<li>
+<a href='/docs/sfn/callbacks.html'>Callbacks</a>
+<ul>
+<li>
+<a href='/docs/sfn/callbacks.html#enabling-callbacks'>Enabling Callbacks</a>
+</li>
+<li>
+<a href='/docs/sfn/callbacks.html#builtin-callbacks'>Builtin Callbacks</a>
+</li>
+<li>
+<a href='/docs/sfn/callbacks.html#custom-callbacks'>Custom Callbacks</a>
+</li>
+<li>
+<a href='/docs/sfn/callbacks.html#addon-callbacks'>Addon Callbacks</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/lint.html'>Lint</a>
+</li>
+
+</ul>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="callbacks">Callbacks</h2>&#x000A;&#x000A;<p>Callbacks provide a way to inject optional functionality&#x000A;or custom functionality into <code>sfn</code> commands. Callbacks&#x000A;are generally invoked in two places:</p>&#x000A;&#x000A;<ul>&#x000A;  <li><code>before</code> - Prior to the command’s remote API request</li>&#x000A;  <li><code>after</code> - Following the command’s remote API request</li>&#x000A;  <li><code>failed</code> - Following failure of remote API request</li>&#x000A;</ul>&#x000A;&#x000A;<p>There are also callbacks available prior to the execution&#x000A;of a command. These can also be isolated to specific commands:</p>&#x000A;&#x000A;<ul>&#x000A;  <li><code>after_config</code> - Prior to the execution of the command.</li>&#x000A;</ul>&#x000A;&#x000A;<h3 id="enabling-callbacks">Enabling Callbacks</h3>&#x000A;&#x000A;<p>Callbacks can be applied globally (to all commands) or&#x000A;to specific commands. For example, applying a before callback&#x000A;to <em>all</em> commands:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span><span class="p">.</span><span class="nf">before</span> <span class="p">[</span><span class="s1">'custom_callback'</span><span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Applying a before callback to only the <code>create</code> command:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span><span class="p">.</span><span class="nf">before_create</span> <span class="p">[</span><span class="s1">'custom_callback'</span><span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The other place a callback can be invoked is after a&#x000A;template has been loaded. This can allow the callback&#x000A;to perform some action on the loaded template prior to&#x000A;the command being executed. Enabling a template callback:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span><span class="p">.</span><span class="nf">template</span> <span class="p">[</span><span class="s1">'my-custom-callback'</span><span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>When a stack does not include nested stacks, a <code>before</code>&#x000A;callback can be sufficient for allowing modificiations&#x000A;to a template prior to the command being executed. However,&#x000A;when a stack contains nested stacks, those templates will&#x000A;be processed and stored prior to the invocation of any&#x000A;registered <code>before</code> callbacks. For this reason, it is&#x000A;best to use the <code>template</code> callback when registering callbacks&#x000A;that modify a template contents.</p>&#x000A;&#x000A;<p>Finally, because callbacks can be distributed via gem it&#x000A;may be required to load the libraries so the callback is&#x000A;accessible:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span><span class="p">.</span><span class="nf">require</span> <span class="p">[</span><span class="s1">'my-custom-callback'</span><span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h4 id="important-note">Important note</h4>&#x000A;&#x000A;<p>Some callbacks will require being enabled immediately upon startup&#x000A;instead of during configuration. This can be done by using a special&#x000A;<code>:sfn</code> group within your bundle. For example, to load the <code>sfn-serverspec</code>&#x000A;callback immediately the Gemfile should look like:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># Gemfile</span>&#x000A;<span class="n">source</span> <span class="s1">'https://rubygems.org'</span>&#x000A;&#x000A;<span class="n">gem</span> <span class="s1">'sfn'</span>&#x000A;&#x000A;<span class="n">group</span> <span class="ss">:sfn</span> <span class="k">do</span>&#x000A;  <span class="n">gem</span> <span class="s1">'sfn-serverspec'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h3 id="builtin-callbacks">Builtin Callbacks</h3>&#x000A;&#x000A;<p>Builtin callbacks distributed with <code>sfn</code>:</p>&#x000A;&#x000A;<ul>&#x000A;  <li>AWS Assume Role</li>&#x000A;  <li>AWS MFA</li>&#x000A;  <li>Stack Policy</li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="aws-assume-role">AWS Assume Role</h4>&#x000A;&#x000A;<p>When assuming a role via STS on AWS a temporary set of credentials and token&#x000A;are generated for use. This callback will cache these credentials for re-use&#x000A;to prevent re-generation of temporary credentials on every command request.</p>&#x000A;&#x000A;<p>To enable the callback:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span> <span class="k">do</span>&#x000A;    <span class="n">default</span> <span class="p">[</span><span class="s1">'aws_assume_role'</span><span class="p">]</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Once temporary credentials have been generated, the callback will store the credentials&#x000A;within a file in the working directory named <code>.sfn-aws</code>. This path can be modified via&#x000A;configuration:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">aws_assume_role</span> <span class="k">do</span>&#x000A;    <span class="n">cache_file</span> <span class="s1">'/custom/path/to/file'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Loading and storage of credentials will only occur if a role is provided to assume. Given&#x000A;a configuration of:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span><span class="p">.</span><span class="nf">default</span> <span class="s1">'aws_assume_role'</span>&#x000A;  <span class="n">credentials</span> <span class="k">do</span>&#x000A;    <span class="n">aws_sts_role_arn</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'AWS_STS_ROLE'</span><span class="p">]</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The callback will be enabled when the environment variable is provided:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ AWS_STS_ROLE="arn:...MY_ROLE" sfn list&#x000A;</code></pre></div>&#x000A;<p>and will not be enabled when the environment variable is not provided:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn list&#x000A;</code></pre></div>&#x000A;<p>It can also be disabled/enabled via configuration setting:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">aws_assume_role</span><span class="p">.</span><span class="nf">status</span> <span class="s1">'enabled'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h4 id="aws-multifactor-authentication">AWS Multifactor Authentication</h4>&#x000A;&#x000A;<p>Support for MFA within AWS can be provided using the AWS MFA callback. It will&#x000A;prompt for an MFA token code which is then used to generate the new session.</p>&#x000A;&#x000A;<p>To enable the callback:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span> <span class="k">do</span>&#x000A;    <span class="n">default</span> <span class="p">[</span><span class="s1">'aws_mfa'</span><span class="p">]</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The default virtual MFA device ARN will be used when creating the new session. If a&#x000A;non-default virutal MFA device or a hardware device is being used, set the device&#x000A;serial number with the configuration:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">credentials</span> <span class="k">do</span>&#x000A;    <span class="n">provider</span> <span class="ss">:aws</span>&#x000A;    <span class="n">aws_sts_mfa_serial_number</span> <span class="s1">'DEVICE_IDENTIFIER'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>After a session has been successfully created, the callback will store the session&#x000A;token and credentials within a file in the working directory named <code>.sfn-aws</code>. This&#x000A;path can be configured via configuration:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">aws_mfa</span> <span class="k">do</span>&#x000A;    <span class="n">cache_file</span> <span class="s1">'/custom/path/to/file'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Use of MFA may be conditional based on actions performed. For easier toggling of&#x000A;MFA usage, a configuration value can be used to enable or disable MFA:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">aws_mfa</span> <span class="k">do</span>&#x000A;    <span class="n">cache_file</span> <span class="no">ENV</span><span class="p">.</span><span class="nf">fetch</span><span class="p">(</span><span class="s1">'SFN_MFA'</span><span class="p">,</span> <span class="s1">'enabled'</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>With this configuration, MFA usage can be easily disabled:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ SFN_MFA=disabled sfn list&#x000A;</code></pre></div>&#x000A;<h4 id="stack-policy-callback">Stack Policy Callback</h4>&#x000A;&#x000A;<p>The Stack Policy Callback utilizes the <a href="http://www.sparkleformation.io/docs/sparkle_formation/stack-policies.html">policy feature</a>&#x000A;built into the <a href="http://www.sparkleformation.io/docs/sparkle_formation">SparkleFormation</a>&#x000A;library.</p>&#x000A;&#x000A;<p>To enable the callback:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span> <span class="k">do</span>&#x000A;    <span class="n">default</span> <span class="p">[</span><span class="s1">'stack_policy'</span><span class="p">]</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>By default a stack policy is not disabled when an update command is run. This may&#x000A;require multiple update commands to be run first disabling the existing policy, then&#x000A;running the actual update. Stack policies can be automatically removed prior to update&#x000A;allowing the stack to be properly updated with the newly generated policy applied on&#x000A;completion. To disable the stack policy on update, add this to your configuration:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">stack_policy</span><span class="p">.</span><span class="nf">update</span> <span class="s1">'defenseless'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h3 id="custom-callbacks">Custom Callbacks</h3>&#x000A;&#x000A;<p>To create a custom callback define a new class within the callback namespace&#x000A;and subclass the abstract class:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Sfn</span>&#x000A;  <span class="k">class</span> <span class="nc">Callback</span>&#x000A;    <span class="k">class</span> <span class="nc">MyCallback</span> <span class="o">&lt;</span> <span class="no">Callback</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Providing a method that matches the callback name requested will enable&#x000A;its functionality. For example, running an action after every command:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Sfn</span>&#x000A;  <span class="k">class</span> <span class="nc">Callback</span>&#x000A;    <span class="k">class</span> <span class="nc">MyCallback</span> <span class="o">&lt;</span> <span class="no">Callback</span>&#x000A;&#x000A;      <span class="k">def</span> <span class="nf">after</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>&#x000A;        <span class="c1"># do things</span>&#x000A;      <span class="k">end</span>&#x000A;&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>or after the <code>create</code> command:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Sfn</span>&#x000A;  <span class="k">class</span> <span class="nc">Callback</span>&#x000A;    <span class="k">class</span> <span class="nc">MyCallback</span> <span class="o">&lt;</span> <span class="no">Callback</span>&#x000A;&#x000A;      <span class="k">def</span> <span class="nf">after_create</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>&#x000A;        <span class="c1"># do things</span>&#x000A;      <span class="k">end</span>&#x000A;&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The <code>args</code> referenced above will be a <code>Hash</code> composed of some or all of&#x000A;the following:</p>&#x000A;&#x000A;<ul>&#x000A;  <li><code>:api_stack</code> - The <code>Miasma::Models::Orchestration::Stack</code> instance of the remote stack</li>&#x000A;  <li><code>:stack_name</code> - Name of the stack</li>&#x000A;  <li><code>:sparkle_stack</code> - The <code>SparkleFormation</code> instance of the template</li>&#x000A;  <li><code>:hash_stack</code> - The <code>Hash</code> instance of the template</li>&#x000A;</ul>&#x000A;&#x000A;<p>Enabling the custom callback is the same as above:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="n">callbacks</span><span class="p">.</span><span class="nf">after</span> <span class="p">[</span><span class="s1">'custom_callback'</span><span class="p">]</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The sfn command will output a notification to the user before a callback is&#x000A;run, and after it has completed. This may be too verbose for some callbacks.&#x000A;A callback may disable this output using the <code>quiet</code> method:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Sfn</span>&#x000A;  <span class="k">class</span> <span class="nc">Callback</span>&#x000A;    <span class="k">class</span> <span class="nc">MyCallback</span> <span class="o">&lt;</span> <span class="no">Callback</span>&#x000A;&#x000A;      <span class="k">def</span> <span class="nf">quiet</span>&#x000A;        <span class="kp">true</span>&#x000A;      <span class="k">end</span>&#x000A;&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h3 id="addon-callbacks">Addon Callbacks</h3>&#x000A;&#x000A;<h4 id="usage">Usage</h4>&#x000A;&#x000A;<p>Addon callbacks must be installed to the local bundle, or the system depending&#x000A;on usage type.</p>&#x000A;&#x000A;<p>For bundle usage, add the callback to the Gemfile:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="n">gem</span> <span class="s1">'sfn-callback-name'</span>&#x000A;</code></pre></div>&#x000A;<p>For system usage, install the gem:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ gem install sfn-callback-name&#x000A;</code></pre></div>&#x000A;<h4 id="callbacks-1">Callbacks</h4>&#x000A;&#x000A;<h5 id="sfn-parameters">sfn-parameters</h5>&#x000A;&#x000A;<p>Manage stack parameters via files within the project repository.</p>&#x000A;&#x000A;<ul>&#x000A;  <li>https://github.com/sparkleformation/sfn-parameters</li>&#x000A;</ul>&#x000A;&#x000A;<h5 id="sfn-serverspec">sfn-serverspec</h5>&#x000A;&#x000A;<p>Define Serverspec rules directly on resources within templates&#x000A;and automatically run after success stack creation or update.</p>&#x000A;&#x000A;<ul>&#x000A;  <li>https://github.com/sparkleformation/sfn-serverspec</li>&#x000A;</ul>&#x000A;
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

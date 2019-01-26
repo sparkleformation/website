@@ -1,0 +1,3877 @@
+@charset "UTF-8";
+/* line 28, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.black {
+  color: #19262c !important; }
+
+/* line 32, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.white,
+.white a {
+  color: white !important; }
+
+/* line 37, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.temp,
+.temp * {
+  color: #FF3B30 !important; }
+
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.transparent {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(238, 238, 238, 0.27);
+  color: #FFFFFF; }
+
+/* line 48, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.transparent:focus {
+  border-color: #FFFFFF; }
+
+/* line 52, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default, body,
+.theme-bg-default p,
+body p {
+  background-color: white;
+  color: #19262c; }
+
+/* line 58, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default a, body a,
+.theme-bg-default a:hover,
+body a:hover,
+.theme-bg-default a:focus,
+body a:focus,
+.theme-bg-default a:visited,
+body a:visited {
+  color: #06b8e6; }
+
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default p > a, body p > a,
+.theme-bg-default p > a:hover,
+body p > a:hover,
+.theme-bg-default p > a:visited,
+body p > a:visited,
+.theme-bg-default p > a:focus,
+body p > a:focus,
+.theme-bg-default li > a,
+body li > a,
+.theme-bg-default li > a:hover,
+body li > a:hover,
+.theme-bg-default li > a:visited,
+body li > a:visited,
+.theme-bg-default li > a:focus,
+body li > a:focus {
+  color: #70c219; }
+
+/* line 76, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default .button, body .button {
+  background-color: inherit;
+  color: inherit;
+  border-color: #19262c; }
+
+/* line 82, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default .button:hover, body .button:hover {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: #06b8e6; }
+
+/* line 88, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default .button span, body .button span {
+  color: inherit; }
+
+/* line 92, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse,
+.theme-bg-inverse p {
+  background-color: #19262c;
+  color: white; }
+
+/* line 98, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse a,
+.theme-bg-inverse a:hover,
+.theme-bg-inverse a:focus,
+.theme-bg-inverse a:visited {
+  color: #06b8e6; }
+
+/* line 105, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse p > a,
+.theme-bg-inverse p > a:hover,
+.theme-bg-inverse p > a:visited,
+.theme-bg-inverse p > a:focus,
+.theme-bg-inverse li > a,
+.theme-bg-inverse li > a:hover,
+.theme-bg-inverse li > a:visited,
+.theme-bg-inverse li > a:focus {
+  color: #06b8e6; }
+
+/* line 116, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse .button {
+  background-color: inherit;
+  color: inherit;
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 122, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse .button:hover {
+  background-color: #de5285;
+  color: white;
+  border-color: white; }
+
+/* line 128, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse .button span {
+  color: inherit; }
+
+/* line 132, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral,
+.theme-bg-neutral p {
+  background-color: #c8c8c8;
+  color: #19262c; }
+
+/* line 138, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral a,
+.theme-bg-neutral a:hover,
+.theme-bg-neutral a:focus,
+.theme-bg-neutral a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 145, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral p > a,
+.theme-bg-neutral p > a:hover,
+.theme-bg-neutral p > a:visited,
+.theme-bg-neutral p > a:focus,
+.theme-bg-neutral li > a,
+.theme-bg-neutral li > a:hover,
+.theme-bg-neutral li > a:visited,
+.theme-bg-neutral li > a:focus {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 156, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral .button {
+  background-color: inherit;
+  color: inherit;
+  border-color: #19262c; }
+
+/* line 162, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral .button:hover {
+  background-color: #70c219;
+  color: #19262c;
+  border-color: #19262c; }
+
+/* line 168, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral .button span {
+  color: inherit; }
+
+/* line 172, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary,
+.theme-bg-color-primary p {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 178, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary a,
+.theme-bg-color-primary a:hover,
+.theme-bg-color-primary a:focus,
+.theme-bg-color-primary a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 185, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary p > a,
+.theme-bg-color-primary p > a:hover,
+.theme-bg-color-primary p > a:visited,
+.theme-bg-color-primary p > a:focus,
+.theme-bg-color-primary li > a,
+.theme-bg-color-primary li > a:hover,
+.theme-bg-color-primary li > a:visited,
+.theme-bg-color-primary li > a:focus {
+  color: #19262c; }
+
+/* line 196, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary .button {
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 200, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary .button:hover {
+  background-color: #de5285;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 206, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary .button span {
+  color: inherit; }
+
+/* line 210, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary,
+.theme-bg-color-secondary p {
+  background-color: #de5285;
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 216, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary a,
+.theme-bg-color-secondary a:hover,
+.theme-bg-color-secondary a:focus,
+.theme-bg-color-secondary a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 223, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary p > a,
+.theme-bg-color-secondary p > a:hover,
+.theme-bg-color-secondary p > a:visited,
+.theme-bg-color-secondary p > a:focus,
+.theme-bg-color-secondary li > a,
+.theme-bg-color-secondary li > a:hover,
+.theme-bg-color-secondary li > a:visited,
+.theme-bg-color-secondary li > a:focus {
+  color: #06b8e6; }
+
+/* line 234, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary .button {
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 238, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary .button:hover {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 244, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary .button span {
+  color: inherit; }
+
+/* line 248, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary,
+.theme-bg-color-tertiary p {
+  background-color: #70c219;
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 254, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary a,
+.theme-bg-color-tertiary a:hover,
+.theme-bg-color-tertiary a:focus,
+.theme-bg-color-tertiary a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 261, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary p > a,
+.theme-bg-color-tertiary p > a:hover,
+.theme-bg-color-tertiary p > a:visited,
+.theme-bg-color-tertiary p > a:focus,
+.theme-bg-color-tertiary li > a,
+.theme-bg-color-tertiary li > a:hover,
+.theme-bg-color-tertiary li > a:visited,
+.theme-bg-color-tertiary li > a:focus {
+  color: #19262c; }
+
+/* line 272, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary .button {
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 276, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary .button:hover {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 282, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary .button span {
+  color: inherit; }
+
+/* FontAwesome */
+@font-face {
+  font-family: FontAwesome;
+  src: url("/fonts/font-awesome/FontAwesome.otf"), url("/fonts/font-awesome/fontawesome-webfont.eot") format("embedded-opentype"), url("/fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("/fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("/fonts/font-awesome/fontawesome-webfont.svg") format("svg"); }
+/*!
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/css/font-awesome/fontawesome-webfont.eot?v=4.4.0");
+  src: url("/css/font-awesome/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/css/font-awesome/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("/css/font-awesome/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("/css/font-awesome/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("/css/font-awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_core.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* makes the font 33% larger relative to the icon container */
+/* line 6, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_larger.scss */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+/* line 11, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_larger.scss */
+.fa-2x {
+  font-size: 2em; }
+
+/* line 12, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_larger.scss */
+.fa-3x {
+  font-size: 3em; }
+
+/* line 13, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_larger.scss */
+.fa-4x {
+  font-size: 4em; }
+
+/* line 14, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_larger.scss */
+.fa-5x {
+  font-size: 5em; }
+
+/* line 3, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center; }
+
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none; }
+  /* line 8, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_list.scss */
+  .fa-ul > li {
+    position: relative; }
+
+/* line 10, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center; }
+  /* line 16, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_list.scss */
+  .fa-li.fa-lg {
+    left: -1.85714286em; }
+
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em; }
+
+/* line 10, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.fa-pull-left {
+  float: left; }
+
+/* line 11, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.fa-pull-right {
+  float: right; }
+
+/* line 14, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.fa.fa-pull-left {
+  margin-right: .3em; }
+/* line 15, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.fa.fa-pull-right {
+  margin-left: .3em; }
+
+/* Deprecated as of 4.4.0 */
+/* line 19, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.pull-right {
+  float: right; }
+
+/* line 20, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.pull-left {
+  float: left; }
+
+/* line 23, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em; }
+/* line 24, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_bordered-pulled.scss */
+.fa.pull-right {
+  margin-left: .3em; }
+
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_animated.scss */
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+/* line 9, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_animated.scss */
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_rotated-flipped.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+/* line 5, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_rotated-flipped.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+/* line 6, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_rotated-flipped.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+/* line 8, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+/* line 9, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_rotated-flipped.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+/* line 14, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_rotated-flipped.scss */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none; }
+
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+/* line 12, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+/* line 18, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit; }
+
+/* line 19, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em; }
+
+/* line 20, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_stacked.scss */
+.fa-inverse {
+  color: #fff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 5, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-glass:before {
+  content: ""; }
+
+/* line 6, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-music:before {
+  content: ""; }
+
+/* line 7, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-search:before {
+  content: ""; }
+
+/* line 8, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-envelope-o:before {
+  content: ""; }
+
+/* line 9, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-heart:before {
+  content: ""; }
+
+/* line 10, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-star:before {
+  content: ""; }
+
+/* line 11, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-star-o:before {
+  content: ""; }
+
+/* line 12, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-user:before {
+  content: ""; }
+
+/* line 13, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-film:before {
+  content: ""; }
+
+/* line 14, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-th-large:before {
+  content: ""; }
+
+/* line 15, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-th:before {
+  content: ""; }
+
+/* line 16, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-th-list:before {
+  content: ""; }
+
+/* line 17, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-check:before {
+  content: ""; }
+
+/* line 18, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: ""; }
+
+/* line 21, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-search-plus:before {
+  content: ""; }
+
+/* line 22, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-search-minus:before {
+  content: ""; }
+
+/* line 23, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-power-off:before {
+  content: ""; }
+
+/* line 24, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-signal:before {
+  content: ""; }
+
+/* line 25, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: ""; }
+
+/* line 27, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-trash-o:before {
+  content: ""; }
+
+/* line 28, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-home:before {
+  content: ""; }
+
+/* line 29, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-o:before {
+  content: ""; }
+
+/* line 30, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-clock-o:before {
+  content: ""; }
+
+/* line 31, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-road:before {
+  content: ""; }
+
+/* line 32, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-download:before {
+  content: ""; }
+
+/* line 33, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: ""; }
+
+/* line 34, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: ""; }
+
+/* line 35, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-inbox:before {
+  content: ""; }
+
+/* line 36, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-play-circle-o:before {
+  content: ""; }
+
+/* line 37, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: ""; }
+
+/* line 39, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-refresh:before {
+  content: ""; }
+
+/* line 40, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-list-alt:before {
+  content: ""; }
+
+/* line 41, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-lock:before {
+  content: ""; }
+
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-flag:before {
+  content: ""; }
+
+/* line 43, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-headphones:before {
+  content: ""; }
+
+/* line 44, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-volume-off:before {
+  content: ""; }
+
+/* line 45, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-volume-down:before {
+  content: ""; }
+
+/* line 46, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-volume-up:before {
+  content: ""; }
+
+/* line 47, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-qrcode:before {
+  content: ""; }
+
+/* line 48, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-barcode:before {
+  content: ""; }
+
+/* line 49, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tag:before {
+  content: ""; }
+
+/* line 50, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tags:before {
+  content: ""; }
+
+/* line 51, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-book:before {
+  content: ""; }
+
+/* line 52, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bookmark:before {
+  content: ""; }
+
+/* line 53, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-print:before {
+  content: ""; }
+
+/* line 54, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-camera:before {
+  content: ""; }
+
+/* line 55, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-font:before {
+  content: ""; }
+
+/* line 56, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bold:before {
+  content: ""; }
+
+/* line 57, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-italic:before {
+  content: ""; }
+
+/* line 58, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-text-height:before {
+  content: ""; }
+
+/* line 59, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-text-width:before {
+  content: ""; }
+
+/* line 60, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-align-left:before {
+  content: ""; }
+
+/* line 61, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-align-center:before {
+  content: ""; }
+
+/* line 62, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-align-right:before {
+  content: ""; }
+
+/* line 63, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-align-justify:before {
+  content: ""; }
+
+/* line 64, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-list:before {
+  content: ""; }
+
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: ""; }
+
+/* line 67, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-indent:before {
+  content: ""; }
+
+/* line 68, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-video-camera:before {
+  content: ""; }
+
+/* line 69, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: ""; }
+
+/* line 72, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pencil:before {
+  content: ""; }
+
+/* line 73, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-map-marker:before {
+  content: ""; }
+
+/* line 74, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-adjust:before {
+  content: ""; }
+
+/* line 75, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tint:before {
+  content: ""; }
+
+/* line 76, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: ""; }
+
+/* line 78, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-share-square-o:before {
+  content: ""; }
+
+/* line 79, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-check-square-o:before {
+  content: ""; }
+
+/* line 80, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrows:before {
+  content: ""; }
+
+/* line 81, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-step-backward:before {
+  content: ""; }
+
+/* line 82, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-fast-backward:before {
+  content: ""; }
+
+/* line 83, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-backward:before {
+  content: ""; }
+
+/* line 84, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-play:before {
+  content: ""; }
+
+/* line 85, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pause:before {
+  content: ""; }
+
+/* line 86, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-stop:before {
+  content: ""; }
+
+/* line 87, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-forward:before {
+  content: ""; }
+
+/* line 88, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-fast-forward:before {
+  content: ""; }
+
+/* line 89, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-step-forward:before {
+  content: ""; }
+
+/* line 90, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-eject:before {
+  content: ""; }
+
+/* line 91, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-left:before {
+  content: ""; }
+
+/* line 92, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-right:before {
+  content: ""; }
+
+/* line 93, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-plus-circle:before {
+  content: ""; }
+
+/* line 94, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-minus-circle:before {
+  content: ""; }
+
+/* line 95, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-times-circle:before {
+  content: ""; }
+
+/* line 96, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-check-circle:before {
+  content: ""; }
+
+/* line 97, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-question-circle:before {
+  content: ""; }
+
+/* line 98, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-info-circle:before {
+  content: ""; }
+
+/* line 99, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-crosshairs:before {
+  content: ""; }
+
+/* line 100, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-times-circle-o:before {
+  content: ""; }
+
+/* line 101, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-check-circle-o:before {
+  content: ""; }
+
+/* line 102, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ban:before {
+  content: ""; }
+
+/* line 103, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-left:before {
+  content: ""; }
+
+/* line 104, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-right:before {
+  content: ""; }
+
+/* line 105, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-up:before {
+  content: ""; }
+
+/* line 106, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-down:before {
+  content: ""; }
+
+/* line 107, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: ""; }
+
+/* line 109, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-expand:before {
+  content: ""; }
+
+/* line 110, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-compress:before {
+  content: ""; }
+
+/* line 111, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-plus:before {
+  content: ""; }
+
+/* line 112, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-minus:before {
+  content: ""; }
+
+/* line 113, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-asterisk:before {
+  content: ""; }
+
+/* line 114, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-exclamation-circle:before {
+  content: ""; }
+
+/* line 115, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gift:before {
+  content: ""; }
+
+/* line 116, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-leaf:before {
+  content: ""; }
+
+/* line 117, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-fire:before {
+  content: ""; }
+
+/* line 118, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-eye:before {
+  content: ""; }
+
+/* line 119, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-eye-slash:before {
+  content: ""; }
+
+/* line 120, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: ""; }
+
+/* line 122, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-plane:before {
+  content: ""; }
+
+/* line 123, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-calendar:before {
+  content: ""; }
+
+/* line 124, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-random:before {
+  content: ""; }
+
+/* line 125, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-comment:before {
+  content: ""; }
+
+/* line 126, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-magnet:before {
+  content: ""; }
+
+/* line 127, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-up:before {
+  content: ""; }
+
+/* line 128, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-down:before {
+  content: ""; }
+
+/* line 129, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-retweet:before {
+  content: ""; }
+
+/* line 130, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-shopping-cart:before {
+  content: ""; }
+
+/* line 131, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-folder:before {
+  content: ""; }
+
+/* line 132, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-folder-open:before {
+  content: ""; }
+
+/* line 133, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrows-v:before {
+  content: ""; }
+
+/* line 134, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrows-h:before {
+  content: ""; }
+
+/* line 135, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: ""; }
+
+/* line 137, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-twitter-square:before {
+  content: ""; }
+
+/* line 138, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-facebook-square:before {
+  content: ""; }
+
+/* line 139, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-camera-retro:before {
+  content: ""; }
+
+/* line 140, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-key:before {
+  content: ""; }
+
+/* line 141, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: ""; }
+
+/* line 143, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-comments:before {
+  content: ""; }
+
+/* line 144, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: ""; }
+
+/* line 145, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: ""; }
+
+/* line 146, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-star-half:before {
+  content: ""; }
+
+/* line 147, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-heart-o:before {
+  content: ""; }
+
+/* line 148, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sign-out:before {
+  content: ""; }
+
+/* line 149, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-linkedin-square:before {
+  content: ""; }
+
+/* line 150, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-thumb-tack:before {
+  content: ""; }
+
+/* line 151, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-external-link:before {
+  content: ""; }
+
+/* line 152, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sign-in:before {
+  content: ""; }
+
+/* line 153, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-trophy:before {
+  content: ""; }
+
+/* line 154, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-github-square:before {
+  content: ""; }
+
+/* line 155, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-upload:before {
+  content: ""; }
+
+/* line 156, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-lemon-o:before {
+  content: ""; }
+
+/* line 157, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-phone:before {
+  content: ""; }
+
+/* line 158, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-square-o:before {
+  content: ""; }
+
+/* line 159, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bookmark-o:before {
+  content: ""; }
+
+/* line 160, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-phone-square:before {
+  content: ""; }
+
+/* line 161, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-twitter:before {
+  content: ""; }
+
+/* line 162, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: ""; }
+
+/* line 164, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-github:before {
+  content: ""; }
+
+/* line 165, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-unlock:before {
+  content: ""; }
+
+/* line 166, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-credit-card:before {
+  content: ""; }
+
+/* line 167, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-feed:before,
+.fa-rss:before {
+  content: ""; }
+
+/* line 169, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hdd-o:before {
+  content: ""; }
+
+/* line 170, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bullhorn:before {
+  content: ""; }
+
+/* line 171, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bell:before {
+  content: ""; }
+
+/* line 172, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-certificate:before {
+  content: ""; }
+
+/* line 173, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-o-right:before {
+  content: ""; }
+
+/* line 174, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-o-left:before {
+  content: ""; }
+
+/* line 175, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-o-up:before {
+  content: ""; }
+
+/* line 176, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-o-down:before {
+  content: ""; }
+
+/* line 177, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: ""; }
+
+/* line 178, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: ""; }
+
+/* line 179, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: ""; }
+
+/* line 180, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: ""; }
+
+/* line 181, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-globe:before {
+  content: ""; }
+
+/* line 182, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-wrench:before {
+  content: ""; }
+
+/* line 183, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tasks:before {
+  content: ""; }
+
+/* line 184, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-filter:before {
+  content: ""; }
+
+/* line 185, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-briefcase:before {
+  content: ""; }
+
+/* line 186, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrows-alt:before {
+  content: ""; }
+
+/* line 187, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: ""; }
+
+/* line 189, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: ""; }
+
+/* line 191, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cloud:before {
+  content: ""; }
+
+/* line 192, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-flask:before {
+  content: ""; }
+
+/* line 193, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: ""; }
+
+/* line 195, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: ""; }
+
+/* line 197, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-paperclip:before {
+  content: ""; }
+
+/* line 198, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: ""; }
+
+/* line 200, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-square:before {
+  content: ""; }
+
+/* line 201, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: ""; }
+
+/* line 204, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-list-ul:before {
+  content: ""; }
+
+/* line 205, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-list-ol:before {
+  content: ""; }
+
+/* line 206, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-strikethrough:before {
+  content: ""; }
+
+/* line 207, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-underline:before {
+  content: ""; }
+
+/* line 208, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-table:before {
+  content: ""; }
+
+/* line 209, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-magic:before {
+  content: ""; }
+
+/* line 210, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-truck:before {
+  content: ""; }
+
+/* line 211, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pinterest:before {
+  content: ""; }
+
+/* line 212, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pinterest-square:before {
+  content: ""; }
+
+/* line 213, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-google-plus-square:before {
+  content: ""; }
+
+/* line 214, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-google-plus:before {
+  content: ""; }
+
+/* line 215, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-money:before {
+  content: ""; }
+
+/* line 216, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-caret-down:before {
+  content: ""; }
+
+/* line 217, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-caret-up:before {
+  content: ""; }
+
+/* line 218, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-caret-left:before {
+  content: ""; }
+
+/* line 219, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-caret-right:before {
+  content: ""; }
+
+/* line 220, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-columns:before {
+  content: ""; }
+
+/* line 221, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: ""; }
+
+/* line 223, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: ""; }
+
+/* line 225, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: ""; }
+
+/* line 227, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-envelope:before {
+  content: ""; }
+
+/* line 228, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-linkedin:before {
+  content: ""; }
+
+/* line 229, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: ""; }
+
+/* line 231, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: ""; }
+
+/* line 233, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: ""; }
+
+/* line 235, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-comment-o:before {
+  content: ""; }
+
+/* line 236, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-comments-o:before {
+  content: ""; }
+
+/* line 237, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: ""; }
+
+/* line 239, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sitemap:before {
+  content: ""; }
+
+/* line 240, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-umbrella:before {
+  content: ""; }
+
+/* line 241, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: ""; }
+
+/* line 243, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-lightbulb-o:before {
+  content: ""; }
+
+/* line 244, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-exchange:before {
+  content: ""; }
+
+/* line 245, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cloud-download:before {
+  content: ""; }
+
+/* line 246, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cloud-upload:before {
+  content: ""; }
+
+/* line 247, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-user-md:before {
+  content: ""; }
+
+/* line 248, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-stethoscope:before {
+  content: ""; }
+
+/* line 249, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-suitcase:before {
+  content: ""; }
+
+/* line 250, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bell-o:before {
+  content: ""; }
+
+/* line 251, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-coffee:before {
+  content: ""; }
+
+/* line 252, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cutlery:before {
+  content: ""; }
+
+/* line 253, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-text-o:before {
+  content: ""; }
+
+/* line 254, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-building-o:before {
+  content: ""; }
+
+/* line 255, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hospital-o:before {
+  content: ""; }
+
+/* line 256, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ambulance:before {
+  content: ""; }
+
+/* line 257, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-medkit:before {
+  content: ""; }
+
+/* line 258, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-fighter-jet:before {
+  content: ""; }
+
+/* line 259, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-beer:before {
+  content: ""; }
+
+/* line 260, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-h-square:before {
+  content: ""; }
+
+/* line 261, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-plus-square:before {
+  content: ""; }
+
+/* line 262, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-double-left:before {
+  content: ""; }
+
+/* line 263, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-double-right:before {
+  content: ""; }
+
+/* line 264, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-double-up:before {
+  content: ""; }
+
+/* line 265, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-double-down:before {
+  content: ""; }
+
+/* line 266, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-left:before {
+  content: ""; }
+
+/* line 267, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-right:before {
+  content: ""; }
+
+/* line 268, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-up:before {
+  content: ""; }
+
+/* line 269, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angle-down:before {
+  content: ""; }
+
+/* line 270, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-desktop:before {
+  content: ""; }
+
+/* line 271, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-laptop:before {
+  content: ""; }
+
+/* line 272, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tablet:before {
+  content: ""; }
+
+/* line 273, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: ""; }
+
+/* line 275, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-circle-o:before {
+  content: ""; }
+
+/* line 276, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-quote-left:before {
+  content: ""; }
+
+/* line 277, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-quote-right:before {
+  content: ""; }
+
+/* line 278, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-spinner:before {
+  content: ""; }
+
+/* line 279, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-circle:before {
+  content: ""; }
+
+/* line 280, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: ""; }
+
+/* line 282, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-github-alt:before {
+  content: ""; }
+
+/* line 283, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-folder-o:before {
+  content: ""; }
+
+/* line 284, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-folder-open-o:before {
+  content: ""; }
+
+/* line 285, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-smile-o:before {
+  content: ""; }
+
+/* line 286, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-frown-o:before {
+  content: ""; }
+
+/* line 287, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-meh-o:before {
+  content: ""; }
+
+/* line 288, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gamepad:before {
+  content: ""; }
+
+/* line 289, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-keyboard-o:before {
+  content: ""; }
+
+/* line 290, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-flag-o:before {
+  content: ""; }
+
+/* line 291, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-flag-checkered:before {
+  content: ""; }
+
+/* line 292, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-terminal:before {
+  content: ""; }
+
+/* line 293, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-code:before {
+  content: ""; }
+
+/* line 294, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: ""; }
+
+/* line 296, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: ""; }
+
+/* line 299, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-location-arrow:before {
+  content: ""; }
+
+/* line 300, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-crop:before {
+  content: ""; }
+
+/* line 301, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-code-fork:before {
+  content: ""; }
+
+/* line 302, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: ""; }
+
+/* line 304, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-question:before {
+  content: ""; }
+
+/* line 305, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-info:before {
+  content: ""; }
+
+/* line 306, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-exclamation:before {
+  content: ""; }
+
+/* line 307, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-superscript:before {
+  content: ""; }
+
+/* line 308, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-subscript:before {
+  content: ""; }
+
+/* line 309, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-eraser:before {
+  content: ""; }
+
+/* line 310, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-puzzle-piece:before {
+  content: ""; }
+
+/* line 311, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-microphone:before {
+  content: ""; }
+
+/* line 312, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-microphone-slash:before {
+  content: ""; }
+
+/* line 313, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-shield:before {
+  content: ""; }
+
+/* line 314, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-calendar-o:before {
+  content: ""; }
+
+/* line 315, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: ""; }
+
+/* line 316, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-rocket:before {
+  content: ""; }
+
+/* line 317, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-maxcdn:before {
+  content: ""; }
+
+/* line 318, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: ""; }
+
+/* line 319, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: ""; }
+
+/* line 320, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: ""; }
+
+/* line 321, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: ""; }
+
+/* line 322, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-html5:before {
+  content: ""; }
+
+/* line 323, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-css3:before {
+  content: ""; }
+
+/* line 324, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-anchor:before {
+  content: ""; }
+
+/* line 325, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-unlock-alt:before {
+  content: ""; }
+
+/* line 326, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bullseye:before {
+  content: ""; }
+
+/* line 327, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ellipsis-h:before {
+  content: ""; }
+
+/* line 328, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ellipsis-v:before {
+  content: ""; }
+
+/* line 329, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-rss-square:before {
+  content: ""; }
+
+/* line 330, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-play-circle:before {
+  content: ""; }
+
+/* line 331, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ticket:before {
+  content: ""; }
+
+/* line 332, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-minus-square:before {
+  content: ""; }
+
+/* line 333, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-minus-square-o:before {
+  content: ""; }
+
+/* line 334, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-level-up:before {
+  content: ""; }
+
+/* line 335, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-level-down:before {
+  content: ""; }
+
+/* line 336, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-check-square:before {
+  content: ""; }
+
+/* line 337, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pencil-square:before {
+  content: ""; }
+
+/* line 338, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-external-link-square:before {
+  content: ""; }
+
+/* line 339, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-share-square:before {
+  content: ""; }
+
+/* line 340, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-compass:before {
+  content: ""; }
+
+/* line 341, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: ""; }
+
+/* line 343, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: ""; }
+
+/* line 345, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: ""; }
+
+/* line 347, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: ""; }
+
+/* line 349, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gbp:before {
+  content: ""; }
+
+/* line 350, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: ""; }
+
+/* line 352, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: ""; }
+
+/* line 354, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: ""; }
+
+/* line 358, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: ""; }
+
+/* line 361, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: ""; }
+
+/* line 363, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: ""; }
+
+/* line 365, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file:before {
+  content: ""; }
+
+/* line 366, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-text:before {
+  content: ""; }
+
+/* line 367, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: ""; }
+
+/* line 368, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: ""; }
+
+/* line 369, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: ""; }
+
+/* line 370, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: ""; }
+
+/* line 371, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: ""; }
+
+/* line 372, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: ""; }
+
+/* line 373, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-thumbs-up:before {
+  content: ""; }
+
+/* line 374, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-thumbs-down:before {
+  content: ""; }
+
+/* line 375, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-youtube-square:before {
+  content: ""; }
+
+/* line 376, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-youtube:before {
+  content: ""; }
+
+/* line 377, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-xing:before {
+  content: ""; }
+
+/* line 378, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-xing-square:before {
+  content: ""; }
+
+/* line 379, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-youtube-play:before {
+  content: ""; }
+
+/* line 380, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-dropbox:before {
+  content: ""; }
+
+/* line 381, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-stack-overflow:before {
+  content: ""; }
+
+/* line 382, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-instagram:before {
+  content: ""; }
+
+/* line 383, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-flickr:before {
+  content: ""; }
+
+/* line 384, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-adn:before {
+  content: ""; }
+
+/* line 385, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bitbucket:before {
+  content: ""; }
+
+/* line 386, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bitbucket-square:before {
+  content: ""; }
+
+/* line 387, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tumblr:before {
+  content: ""; }
+
+/* line 388, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tumblr-square:before {
+  content: ""; }
+
+/* line 389, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-long-arrow-down:before {
+  content: ""; }
+
+/* line 390, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-long-arrow-up:before {
+  content: ""; }
+
+/* line 391, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-long-arrow-left:before {
+  content: ""; }
+
+/* line 392, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-long-arrow-right:before {
+  content: ""; }
+
+/* line 393, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-apple:before {
+  content: ""; }
+
+/* line 394, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-windows:before {
+  content: ""; }
+
+/* line 395, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-android:before {
+  content: ""; }
+
+/* line 396, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-linux:before {
+  content: ""; }
+
+/* line 397, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-dribbble:before {
+  content: ""; }
+
+/* line 398, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-skype:before {
+  content: ""; }
+
+/* line 399, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-foursquare:before {
+  content: ""; }
+
+/* line 400, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-trello:before {
+  content: ""; }
+
+/* line 401, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-female:before {
+  content: ""; }
+
+/* line 402, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-male:before {
+  content: ""; }
+
+/* line 403, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: ""; }
+
+/* line 405, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sun-o:before {
+  content: ""; }
+
+/* line 406, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-moon-o:before {
+  content: ""; }
+
+/* line 407, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-archive:before {
+  content: ""; }
+
+/* line 408, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bug:before {
+  content: ""; }
+
+/* line 409, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-vk:before {
+  content: ""; }
+
+/* line 410, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-weibo:before {
+  content: ""; }
+
+/* line 411, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-renren:before {
+  content: ""; }
+
+/* line 412, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pagelines:before {
+  content: ""; }
+
+/* line 413, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-stack-exchange:before {
+  content: ""; }
+
+/* line 414, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: ""; }
+
+/* line 415, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: ""; }
+
+/* line 416, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: ""; }
+
+/* line 418, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-dot-circle-o:before {
+  content: ""; }
+
+/* line 419, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-wheelchair:before {
+  content: ""; }
+
+/* line 420, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-vimeo-square:before {
+  content: ""; }
+
+/* line 421, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: ""; }
+
+/* line 423, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-plus-square-o:before {
+  content: ""; }
+
+/* line 424, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-space-shuttle:before {
+  content: ""; }
+
+/* line 425, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-slack:before {
+  content: ""; }
+
+/* line 426, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-envelope-square:before {
+  content: ""; }
+
+/* line 427, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-wordpress:before {
+  content: ""; }
+
+/* line 428, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-openid:before {
+  content: ""; }
+
+/* line 429, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: ""; }
+
+/* line 432, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: ""; }
+
+/* line 434, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-yahoo:before {
+  content: ""; }
+
+/* line 435, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-google:before {
+  content: ""; }
+
+/* line 436, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-reddit:before {
+  content: ""; }
+
+/* line 437, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-reddit-square:before {
+  content: ""; }
+
+/* line 438, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-stumbleupon-circle:before {
+  content: ""; }
+
+/* line 439, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-stumbleupon:before {
+  content: ""; }
+
+/* line 440, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-delicious:before {
+  content: ""; }
+
+/* line 441, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-digg:before {
+  content: ""; }
+
+/* line 442, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pied-piper:before {
+  content: ""; }
+
+/* line 443, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pied-piper-alt:before {
+  content: ""; }
+
+/* line 444, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-drupal:before {
+  content: ""; }
+
+/* line 445, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-joomla:before {
+  content: ""; }
+
+/* line 446, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-language:before {
+  content: ""; }
+
+/* line 447, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-fax:before {
+  content: ""; }
+
+/* line 448, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-building:before {
+  content: ""; }
+
+/* line 449, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-child:before {
+  content: ""; }
+
+/* line 450, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-paw:before {
+  content: ""; }
+
+/* line 451, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-spoon:before {
+  content: ""; }
+
+/* line 452, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cube:before {
+  content: ""; }
+
+/* line 453, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cubes:before {
+  content: ""; }
+
+/* line 454, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-behance:before {
+  content: ""; }
+
+/* line 455, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-behance-square:before {
+  content: ""; }
+
+/* line 456, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-steam:before {
+  content: ""; }
+
+/* line 457, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-steam-square:before {
+  content: ""; }
+
+/* line 458, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-recycle:before {
+  content: ""; }
+
+/* line 459, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: ""; }
+
+/* line 461, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: ""; }
+
+/* line 463, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tree:before {
+  content: ""; }
+
+/* line 464, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-spotify:before {
+  content: ""; }
+
+/* line 465, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-deviantart:before {
+  content: ""; }
+
+/* line 466, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-soundcloud:before {
+  content: ""; }
+
+/* line 467, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-database:before {
+  content: ""; }
+
+/* line 468, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-pdf-o:before {
+  content: ""; }
+
+/* line 469, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-word-o:before {
+  content: ""; }
+
+/* line 470, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-excel-o:before {
+  content: ""; }
+
+/* line 471, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-powerpoint-o:before {
+  content: ""; }
+
+/* line 472, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: ""; }
+
+/* line 475, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: ""; }
+
+/* line 477, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: ""; }
+
+/* line 479, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: ""; }
+
+/* line 481, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-file-code-o:before {
+  content: ""; }
+
+/* line 482, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-vine:before {
+  content: ""; }
+
+/* line 483, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-codepen:before {
+  content: ""; }
+
+/* line 484, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-jsfiddle:before {
+  content: ""; }
+
+/* line 485, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: ""; }
+
+/* line 490, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-circle-o-notch:before {
+  content: ""; }
+
+/* line 491, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ra:before,
+.fa-rebel:before {
+  content: ""; }
+
+/* line 493, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: ""; }
+
+/* line 495, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-git-square:before {
+  content: ""; }
+
+/* line 496, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-git:before {
+  content: ""; }
+
+/* line 497, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: ""; }
+
+/* line 500, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tencent-weibo:before {
+  content: ""; }
+
+/* line 501, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-qq:before {
+  content: ""; }
+
+/* line 502, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: ""; }
+
+/* line 504, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: ""; }
+
+/* line 506, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: ""; }
+
+/* line 508, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-history:before {
+  content: ""; }
+
+/* line 509, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-circle-thin:before {
+  content: ""; }
+
+/* line 510, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-header:before {
+  content: ""; }
+
+/* line 511, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-paragraph:before {
+  content: ""; }
+
+/* line 512, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sliders:before {
+  content: ""; }
+
+/* line 513, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-share-alt:before {
+  content: ""; }
+
+/* line 514, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-share-alt-square:before {
+  content: ""; }
+
+/* line 515, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bomb:before {
+  content: ""; }
+
+/* line 516, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: ""; }
+
+/* line 518, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tty:before {
+  content: ""; }
+
+/* line 519, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-binoculars:before {
+  content: ""; }
+
+/* line 520, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-plug:before {
+  content: ""; }
+
+/* line 521, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-slideshare:before {
+  content: ""; }
+
+/* line 522, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-twitch:before {
+  content: ""; }
+
+/* line 523, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-yelp:before {
+  content: ""; }
+
+/* line 524, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-newspaper-o:before {
+  content: ""; }
+
+/* line 525, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-wifi:before {
+  content: ""; }
+
+/* line 526, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-calculator:before {
+  content: ""; }
+
+/* line 527, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-paypal:before {
+  content: ""; }
+
+/* line 528, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-google-wallet:before {
+  content: ""; }
+
+/* line 529, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-visa:before {
+  content: ""; }
+
+/* line 530, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-mastercard:before {
+  content: ""; }
+
+/* line 531, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-discover:before {
+  content: ""; }
+
+/* line 532, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-amex:before {
+  content: ""; }
+
+/* line 533, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-paypal:before {
+  content: ""; }
+
+/* line 534, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-stripe:before {
+  content: ""; }
+
+/* line 535, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bell-slash:before {
+  content: ""; }
+
+/* line 536, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bell-slash-o:before {
+  content: ""; }
+
+/* line 537, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-trash:before {
+  content: ""; }
+
+/* line 538, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-copyright:before {
+  content: ""; }
+
+/* line 539, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-at:before {
+  content: ""; }
+
+/* line 540, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-eyedropper:before {
+  content: ""; }
+
+/* line 541, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-paint-brush:before {
+  content: ""; }
+
+/* line 542, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-birthday-cake:before {
+  content: ""; }
+
+/* line 543, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-area-chart:before {
+  content: ""; }
+
+/* line 544, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pie-chart:before {
+  content: ""; }
+
+/* line 545, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-line-chart:before {
+  content: ""; }
+
+/* line 546, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-lastfm:before {
+  content: ""; }
+
+/* line 547, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-lastfm-square:before {
+  content: ""; }
+
+/* line 548, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-toggle-off:before {
+  content: ""; }
+
+/* line 549, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-toggle-on:before {
+  content: ""; }
+
+/* line 550, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bicycle:before {
+  content: ""; }
+
+/* line 551, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-bus:before {
+  content: ""; }
+
+/* line 552, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ioxhost:before {
+  content: ""; }
+
+/* line 553, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-angellist:before {
+  content: ""; }
+
+/* line 554, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc:before {
+  content: ""; }
+
+/* line 555, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: ""; }
+
+/* line 558, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-meanpath:before {
+  content: ""; }
+
+/* line 559, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-buysellads:before {
+  content: ""; }
+
+/* line 560, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-connectdevelop:before {
+  content: ""; }
+
+/* line 561, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-dashcube:before {
+  content: ""; }
+
+/* line 562, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-forumbee:before {
+  content: ""; }
+
+/* line 563, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-leanpub:before {
+  content: ""; }
+
+/* line 564, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sellsy:before {
+  content: ""; }
+
+/* line 565, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-shirtsinbulk:before {
+  content: ""; }
+
+/* line 566, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-simplybuilt:before {
+  content: ""; }
+
+/* line 567, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-skyatlas:before {
+  content: ""; }
+
+/* line 568, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cart-plus:before {
+  content: ""; }
+
+/* line 569, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cart-arrow-down:before {
+  content: ""; }
+
+/* line 570, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-diamond:before {
+  content: ""; }
+
+/* line 571, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-ship:before {
+  content: ""; }
+
+/* line 572, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-user-secret:before {
+  content: ""; }
+
+/* line 573, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-motorcycle:before {
+  content: ""; }
+
+/* line 574, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-street-view:before {
+  content: ""; }
+
+/* line 575, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-heartbeat:before {
+  content: ""; }
+
+/* line 576, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-venus:before {
+  content: ""; }
+
+/* line 577, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mars:before {
+  content: ""; }
+
+/* line 578, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mercury:before {
+  content: ""; }
+
+/* line 579, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-intersex:before,
+.fa-transgender:before {
+  content: ""; }
+
+/* line 581, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-transgender-alt:before {
+  content: ""; }
+
+/* line 582, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-venus-double:before {
+  content: ""; }
+
+/* line 583, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mars-double:before {
+  content: ""; }
+
+/* line 584, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-venus-mars:before {
+  content: ""; }
+
+/* line 585, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mars-stroke:before {
+  content: ""; }
+
+/* line 586, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mars-stroke-v:before {
+  content: ""; }
+
+/* line 587, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mars-stroke-h:before {
+  content: ""; }
+
+/* line 588, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-neuter:before {
+  content: ""; }
+
+/* line 589, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-genderless:before {
+  content: ""; }
+
+/* line 590, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-facebook-official:before {
+  content: ""; }
+
+/* line 591, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-pinterest-p:before {
+  content: ""; }
+
+/* line 592, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-whatsapp:before {
+  content: ""; }
+
+/* line 593, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-server:before {
+  content: ""; }
+
+/* line 594, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-user-plus:before {
+  content: ""; }
+
+/* line 595, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-user-times:before {
+  content: ""; }
+
+/* line 596, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hotel:before,
+.fa-bed:before {
+  content: ""; }
+
+/* line 598, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-viacoin:before {
+  content: ""; }
+
+/* line 599, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-train:before {
+  content: ""; }
+
+/* line 600, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-subway:before {
+  content: ""; }
+
+/* line 601, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-medium:before {
+  content: ""; }
+
+/* line 602, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: ""; }
+
+/* line 604, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-optin-monster:before {
+  content: ""; }
+
+/* line 605, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-opencart:before {
+  content: ""; }
+
+/* line 606, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-expeditedssl:before {
+  content: ""; }
+
+/* line 607, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: ""; }
+
+/* line 609, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: ""; }
+
+/* line 611, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: ""; }
+
+/* line 613, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: ""; }
+
+/* line 615, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: ""; }
+
+/* line 617, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-mouse-pointer:before {
+  content: ""; }
+
+/* line 618, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-i-cursor:before {
+  content: ""; }
+
+/* line 619, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-object-group:before {
+  content: ""; }
+
+/* line 620, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-object-ungroup:before {
+  content: ""; }
+
+/* line 621, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sticky-note:before {
+  content: ""; }
+
+/* line 622, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-sticky-note-o:before {
+  content: ""; }
+
+/* line 623, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-jcb:before {
+  content: ""; }
+
+/* line 624, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-cc-diners-club:before {
+  content: ""; }
+
+/* line 625, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-clone:before {
+  content: ""; }
+
+/* line 626, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-balance-scale:before {
+  content: ""; }
+
+/* line 627, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hourglass-o:before {
+  content: ""; }
+
+/* line 628, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: ""; }
+
+/* line 630, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: ""; }
+
+/* line 632, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: ""; }
+
+/* line 634, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hourglass:before {
+  content: ""; }
+
+/* line 635, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: ""; }
+
+/* line 637, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: ""; }
+
+/* line 639, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-scissors-o:before {
+  content: ""; }
+
+/* line 640, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-lizard-o:before {
+  content: ""; }
+
+/* line 641, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-spock-o:before {
+  content: ""; }
+
+/* line 642, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-pointer-o:before {
+  content: ""; }
+
+/* line 643, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-hand-peace-o:before {
+  content: ""; }
+
+/* line 644, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-trademark:before {
+  content: ""; }
+
+/* line 645, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-registered:before {
+  content: ""; }
+
+/* line 646, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-creative-commons:before {
+  content: ""; }
+
+/* line 647, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gg:before {
+  content: ""; }
+
+/* line 648, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-gg-circle:before {
+  content: ""; }
+
+/* line 649, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tripadvisor:before {
+  content: ""; }
+
+/* line 650, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-odnoklassniki:before {
+  content: ""; }
+
+/* line 651, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-odnoklassniki-square:before {
+  content: ""; }
+
+/* line 652, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-get-pocket:before {
+  content: ""; }
+
+/* line 653, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-wikipedia-w:before {
+  content: ""; }
+
+/* line 654, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-safari:before {
+  content: ""; }
+
+/* line 655, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-chrome:before {
+  content: ""; }
+
+/* line 656, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-firefox:before {
+  content: ""; }
+
+/* line 657, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-opera:before {
+  content: ""; }
+
+/* line 658, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-internet-explorer:before {
+  content: ""; }
+
+/* line 659, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-tv:before,
+.fa-television:before {
+  content: ""; }
+
+/* line 661, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-contao:before {
+  content: ""; }
+
+/* line 662, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-500px:before {
+  content: ""; }
+
+/* line 663, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-amazon:before {
+  content: ""; }
+
+/* line 664, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-calendar-plus-o:before {
+  content: ""; }
+
+/* line 665, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-calendar-minus-o:before {
+  content: ""; }
+
+/* line 666, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-calendar-times-o:before {
+  content: ""; }
+
+/* line 667, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-calendar-check-o:before {
+  content: ""; }
+
+/* line 668, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-industry:before {
+  content: ""; }
+
+/* line 669, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-map-pin:before {
+  content: ""; }
+
+/* line 670, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-map-signs:before {
+  content: ""; }
+
+/* line 671, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-map-o:before {
+  content: ""; }
+
+/* line 672, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-map:before {
+  content: ""; }
+
+/* line 673, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-commenting:before {
+  content: ""; }
+
+/* line 674, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-commenting-o:before {
+  content: ""; }
+
+/* line 675, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-houzz:before {
+  content: ""; }
+
+/* line 676, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-vimeo:before {
+  content: ""; }
+
+/* line 677, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-black-tie:before {
+  content: ""; }
+
+/* line 678, /home/spox/Projects/sparkleformation/website/source/css/font-awesome/_icons.scss */
+.fa-fonticons:before {
+  content: ""; }
+
+/* GitHub Octicons*/
+@font-face {
+  font-family: 'octicons';
+  src: url("/css/octicons/octicons.eot?#iefix") format("embedded-opentype"), url("/css/octicons/octicons.woff") format("woff"), url("/css/octicons/octicons.ttf") format("truetype"), url("/css/octicons/octicons.svg#octicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 13, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon, .mega-octicon {
+  font: normal normal normal 16px/1 octicons;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 25, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.mega-octicon {
+  font-size: 32px; }
+
+/* line 27, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-alert:before {
+  content: '\f02d'; }
+
+/*  */
+/* line 28, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-down:before {
+  content: '\f03f'; }
+
+/*  */
+/* line 29, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-left:before {
+  content: '\f040'; }
+
+/*  */
+/* line 30, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-right:before {
+  content: '\f03e'; }
+
+/*  */
+/* line 31, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-down:before {
+  content: '\f0a0'; }
+
+/*  */
+/* line 32, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-left:before {
+  content: '\f0a1'; }
+
+/*  */
+/* line 33, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-right:before {
+  content: '\f071'; }
+
+/*  */
+/* line 34, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-small-up:before {
+  content: '\f09f'; }
+
+/*  */
+/* line 35, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-arrow-up:before {
+  content: '\f03d'; }
+
+/*  */
+/* line 36, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-microscope:before,
+.octicon-beaker:before {
+  content: '\f0dd'; }
+
+/*  */
+/* line 38, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-bell:before {
+  content: '\f0de'; }
+
+/*  */
+/* line 39, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-book:before {
+  content: '\f007'; }
+
+/*  */
+/* line 40, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-bookmark:before {
+  content: '\f07b'; }
+
+/*  */
+/* line 41, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-briefcase:before {
+  content: '\f0d3'; }
+
+/*  */
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-broadcast:before {
+  content: '\f048'; }
+
+/*  */
+/* line 43, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-browser:before {
+  content: '\f0c5'; }
+
+/*  */
+/* line 44, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-bug:before {
+  content: '\f091'; }
+
+/*  */
+/* line 45, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-calendar:before {
+  content: '\f068'; }
+
+/*  */
+/* line 46, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-check:before {
+  content: '\f03a'; }
+
+/*  */
+/* line 47, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-checklist:before {
+  content: '\f076'; }
+
+/*  */
+/* line 48, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-down:before {
+  content: '\f0a3'; }
+
+/*  */
+/* line 49, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-left:before {
+  content: '\f0a4'; }
+
+/*  */
+/* line 50, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-right:before {
+  content: '\f078'; }
+
+/*  */
+/* line 51, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-chevron-up:before {
+  content: '\f0a2'; }
+
+/*  */
+/* line 52, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-circle-slash:before {
+  content: '\f084'; }
+
+/*  */
+/* line 53, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-circuit-board:before {
+  content: '\f0d6'; }
+
+/*  */
+/* line 54, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-clippy:before {
+  content: '\f035'; }
+
+/*  */
+/* line 55, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-clock:before {
+  content: '\f046'; }
+
+/*  */
+/* line 56, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-cloud-download:before {
+  content: '\f00b'; }
+
+/*  */
+/* line 57, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-cloud-upload:before {
+  content: '\f00c'; }
+
+/*  */
+/* line 58, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-code:before {
+  content: '\f05f'; }
+
+/*  */
+/* line 59, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-color-mode:before {
+  content: '\f065'; }
+
+/*  */
+/* line 60, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-comment-add:before,
+.octicon-comment:before {
+  content: '\f02b'; }
+
+/*  */
+/* line 62, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-comment-discussion:before {
+  content: '\f04f'; }
+
+/*  */
+/* line 63, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-credit-card:before {
+  content: '\f045'; }
+
+/*  */
+/* line 64, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-dash:before {
+  content: '\f0ca'; }
+
+/*  */
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-dashboard:before {
+  content: '\f07d'; }
+
+/*  */
+/* line 66, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-database:before {
+  content: '\f096'; }
+
+/*  */
+/* line 67, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-clone:before,
+.octicon-desktop-download:before {
+  content: '\f0dc'; }
+
+/*  */
+/* line 69, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-camera:before {
+  content: '\f056'; }
+
+/*  */
+/* line 70, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-camera-video:before {
+  content: '\f057'; }
+
+/*  */
+/* line 71, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-desktop:before {
+  content: '\f27c'; }
+
+/*  */
+/* line 72, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-device-mobile:before {
+  content: '\f038'; }
+
+/*  */
+/* line 73, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff:before {
+  content: '\f04d'; }
+
+/*  */
+/* line 74, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-added:before {
+  content: '\f06b'; }
+
+/*  */
+/* line 75, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-ignored:before {
+  content: '\f099'; }
+
+/*  */
+/* line 76, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-modified:before {
+  content: '\f06d'; }
+
+/*  */
+/* line 77, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-removed:before {
+  content: '\f06c'; }
+
+/*  */
+/* line 78, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-diff-renamed:before {
+  content: '\f06e'; }
+
+/*  */
+/* line 79, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-ellipsis:before {
+  content: '\f09a'; }
+
+/*  */
+/* line 80, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-eye-unwatch:before,
+.octicon-eye-watch:before,
+.octicon-eye:before {
+  content: '\f04e'; }
+
+/*  */
+/* line 83, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-binary:before {
+  content: '\f094'; }
+
+/*  */
+/* line 84, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-code:before {
+  content: '\f010'; }
+
+/*  */
+/* line 85, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-directory:before {
+  content: '\f016'; }
+
+/*  */
+/* line 86, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-media:before {
+  content: '\f012'; }
+
+/*  */
+/* line 87, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-pdf:before {
+  content: '\f014'; }
+
+/*  */
+/* line 88, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-submodule:before {
+  content: '\f017'; }
+
+/*  */
+/* line 89, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-symlink-directory:before {
+  content: '\f0b1'; }
+
+/*  */
+/* line 90, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-symlink-file:before {
+  content: '\f0b0'; }
+
+/*  */
+/* line 91, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-text:before {
+  content: '\f011'; }
+
+/*  */
+/* line 92, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-file-zip:before {
+  content: '\f013'; }
+
+/*  */
+/* line 93, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-flame:before {
+  content: '\f0d2'; }
+
+/*  */
+/* line 94, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-fold:before {
+  content: '\f0cc'; }
+
+/*  */
+/* line 95, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gear:before {
+  content: '\f02f'; }
+
+/*  */
+/* line 96, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gift:before {
+  content: '\f042'; }
+
+/*  */
+/* line 97, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist:before {
+  content: '\f00e'; }
+
+/*  */
+/* line 98, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist-secret:before {
+  content: '\f08c'; }
+
+/*  */
+/* line 99, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-branch-create:before,
+.octicon-git-branch-delete:before,
+.octicon-git-branch:before {
+  content: '\f020'; }
+
+/*  */
+/* line 102, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-commit:before {
+  content: '\f01f'; }
+
+/*  */
+/* line 103, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-compare:before {
+  content: '\f0ac'; }
+
+/*  */
+/* line 104, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-merge:before {
+  content: '\f023'; }
+
+/*  */
+/* line 105, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-git-pull-request-abandoned:before,
+.octicon-git-pull-request:before {
+  content: '\f009'; }
+
+/*  */
+/* line 107, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-globe:before {
+  content: '\f0b6'; }
+
+/*  */
+/* line 108, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-graph:before {
+  content: '\f043'; }
+
+/*  */
+/* line 109, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-heart:before {
+  content: '\2665'; }
+
+/* ♥ */
+/* line 110, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-history:before {
+  content: '\f07e'; }
+
+/*  */
+/* line 111, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-home:before {
+  content: '\f08d'; }
+
+/*  */
+/* line 112, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-horizontal-rule:before {
+  content: '\f070'; }
+
+/*  */
+/* line 113, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-hubot:before {
+  content: '\f09d'; }
+
+/*  */
+/* line 114, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-inbox:before {
+  content: '\f0cf'; }
+
+/*  */
+/* line 115, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-info:before {
+  content: '\f059'; }
+
+/*  */
+/* line 116, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-issue-closed:before {
+  content: '\f028'; }
+
+/*  */
+/* line 117, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-issue-opened:before {
+  content: '\f026'; }
+
+/*  */
+/* line 118, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-issue-reopened:before {
+  content: '\f027'; }
+
+/*  */
+/* line 119, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-jersey:before {
+  content: '\f019'; }
+
+/*  */
+/* line 120, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-key:before {
+  content: '\f049'; }
+
+/*  */
+/* line 121, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-keyboard:before {
+  content: '\f00d'; }
+
+/*  */
+/* line 122, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-law:before {
+  content: '\f0d8'; }
+
+/*  */
+/* line 123, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-light-bulb:before {
+  content: '\f000'; }
+
+/*  */
+/* line 124, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-link:before {
+  content: '\f05c'; }
+
+/*  */
+/* line 125, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-link-external:before {
+  content: '\f07f'; }
+
+/*  */
+/* line 126, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-list-ordered:before {
+  content: '\f062'; }
+
+/*  */
+/* line 127, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-list-unordered:before {
+  content: '\f061'; }
+
+/*  */
+/* line 128, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-location:before {
+  content: '\f060'; }
+
+/*  */
+/* line 129, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist-private:before,
+.octicon-mirror-private:before,
+.octicon-git-fork-private:before,
+.octicon-lock:before {
+  content: '\f06a'; }
+
+/*  */
+/* line 133, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-logo-github:before {
+  content: '\f092'; }
+
+/*  */
+/* line 134, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mail:before {
+  content: '\f03b'; }
+
+/*  */
+/* line 135, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mail-read:before {
+  content: '\f03c'; }
+
+/*  */
+/* line 136, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mail-reply:before {
+  content: '\f051'; }
+
+/*  */
+/* line 137, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mark-github:before {
+  content: '\f00a'; }
+
+/*  */
+/* line 138, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-markdown:before {
+  content: '\f0c9'; }
+
+/*  */
+/* line 139, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-megaphone:before {
+  content: '\f077'; }
+
+/*  */
+/* line 140, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mention:before {
+  content: '\f0be'; }
+
+/*  */
+/* line 141, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-milestone:before {
+  content: '\f075'; }
+
+/*  */
+/* line 142, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mirror-public:before,
+.octicon-mirror:before {
+  content: '\f024'; }
+
+/*  */
+/* line 144, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mortar-board:before {
+  content: '\f0d7'; }
+
+/*  */
+/* line 145, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-mute:before {
+  content: '\f080'; }
+
+/*  */
+/* line 146, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-no-newline:before {
+  content: '\f09c'; }
+
+/*  */
+/* line 147, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-octoface:before {
+  content: '\f008'; }
+
+/*  */
+/* line 148, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-organization:before {
+  content: '\f037'; }
+
+/*  */
+/* line 149, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-package:before {
+  content: '\f0c4'; }
+
+/*  */
+/* line 150, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-paintcan:before {
+  content: '\f0d1'; }
+
+/*  */
+/* line 151, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-pencil:before {
+  content: '\f058'; }
+
+/*  */
+/* line 152, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-person-add:before,
+.octicon-person-follow:before,
+.octicon-person:before {
+  content: '\f018'; }
+
+/*  */
+/* line 155, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-pin:before {
+  content: '\f041'; }
+
+/*  */
+/* line 156, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-plug:before {
+  content: '\f0d4'; }
+
+/*  */
+/* line 157, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-create:before,
+.octicon-gist-new:before,
+.octicon-file-directory-create:before,
+.octicon-file-add:before,
+.octicon-plus:before {
+  content: '\f05d'; }
+
+/*  */
+/* line 162, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-primitive-dot:before {
+  content: '\f052'; }
+
+/*  */
+/* line 163, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-primitive-square:before {
+  content: '\f053'; }
+
+/*  */
+/* line 164, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-pulse:before {
+  content: '\f085'; }
+
+/*  */
+/* line 165, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-question:before {
+  content: '\f02c'; }
+
+/*  */
+/* line 166, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-quote:before {
+  content: '\f063'; }
+
+/*  */
+/* line 167, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-radio-tower:before {
+  content: '\f030'; }
+
+/*  */
+/* line 168, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-delete:before,
+.octicon-repo:before {
+  content: '\f001'; }
+
+/*  */
+/* line 170, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-clone:before {
+  content: '\f04c'; }
+
+/*  */
+/* line 171, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-force-push:before {
+  content: '\f04a'; }
+
+/*  */
+/* line 172, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-gist-fork:before,
+.octicon-repo-forked:before {
+  content: '\f002'; }
+
+/*  */
+/* line 174, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-pull:before {
+  content: '\f006'; }
+
+/*  */
+/* line 175, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-push:before {
+  content: '\f005'; }
+
+/*  */
+/* line 176, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-rocket:before {
+  content: '\f033'; }
+
+/*  */
+/* line 177, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-rss:before {
+  content: '\f034'; }
+
+/*  */
+/* line 178, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-ruby:before {
+  content: '\f047'; }
+
+/*  */
+/* line 179, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-screen-full:before {
+  content: '\f066'; }
+
+/*  */
+/* line 180, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-screen-normal:before {
+  content: '\f067'; }
+
+/*  */
+/* line 181, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-search-save:before,
+.octicon-search:before {
+  content: '\f02e'; }
+
+/*  */
+/* line 183, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-server:before {
+  content: '\f097'; }
+
+/*  */
+/* line 184, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-settings:before {
+  content: '\f07c'; }
+
+/*  */
+/* line 185, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-shield:before {
+  content: '\f0e1'; }
+
+/*  */
+/* line 186, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-log-in:before,
+.octicon-sign-in:before {
+  content: '\f036'; }
+
+/*  */
+/* line 188, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-log-out:before,
+.octicon-sign-out:before {
+  content: '\f032'; }
+
+/*  */
+/* line 190, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-squirrel:before {
+  content: '\f0b2'; }
+
+/*  */
+/* line 191, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-star-add:before,
+.octicon-star-delete:before,
+.octicon-star:before {
+  content: '\f02a'; }
+
+/*  */
+/* line 194, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-stop:before {
+  content: '\f08f'; }
+
+/*  */
+/* line 195, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-repo-sync:before,
+.octicon-sync:before {
+  content: '\f087'; }
+
+/*  */
+/* line 197, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-tag-remove:before,
+.octicon-tag-add:before,
+.octicon-tag:before {
+  content: '\f015'; }
+
+/*  */
+/* line 200, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-telescope:before {
+  content: '\f088'; }
+
+/*  */
+/* line 201, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-terminal:before {
+  content: '\f0c8'; }
+
+/*  */
+/* line 202, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-three-bars:before {
+  content: '\f05e'; }
+
+/*  */
+/* line 203, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-thumbsdown:before {
+  content: '\f0db'; }
+
+/*  */
+/* line 204, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-thumbsup:before {
+  content: '\f0da'; }
+
+/*  */
+/* line 205, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-tools:before {
+  content: '\f031'; }
+
+/*  */
+/* line 206, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-trashcan:before {
+  content: '\f0d0'; }
+
+/*  */
+/* line 207, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-down:before {
+  content: '\f05b'; }
+
+/*  */
+/* line 208, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-left:before {
+  content: '\f044'; }
+
+/*  */
+/* line 209, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-right:before {
+  content: '\f05a'; }
+
+/*  */
+/* line 210, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-triangle-up:before {
+  content: '\f0aa'; }
+
+/*  */
+/* line 211, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-unfold:before {
+  content: '\f039'; }
+
+/*  */
+/* line 212, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-unmute:before {
+  content: '\f0ba'; }
+
+/*  */
+/* line 213, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-versions:before {
+  content: '\f064'; }
+
+/*  */
+/* line 214, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-watch:before {
+  content: '\f0e0'; }
+
+/*  */
+/* line 215, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-remove-close:before,
+.octicon-x:before {
+  content: '\f081'; }
+
+/*  */
+/* line 217, /home/spox/Projects/sparkleformation/website/source/css/octicons/sprockets-octicons.scss */
+.octicon-zap:before {
+  content: '\26A1'; }
+
+/* ⚡ */
+/* DIN */
+@font-face {
+  font-family: 'DIN Medium';
+  src: url("/fonts/din-medium.eot") format("embedded-opentype"), url("/fonts/din-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* line 4, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.theme-default-text {
+  font-size: 1.75em;
+  line-height: 1.875em; }
+
+/* line 9, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h1 {
+  font-size: 3.0em;
+  font-weight: bold; }
+
+/* line 14, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h2 {
+  font-size: 2.5em; }
+
+/* line 18, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h3 {
+  font-size: 2.0em; }
+
+/* line 22, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h4 {
+  font-size: 1.75em; }
+
+/* line 26, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h5 {
+  font-size: 1.5em; }
+
+/* line 30, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+h6 {
+  font-size: 1.25em;
+  font-weight: bold; }
+
+/* line 35, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none; }
+
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.brand {
+  font-family: 'DIN Medium', sans-serif; }
+
+/* line 46, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.strong {
+  font-weight: bold; }
+
+/* line 50, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+.thin {
+  font-weight: 100; }
+
+/* line 54, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+underline {
+  text-decoration: underline; }
+
+/* line 58, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+pre,
+pre * {
+  overflow: auto !important;
+  white-space: pre !important;
+  word-wrap: normal; }
+
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/theme/text.scss */
+strong {
+  text-decoration: underline; }
+
+/* line 5, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+body {
+  font-family: 'DIN Medium', sans-serif;
+  font-size: 1.75em;
+  line-height: 1.875em; }
+
+/* line 12, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+.blur {
+  filter: blur(5px); }
+
+/* line 16, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+.fa-heart {
+  color: #FF3B30; }
+
+/* line 20, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+.disabled,
+.coming-soon {
+  opacity: 0.6; }
+
+/* line 25, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+button[disabled],
+.disabled a:hover,
+.disabled button:hover,
+.disabled .button:hover,
+.coming-soon a:hover {
+  cursor: not-allowed; }
+
+/* line 33, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+.coming-soon .learn-more a {
+  content: "Coming Soon"; }
+
+/* line 37, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+.xl-icon {
+  font-size: 2.0em; }
+
+/* line 41, /home/spox/Projects/sparkleformation/website/source/css/theme/sparkleformation.scss */
+.banner img {
+  max-height: 300px; }

@@ -1,0 +1,11 @@
+/* line 1, /home/spox/Projects/sparkleformation/website/source/css/content-block.scss */
+.content-row {
+  margin-bottom: 30px; }
+
+/* line 5, /home/spox/Projects/sparkleformation/website/source/css/content-block.scss */
+.content-row:last-child {
+  margin-bottom: 0px; }
+
+/* line 12, /home/spox/Projects/sparkleformation/website/source/css/content-block.scss */
+.content-block .content-heading .octicon {
+  font-size: inherit !important; }

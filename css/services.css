@@ -1,0 +1,16 @@
+/* line 1, /home/spox/Projects/sparkleformation/website/source/css/services.scss */
+.banner h1:before,
+.banner h2:before,
+.banner h3:before,
+.banner h4:before,
+.banner h5:before,
+.banner h6:before {
+  display: none; }
+
+/* line 10, /home/spox/Projects/sparkleformation/website/source/css/services.scss */
+.banner .list {
+  margin-top: 15px; }
+
+/* line 14, /home/spox/Projects/sparkleformation/website/source/css/services.scss */
+.banner .list a:hover {
+  text-decoration: underline; }

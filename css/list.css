@@ -1,0 +1,13 @@
+/* line 1, /home/spox/Projects/sparkleformation/website/source/css/list.scss */
+.list li {
+  margin-bottom: 5px; }
+
+/* line 5, /home/spox/Projects/sparkleformation/website/source/css/list.scss */
+.list li p {
+  display: inline-block;
+  margin-bottom: 0px; }
+
+/* line 10, /home/spox/Projects/sparkleformation/website/source/css/list.scss */
+.list .list-icon {
+  margin-left: 5px;
+  margin-right: 5px; }

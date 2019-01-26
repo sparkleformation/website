@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: CLI Commands</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sfn/commands.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='CLI Commands' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sfn/'>
+<span class='black'>sfn</span>
+</a>
+</li>
+<li>
+<a href='/docs/sfn/commands.html'>
+<span class='black'>CLI Commands</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+<ul>
+<li>
+<a href='/docs/sfn/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sfn/configuration.html'>Configuration</a>
+</li>
+
+<li>
+<a href='/docs/sfn/usage.html'>Usage</a>
+</li>
+
+<li>
+<a href='/docs/sfn/commands.html'>CLI Commands</a>
+<ul>
+<li>
+<a href='/docs/sfn/commands.html#lifecycle'>Lifecycle</a>
+</li>
+<li>
+<a href='/docs/sfn/commands.html#informational'>Informational</a>
+</li>
+<li>
+<a href='/docs/sfn/commands.html#configuration'>Configuration</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sfn/command-config.html'>Configuration</a>
+</li>
+
+<li>
+<a href='/docs/sfn/callbacks.html'>Callbacks</a>
+</li>
+
+<li>
+<a href='/docs/sfn/lint.html'>Lint</a>
+</li>
+
+</ul>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="sparkleformation-cli-commands">SparkleFormation CLI commands</h2>&#x000A;&#x000A;<p>The <code>sfn</code> command provides a collection of subcommands to handle stack&#x000A;lifecycles as well as subcommands to aid in inspection of existing&#x000A;stacks.</p>&#x000A;&#x000A;<h3 id="lifecycle">Lifecycle</h3>&#x000A;&#x000A;<h4 id="stack-create">Stack create</h4>&#x000A;&#x000A;<p>Stacks can be created via <code>sfn</code> using SparkleFormation templates or raw JSON&#x000A;templates.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn create my-stack&#x000A;</code></pre></div>&#x000A;<p><code>sfn</code> will prompt for selection of a template to build for this new stack. To&#x000A;disable this prompting behavior, you can provide the path or name of the desired&#x000A;template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn create my-stack --file my_template&#x000A;</code></pre></div>&#x000A;<p>By default <code>sfn</code> will process and build SparkleFormation templates. To build a JSON&#x000A;template, disable processing in the configuration file, or via flag:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn create my-stack --file ./my_template.json --no-processing&#x000A;</code></pre></div>&#x000A;<p>The <code>create</code> command is only responsible for initiating the stack creation with the&#x000A;remote provider API. This does not report back the success or failure of the actual&#x000A;stack creation. To provide this behavior, the <code>create</code> command will automatically poll&#x000A;the stack’s resource events. Once the stack as reached a completed state, the <code>create</code>&#x000A;command can properly notify of a <em>success</em> or <em>failed</em> state and exit with the proper&#x000A;status code. The automatic polling behavior can be disabled:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn create my-stack --file my_template --no-poll&#x000A;</code></pre></div>&#x000A;<h5 id="apply-stack">Apply stack</h5>&#x000A;&#x000A;<p>The <code>--apply-stack</code> option allows providing the name of an existing&#x000A;stack when creating or updating. Applying stacks is simply fetching&#x000A;the outputs from the applied stacks and automatically defaulting the&#x000A;set parameter of the new or updated stack. Outputs are matched&#x000A;by name to the parameters of the target stack. This allows an easy&#x000A;way to use values from existing stacks when building new stacks.</p>&#x000A;&#x000A;<p>Example:</p>&#x000A;&#x000A;<p>StackA:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight json"><code><span class="err">...</span><span class="w">&#x000A;  </span><span class="s2">"Outputs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="s2">"LoadBalancerAddress"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;      </span><span class="s2">"Description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Address of Load Balancer"</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;        </span><span class="s2">"Fn::GetAtt"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">&#x000A;          </span><span class="s2">"LoadBalancerResource"</span><span class="p">,</span><span class="w">&#x000A;          </span><span class="s2">"DNSName"</span><span class="w">&#x000A;        </span><span class="p">]</span><span class="w">&#x000A;      </span><span class="p">}</span><span class="w">&#x000A;    </span><span class="p">}</span><span class="w">&#x000A;  </span><span class="p">}</span><span class="w">&#x000A;</span><span class="err">...</span><span class="w">&#x000A;</span></code></pre></div>&#x000A;<p>StackB:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight json"><code><span class="err">...</span><span class="w">&#x000A;  </span><span class="s2">"Parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="s2">"LoadBalancerAddress"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;      </span><span class="s2">"Type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"String"</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="s2">"Default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unset"</span><span class="w">&#x000A;    </span><span class="p">}</span><span class="w">&#x000A;  </span><span class="p">}</span><span class="w">&#x000A;</span><span class="err">...</span><span class="w">&#x000A;</span></code></pre></div>&#x000A;<p>When creating StackB, if we use the <code>--apply-stack</code> option:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn create StackB --apply-stack StackA&#x000A;</code></pre></div>&#x000A;<p>when prompted for the stack parameters, we will find the parameter&#x000A;value for <code>LoadBalancerAddress</code> to be filled in with the output&#x000A;provided from StackA.</p>&#x000A;&#x000A;<h5 id="remote-location-apply-stack">Remote location apply stack</h5>&#x000A;&#x000A;<p>Stacks that are defined in a different region, or within a&#x000A;different provider, can be applied by prefixing stack names with&#x000A;the configured location name. Using the defined <code>.sfn</code> configuration:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span> <span class="k">do</span>&#x000A;  <span class="o">...</span>&#x000A;  <span class="n">credentials</span> <span class="k">do</span>&#x000A;    <span class="n">provider</span> <span class="ss">:aws</span>&#x000A;    <span class="n">aws_access_key_id</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'AWS_ACCESS_KEY_ID'</span><span class="p">]</span>&#x000A;    <span class="n">aws_secret_access_key</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'AWS_SECRET_ACCESS_KEY'</span><span class="p">]</span>&#x000A;    <span class="n">aws_region</span> <span class="s1">'us-west-2'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">locations</span> <span class="k">do</span>&#x000A;    <span class="n">ca_west</span> <span class="k">do</span>&#x000A;      <span class="n">provider</span> <span class="ss">:aws</span>&#x000A;      <span class="n">aws_access_key_id</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'AWS_ACCESS_KEY_ID'</span><span class="p">]</span>&#x000A;      <span class="n">aws_secret_access_key</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'AWS_SECRET_ACCESS_KEY'</span><span class="p">]</span>&#x000A;      <span class="n">aws_region</span> <span class="s1">'us-west-1'</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Now, when creating a new stack (which uses the configured credentials&#x000A;targeting <code>us-west-2</code>) a stack from the <code>us-west-1</code> region can be applied&#x000A;by prefixing the location name to the stack name:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn create StackB --apply-stack ca_west__StackA&#x000A;</code></pre></div>&#x000A;<p><em>NOTE: Location providers are not required to be common.</em></p>&#x000A;&#x000A;<p>Example of stack creation:</p>&#x000A;&#x000A;<p><img alt="stack create" src="/docs/sfn/images/d_create.png" /></p>&#x000A;&#x000A;<h4 id="stack-update">Stack update</h4>&#x000A;&#x000A;<p>Existing stacks can be updated via <code>sfn</code>:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn update my-stack&#x000A;</code></pre></div>&#x000A;<p>This will start an “in place” update. Only the parameters of the stack are updated. To&#x000A;update the template of the stack as well:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn update my-stack --file my_template&#x000A;</code></pre></div>&#x000A;<p>The <code>update</code> command behaves like the <code>create</code> command. It is only responsible for initiating&#x000A;the request with the remote provider API. It will poll the stack events to detect final stack&#x000A;state. The polling can be disabled:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn update my-stack --file my_template --no-poll&#x000A;</code></pre></div>&#x000A;<p>Example of stack update:</p>&#x000A;&#x000A;<p><img alt="stack update" src="/docs/sfn/images/d_update.png" /></p>&#x000A;&#x000A;<h4 id="stack-plan">Stack plan</h4>&#x000A;&#x000A;<p>The <code>plan</code> command allows for a stack to be created or updated via <code>sfn</code>. It uses the&#x000A;planning functionality of the provider to include planning information prior to&#x000A;application of the creation/modifications. The <code>plan</code> command is currently only&#x000A;supported with the AWS provider. When using the <code>update</code> command, the plan generation&#x000A;uses the internal planner with <code>sfn</code> and supports showing resource  for nested stacks.&#x000A;This is currently not supported with the remote planning API.</p>&#x000A;&#x000A;<p>Available options for the <code>plan</code> command are similar to the <code>create</code> and <code>update</code>&#x000A;commands. Additionally, available plans can be listed for a given stack:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn plan my-stack --list&#x000A;</code></pre></div>&#x000A;<p>By default the plan will be created with a default name (<code>miasma-changeset-STACKNAME</code>). A&#x000A;custom name can be used for the plan:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn plan my-stack --file my_template --plan-name custom-plan-name&#x000A;</code></pre></div>&#x000A;<p>It is also possible to apply an existing plan for a stack by providing the plan name:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn plan my-stack --plan-name existing-plan-name&#x000A;</code></pre></div>&#x000A;<h4 id="stack-realize">Stack realize</h4>&#x000A;&#x000A;<p>The <code>realize</code> command loads an existing plan for a given stack and executes the plan. This&#x000A;is useful to allow generating plans and then executing a plan at a later time. For example&#x000A;a stack plan can be first generated and not applied:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn plan my-stack --file my_template --plan-only&#x000A;</code></pre></div>&#x000A;<p>This generates the plan and displays the result but does not apply the changes. The plan&#x000A;can then be loaded and applied using the <code>realize</code> command:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn realize my-stack&#x000A;</code></pre></div>&#x000A;<h4 id="stack-destroy">Stack destroy</h4>&#x000A;&#x000A;<p>Existing stacks can be destroyed via <code>sfn</code>:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn destroy my-stack&#x000A;</code></pre></div>&#x000A;<p>By default a confirmation prompt will be provided prior to destroying an existing stack.&#x000A;This can be disabled by automatically confirming:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn destroy my-stack --yes&#x000A;</code></pre></div>&#x000A;<p>The <code>destroy</code> command will poll the stack resource events until the stack has been successfully&#x000A;deleted, or has reached a “complete” state (which would indicate a failure to destroy). The polling&#x000A;can be disabled:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn destroy my-stack --yes --no-poll&#x000A;</code></pre></div>&#x000A;<p>The <code>destroy</code> command also provides glob support when specifying stack names. This can make cleanup&#x000A;very easy when multiple testing stacks may exist:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn destroy my-stack-*&#x000A;</code></pre></div>&#x000A;<p>This will destroy all stacks whose name start with <code>my-stack-</code>. The command will prompt for confirmation&#x000A;and provide a list of all matching stacks prior to destruction.</p>&#x000A;&#x000A;<p>Example of stack destroy:</p>&#x000A;&#x000A;<p><img alt="stack destroy" src="/docs/sfn/images/d_destroy.png" /></p>&#x000A;&#x000A;<h3 id="informational">Informational</h3>&#x000A;&#x000A;<h4 id="stack-list">Stack list</h4>&#x000A;&#x000A;<p>To list existing stacks:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn list&#x000A;</code></pre></div>&#x000A;<p>Example of a stack list:</p>&#x000A;&#x000A;<p><img alt="stack list" src="/docs/sfn/images/d_list.png" /></p>&#x000A;&#x000A;<h4 id="stack-describe">Stack describe</h4>&#x000A;&#x000A;<p>A description of an existing stack will display resources allocated to the stack and any outputs&#x000A;that were defined within the stack’s template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn describe my-stack&#x000A;</code></pre></div>&#x000A;<p>If the stack contains nested stacks, it will display the resources and outputs for those stacks&#x000A;as well.</p>&#x000A;&#x000A;<p>To describe only resources:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn describe my-stack --resources&#x000A;</code></pre></div>&#x000A;<p>To describe only outputs:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn describe my-stack --outputs&#x000A;</code></pre></div>&#x000A;<p>Example of a stack describe:</p>&#x000A;&#x000A;<p><img alt="stack describe" src="/docs/sfn/images/d_describe.png" /></p>&#x000A;&#x000A;<h4 id="stack-events">Stack events</h4>&#x000A;&#x000A;<p>List the events genereted by the resources allocated to an existing stack:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn events my-stack&#x000A;</code></pre></div>&#x000A;<p>If the resources within the stack are currently being modified (via a <code>create</code>, <code>update</code>, or <code>destroy</code>)&#x000A;command, the events can be polled until the stack reaches a completed state:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn events my-stack --poll&#x000A;</code></pre></div>&#x000A;<p>Example of stack events:</p>&#x000A;&#x000A;<p><img alt="stack events" src="/docs/sfn/images/d_events.png" /></p>&#x000A;&#x000A;<h4 id="stack-inspection">Stack inspection</h4>&#x000A;&#x000A;<p>Existing stacks can have their resources inspected via <code>sfn</code> using the miasma model API. The <code>inspect</code>&#x000A;command provides the ability to directly access resource information where the miasma library has&#x000A;modeling support enabled.</p>&#x000A;&#x000A;<p>One builtin helper for the <code>inspect</code> command is listing all compute resources available within a stack.&#x000A;This includes standalone compute instances as well as compute instances attached to auto-scaling groups&#x000A;defined within the stack.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn inspect my-stack --nodes&#x000A;</code></pre></div>&#x000A;<p>Example of stack node inspection:</p>&#x000A;&#x000A;<p><img alt="stack inspect nodes" src="/docs/sfn/images/d_inspect-nodes.png" /></p>&#x000A;&#x000A;<p>When run with no options, the <code>inspect</code> command will output the data model information of the stack:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn inspect my-stack&#x000A;</code></pre></div>&#x000A;<p>Individual items can be displayed using the attribute flag:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn inspect my-stack --attribute template&#x000A;</code></pre></div>&#x000A;<p>The attribute flag is gets applied to the miasma data model and will output the result of request. For&#x000A;example, if the stack consisted of one resource, and that resource was a compute instance, we could view&#x000A;the resource information from the orchestration API point of view:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn inspect my-stack --attribute "resources.all.first"&#x000A;</code></pre></div>&#x000A;<p>The information here will be sparse because the orchestration API only keeps a reference to the actual&#x000A;resource within its own system. Because the miasma library has compute modeling defined, we can utilize&#x000A;the library to automatically load the compute instance:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn inspect my-stack --attribute "resources.all.first.expand"&#x000A;</code></pre></div>&#x000A;<p>If only the addresses allocated to the compute instance were desired, that can be requested:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn inspect my-stack --attribute "resources.all.first.expand.addresses"&#x000A;</code></pre></div>&#x000A;<p>Example of stack attribute inspection</p>&#x000A;&#x000A;<p><img alt="stack inspect attribute" src="/docs/sfn/images/d_inspect-attribute.png" /></p>&#x000A;&#x000A;<h4 id="template-print">Template print</h4>&#x000A;&#x000A;<p>To display a generated template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn print --file my_template&#x000A;</code></pre></div>&#x000A;<h4 id="template-validation">Template validation</h4>&#x000A;&#x000A;<p>Templates can be validated with the remote provide API prior to creation:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn validate --file my_template&#x000A;</code></pre></div>&#x000A;<p>If the template is a JSON style template, disable processing:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn validate --file my_template --no-processing&#x000A;</code></pre></div>&#x000A;<p>Example of stack validate:</p>&#x000A;&#x000A;<p><img alt="stack validate" src="/docs/sfn/images/d_validate.png" /></p>&#x000A;&#x000A;<h4 id="template-diff">Template diff</h4>&#x000A;&#x000A;<p>Template updates can be diff’ed against an existing stack’s template to display information about&#x000A;what resource modifications will be introduced by the new template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn diff my-stack --file my_template&#x000A;</code></pre></div>&#x000A;<p>Example of stack diff:</p>&#x000A;&#x000A;<p><img alt="stack diff" src="/docs/sfn/images/d_diff.png" /></p>&#x000A;&#x000A;<h4 id="template-graphs">Template graphs</h4>&#x000A;&#x000A;<p>Creation or dependency graphs can be created via <code>sfn</code>. Two styles of the graph can be&#x000A;generated:</p>&#x000A;&#x000A;<ul>&#x000A;  <li><code>"creation"</code> - Resource creation flow (default)</li>&#x000A;  <li><code>"dependency"</code> - Resource dependency composition</li>&#x000A;</ul>&#x000A;&#x000A;<p>To generate a graph:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn graph --file my_template --graph-style dependency&#x000A;</code></pre></div>&#x000A;<p>By default the graph command will create a Graphviz compatible dot format file. If Graphviz&#x000A;is installed on the local system, an image can be generated directly:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn graph --file my_template --graph-type png&#x000A;</code></pre></div>&#x000A;<h3 id="configuration">Configuration</h3>&#x000A;&#x000A;<p>To aid setup and configuration, <code>sfn</code> provides a configuration helper:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn conf&#x000A;</code></pre></div>&#x000A;<p>This will display the current configuration. If no configuration file is present, the user can have&#x000A;one automatically generated for them:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>$ sfn conf --generate&#x000A;</code></pre></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

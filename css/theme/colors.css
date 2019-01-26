@@ -1,0 +1,257 @@
+/* line 28, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.black {
+  color: #19262c !important; }
+
+/* line 32, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.white,
+.white a {
+  color: white !important; }
+
+/* line 37, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.temp,
+.temp * {
+  color: #FF3B30 !important; }
+
+/* line 42, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.transparent {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(238, 238, 238, 0.27);
+  color: #FFFFFF; }
+
+/* line 48, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.transparent:focus {
+  border-color: #FFFFFF; }
+
+/* line 52, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default,
+.theme-bg-default p {
+  background-color: white;
+  color: #19262c; }
+
+/* line 58, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default a,
+.theme-bg-default a:hover,
+.theme-bg-default a:focus,
+.theme-bg-default a:visited {
+  color: #06b8e6; }
+
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default p > a,
+.theme-bg-default p > a:hover,
+.theme-bg-default p > a:visited,
+.theme-bg-default p > a:focus,
+.theme-bg-default li > a,
+.theme-bg-default li > a:hover,
+.theme-bg-default li > a:visited,
+.theme-bg-default li > a:focus {
+  color: #70c219; }
+
+/* line 76, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default .button {
+  background-color: inherit;
+  color: inherit;
+  border-color: #19262c; }
+
+/* line 82, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default .button:hover {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: #06b8e6; }
+
+/* line 88, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-default .button span {
+  color: inherit; }
+
+/* line 92, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse,
+.theme-bg-inverse p {
+  background-color: #19262c;
+  color: white; }
+
+/* line 98, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse a,
+.theme-bg-inverse a:hover,
+.theme-bg-inverse a:focus,
+.theme-bg-inverse a:visited {
+  color: #06b8e6; }
+
+/* line 105, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse p > a,
+.theme-bg-inverse p > a:hover,
+.theme-bg-inverse p > a:visited,
+.theme-bg-inverse p > a:focus,
+.theme-bg-inverse li > a,
+.theme-bg-inverse li > a:hover,
+.theme-bg-inverse li > a:visited,
+.theme-bg-inverse li > a:focus {
+  color: #06b8e6; }
+
+/* line 116, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse .button {
+  background-color: inherit;
+  color: inherit;
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 122, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse .button:hover {
+  background-color: #de5285;
+  color: white;
+  border-color: white; }
+
+/* line 128, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-inverse .button span {
+  color: inherit; }
+
+/* line 132, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral,
+.theme-bg-neutral p {
+  background-color: #c8c8c8;
+  color: #19262c; }
+
+/* line 138, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral a,
+.theme-bg-neutral a:hover,
+.theme-bg-neutral a:focus,
+.theme-bg-neutral a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 145, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral p > a,
+.theme-bg-neutral p > a:hover,
+.theme-bg-neutral p > a:visited,
+.theme-bg-neutral p > a:focus,
+.theme-bg-neutral li > a,
+.theme-bg-neutral li > a:hover,
+.theme-bg-neutral li > a:visited,
+.theme-bg-neutral li > a:focus {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 156, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral .button {
+  background-color: inherit;
+  color: inherit;
+  border-color: #19262c; }
+
+/* line 162, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral .button:hover {
+  background-color: #70c219;
+  color: #19262c;
+  border-color: #19262c; }
+
+/* line 168, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-neutral .button span {
+  color: inherit; }
+
+/* line 172, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary,
+.theme-bg-color-primary p {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 178, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary a,
+.theme-bg-color-primary a:hover,
+.theme-bg-color-primary a:focus,
+.theme-bg-color-primary a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 185, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary p > a,
+.theme-bg-color-primary p > a:hover,
+.theme-bg-color-primary p > a:visited,
+.theme-bg-color-primary p > a:focus,
+.theme-bg-color-primary li > a,
+.theme-bg-color-primary li > a:hover,
+.theme-bg-color-primary li > a:visited,
+.theme-bg-color-primary li > a:focus {
+  color: #19262c; }
+
+/* line 196, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary .button {
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 200, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary .button:hover {
+  background-color: #de5285;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 206, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-primary .button span {
+  color: inherit; }
+
+/* line 210, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary,
+.theme-bg-color-secondary p {
+  background-color: #de5285;
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 216, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary a,
+.theme-bg-color-secondary a:hover,
+.theme-bg-color-secondary a:focus,
+.theme-bg-color-secondary a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 223, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary p > a,
+.theme-bg-color-secondary p > a:hover,
+.theme-bg-color-secondary p > a:visited,
+.theme-bg-color-secondary p > a:focus,
+.theme-bg-color-secondary li > a,
+.theme-bg-color-secondary li > a:hover,
+.theme-bg-color-secondary li > a:visited,
+.theme-bg-color-secondary li > a:focus {
+  color: #06b8e6; }
+
+/* line 234, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary .button {
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 238, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary .button:hover {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 244, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-secondary .button span {
+  color: inherit; }
+
+/* line 248, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary,
+.theme-bg-color-tertiary p {
+  background-color: #70c219;
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 254, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary a,
+.theme-bg-color-tertiary a:hover,
+.theme-bg-color-tertiary a:focus,
+.theme-bg-color-tertiary a:visited {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 261, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary p > a,
+.theme-bg-color-tertiary p > a:hover,
+.theme-bg-color-tertiary p > a:visited,
+.theme-bg-color-tertiary p > a:focus,
+.theme-bg-color-tertiary li > a,
+.theme-bg-color-tertiary li > a:hover,
+.theme-bg-color-tertiary li > a:visited,
+.theme-bg-color-tertiary li > a:focus {
+  color: #19262c; }
+
+/* line 272, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary .button {
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 276, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary .button:hover {
+  background-color: #06b8e6;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); }
+
+/* line 282, /home/spox/Projects/sparkleformation/website/source/css/theme/colors.scss */
+.theme-bg-color-tertiary .button span {
+  color: inherit; }

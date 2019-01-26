@@ -1,0 +1,109 @@
+/* See here for details: https://github.com/middleman/middleman-syntax#css */
+/* Monokai style */
+/* line 5, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight table td, pre table td {
+  padding: 5px; }
+
+/* line 6, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight table pre, pre table pre {
+  margin: 0; }
+
+/* line 7, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight, pre, .highlight .w, pre .w {
+  color: #f8f8f2;
+  background-color: #272822; }
+
+/* line 11, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .err, pre .err {
+  color: #272822;
+  background-color: #f92672; }
+
+/* line 15, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .c, pre .c, .highlight .cd, pre .cd, .highlight .cm, pre .cm, .highlight .c1, pre .c1, .highlight .cs, pre .cs {
+  color: #75715e; }
+
+/* line 18, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .cp, pre .cp {
+  color: #f4bf75; }
+
+/* line 21, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .nt, pre .nt {
+  color: #f4bf75; }
+
+/* line 24, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .o, pre .o, .highlight .ow, pre .ow {
+  color: #f8f8f2; }
+
+/* line 27, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .p, pre .p, .highlight .pi, pre .pi {
+  color: #f8f8f2; }
+
+/* line 30, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .gi, pre .gi {
+  color: #a6e22e; }
+
+/* line 33, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .gd, pre .gd {
+  color: #f92672; }
+
+/* line 36, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .gh, pre .gh {
+  color: #66d9ef;
+  background-color: #272822;
+  font-weight: bold; }
+
+/* line 41, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .k, pre .k, .highlight .kn, pre .kn, .highlight .kp, pre .kp, .highlight .kr, pre .kr, .highlight .kv, pre .kv {
+  color: #ae81ff; }
+
+/* line 44, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .kc, pre .kc {
+  color: #fd971f; }
+
+/* line 47, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .kt, pre .kt {
+  color: #fd971f; }
+
+/* line 50, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .kd, pre .kd {
+  color: #fd971f; }
+
+/* line 53, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .s, pre .s, .highlight .sb, pre .sb, .highlight .sc, pre .sc, .highlight .sd, pre .sd, .highlight .s2, pre .s2, .highlight .sh, pre .sh, .highlight .sx, pre .sx, .highlight .s1, pre .s1 {
+  color: #a6e22e; }
+
+/* line 56, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .sr, pre .sr {
+  color: #a1efe4; }
+
+/* line 59, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .si, pre .si {
+  color: #cc6633; }
+
+/* line 62, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .se, pre .se {
+  color: #cc6633; }
+
+/* line 65, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .nn, pre .nn {
+  color: #f4bf75; }
+
+/* line 68, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .nc, pre .nc {
+  color: #f4bf75; }
+
+/* line 71, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .no, pre .no {
+  color: #f4bf75; }
+
+/* line 74, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .na, pre .na {
+  color: #66d9ef; }
+
+/* line 77, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .m, pre .m, .highlight .mf, pre .mf, .highlight .mh, pre .mh, .highlight .mi, pre .mi, .highlight .il, pre .il, .highlight .mo, pre .mo, .highlight .mb, pre .mb, .highlight .mx, pre .mx {
+  color: #a6e22e; }
+
+/* line 80, /home/spox/Projects/sparkleformation/website/source/css/highlighting.css.erb */
+.highlight .ss, pre .ss {
+  color: #a6e22e; }

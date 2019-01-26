@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: Template Anatomy</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sparkle_formation/anatomy.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='Template Anatomy' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/'>
+<span class='black'>SparkleFormation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>
+<span class='black'>Template Anatomy</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>SparkleFormation DSL</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>SparkleFormation Building Blocks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>Template Anatomy</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/anatomy.html#parameters'>Parameters</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/anatomy.html#mappings'>Mappings</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/anatomy.html#conditions'>Conditions</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/anatomy.html#resources'>Resources</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/anatomy.html#outputs'>Outputs</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/helper-methods.html'>Helper Methods</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Nested Stacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>Inheritance and Merging</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/stack-policies.html'>Stack Policies</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>Provider Restrictions</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/translation.html'>Translation</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>Compile Time Parameters</a>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="template-anatomy">Template Anatomy</h2>&#x000A;&#x000A;<p>The anatomy of a template is dependent on the specific implementation that is&#x000A;targeted. Due to the freeform nature of the SparkleFormation DSL any orchestration&#x000A;API accepting a serialized document to describe resources is inherently supported.&#x000A;Due to that fact, this document will focus directly on the AWS CloudFormation&#x000A;style template as it is the most widely implemented.</p>&#x000A;&#x000A;<h3 id="aws-cloudformation-in-sparkleformation">AWS CloudFormation in SparkleFormation</h3>&#x000A;&#x000A;<ul>&#x000A;  <li><a href="#base-attributes">Base Attributes</a></li>&#x000A;  <li><a href="#parameters">Parameters</a></li>&#x000A;  <li><a href="#mappings">Mappings</a></li>&#x000A;  <li><a href="#conditions">Conditions</a></li>&#x000A;  <li><a href="#resources">Resources</a></li>&#x000A;  <li><a href="#outputs">Outputs</a></li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="base-attributes">Base Attributes</h4>&#x000A;&#x000A;<p>All templates must begin with the expected API version and may include a description&#x000A;and or metadata:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">set!</span><span class="p">(</span><span class="s1">'AWSTemplateFormatVersion'</span><span class="p">,</span> <span class="s1">'2010-09-09'</span><span class="p">)</span>&#x000A;  <span class="n">description</span> <span class="s1">'My New Stack'</span>&#x000A;  <span class="n">metadata</span><span class="p">.</span><span class="nf">instances</span><span class="p">.</span><span class="nf">description</span> <span class="s1">'Awesome instances'</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<ul>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html">Format Version</a></li>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-description-structure.html">Description</a></li>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html">Metadata</a></li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="parameters">Parameters</h4>&#x000A;&#x000A;<p>Parameters are named variables available within the template that users may&#x000A;provide customized values when creating or updating a stack. This allows&#x000A;“runtime” modifications to occur when the template is evaluated by the API.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span> <span class="k">do</span>&#x000A;    <span class="n">creator</span> <span class="k">do</span>&#x000A;      <span class="n">type</span> <span class="s1">'String'</span>&#x000A;      <span class="n">default</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'USER'</span><span class="p">]</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<ul>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">Parameters</a></li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="mappings">Mappings</h4>&#x000A;&#x000A;<p>Mappings are a nested key/value store. They provide an easy way to dynamically&#x000A;specify what value should be used based on context available when the template&#x000A;is evaluated by the API.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">mappings</span><span class="p">.</span><span class="nf">platforms</span><span class="p">.</span><span class="nf">set!</span><span class="p">(</span><span class="s1">'us-west-2'</span><span class="p">.</span><span class="nf">_no_hump</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">centos6</span> <span class="s1">'ami-b6bdde86'</span>&#x000A;    <span class="n">centos7</span> <span class="s1">'ami-c7d092f7'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>These can then be referenced using the <code>map!</code> helper method:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:foobar</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">properties</span><span class="p">.</span><span class="nf">image_id</span> <span class="n">map!</span><span class="p">(</span><span class="ss">:platforms</span><span class="p">,</span> <span class="n">region!</span><span class="p">,</span> <span class="ss">:centos7</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<ul>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html">Mappings</a></li>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html">Fn::FindInMap</a></li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="conditions">Conditions</h4>&#x000A;&#x000A;<p>Named conditions are defined in this section and then referenced&#x000A;elsewhere in the template. Conditions can be used to customize resource&#x000A;properties values or to allow/restrict the creation of resources and&#x000A;outputs.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span> <span class="k">do</span>&#x000A;    <span class="n">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">conditions</span> <span class="k">do</span>&#x000A;    <span class="n">creator_is_spox</span> <span class="n">equals!</span><span class="p">(</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">),</span> <span class="s1">'spox'</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>This condition can then be used to provide a custom value for a property:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span> <span class="k">do</span>&#x000A;    <span class="n">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">conditions</span> <span class="k">do</span>&#x000A;    <span class="n">creator_is_spox</span> <span class="n">equals!</span><span class="p">(</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">),</span> <span class="s1">'spox'</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:fubar</span><span class="p">).</span><span class="nf">properties</span> <span class="k">do</span>&#x000A;    <span class="n">key_name</span> <span class="k">if</span><span class="o">!</span><span class="p">(</span><span class="ss">:creator_is_spox</span><span class="p">,</span> <span class="s1">'spox-key'</span><span class="p">,</span> <span class="s1">'default'</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>The condition can also be used to restrict the creation of a resource:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">parameters</span><span class="p">.</span><span class="nf">creator</span> <span class="k">do</span>&#x000A;    <span class="n">type</span> <span class="s1">'String'</span>&#x000A;    <span class="n">default</span> <span class="s1">'spox'</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">conditions</span> <span class="k">do</span>&#x000A;    <span class="n">creator_is_spox</span> <span class="n">equals!</span><span class="p">(</span><span class="n">ref!</span><span class="p">(</span><span class="ss">:creator</span><span class="p">),</span> <span class="s1">'spox'</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="ss">:fubar</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">on_condition!</span> <span class="ss">:creator_is_spox</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<ul>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html">Conditions</a></li>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-conditions.html">Condition Functions</a></li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="resources">Resources</h4>&#x000A;&#x000A;<p>Resources are the infrastructure items and configurations to be&#x000A;provisioned by the orchestration API:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">resources</span><span class="p">.</span><span class="nf">my_instance</span> <span class="k">do</span>&#x000A;    <span class="n">type</span> <span class="s1">'AWS::EC2::Instance'</span>&#x000A;    <span class="n">properties</span> <span class="k">do</span>&#x000A;      <span class="n">key_name</span> <span class="s1">'default'</span>&#x000A;      <span class="o">...</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<ul>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html">Resources</a></li>&#x000A;</ul>&#x000A;&#x000A;<h4 id="outputs">Outputs</h4>&#x000A;&#x000A;<p>Outputs are resultant values from the provisioned infrastructure stack.&#x000A;It generally contains information about specific resource attributes.</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">outputs</span> <span class="k">do</span>&#x000A;    <span class="n">instance_address</span> <span class="k">do</span>&#x000A;      <span class="n">description</span> <span class="s1">'Public IP of my instance'</span>&#x000A;      <span class="n">value</span> <span class="kp">attr</span><span class="o">!</span><span class="p">(</span><span class="ss">:my_instance</span><span class="p">,</span> <span class="ss">:public_ip</span><span class="p">)</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>Conditions can also be applied on outputs:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:template</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">outputs</span> <span class="k">do</span>&#x000A;    <span class="n">instance_address</span> <span class="k">do</span>&#x000A;      <span class="n">description</span> <span class="s1">'Public IP of my instance'</span>&#x000A;      <span class="n">value</span> <span class="kp">attr</span><span class="o">!</span><span class="p">(</span><span class="ss">:my_instance</span><span class="p">,</span> <span class="ss">:public_ip</span><span class="p">)</span>&#x000A;      <span class="n">on_condition!</span> <span class="ss">:my_condition</span>&#x000A;    <span class="k">end</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<ul>&#x000A;  <li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html">Outputs</a></li>&#x000A;</ul>&#x000A;
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<!-- / "Website Properties" -->
+<meta content='Compose your infrastructure.' name='description'>
+<meta content='spox' name='author'>
+<link href='img/logo-full-color.png' rel='icon'>
+<title>SparkleFormation: Compile Time Parameters</title>
+<!-- / "CSS resources" -->
+<link href="/css/base.css" rel="stylesheet" />
+<!-- / "JQuery" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- / "Favicons" -->
+<!-- / Favicons -->
+<link href="/img/logo-full-color.png" rel="icon" type="image/png" />
+<link href='/img/ico/favicon-144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='/img/ico/favicon-114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+<link href='/img/ico/favicon-72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<link href='/img/ico/favicon-57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+
+<!-- / "OpenGraph" -->
+<!-- / "See http://ogp.me/ for more information" -->
+<meta content='http://www.sparkleformation.io/docs/sparkle_formation/compile-time-parameters.html' name='og:url'>
+<meta content='website' name='og:type'>
+<meta content='SparkleFormation' name='og:site_name'>
+<meta content='Compile Time Parameters' name='og:title'>
+<meta content='Compose your infrastructure.' name='og:description'>
+<meta name='og:image'>
+<meta name='og:audio'>
+<meta name='og:video'>
+
+<!-- / "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries" -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class='navbar'>
+<link href="/css/navbar.css" rel="stylesheet" />
+<div class='navbar-fixed-top'>
+<div class='container'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='fa fa-bars'></span>
+</button>
+<a class='navbar-brand brand' href='/'>
+<img src='/img/logo-full-color.png'>
+<span><span class=strong>Sparkle</span><span class=thin>Formation</span></span>
+</a>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a class='black' href='/#platforms'>
+<span>Platforms</span>
+</a>
+</li>
+<li>
+<a class='black' href='/docs/'>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='breadcrumbs'>
+<link href="/css/breadcrumbs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9'>
+<ol class='list-inline'>
+<li>
+<a href='/docs/'>
+<span class='black'>Documentation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/'>
+<span class='black'>SparkleFormation</span>
+</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>
+<span class='black'>Compile Time Parameters</span>
+</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class='documentation'>
+<link href="/css/docs.css" rel="stylesheet" />
+<div class='container'>
+<div class='row'>
+<div class='col-sm-4 col-md-3'>
+<div class='sidebar'>
+<link href="/css/sidebar.css" rel="stylesheet" />
+<ul>
+<li>
+<a href='/docs/guides/'>Guides</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/'>SparkleFormation</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/overview.html'>Overview</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkleformation-dsl.html'>SparkleFormation DSL</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/building-blocks.html'>SparkleFormation Building Blocks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/anatomy.html'>Template Anatomy</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/helper-methods.html'>Helper Methods</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/nested-stacks.html'>Nested Stacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/sparkle-packs.html'>SparklePacks</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/inheritance-merging.html'>Inheritance and Merging</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/stack-policies.html'>Stack Policies</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/provider-restrictions.html'>Provider Restrictions</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/translation.html'>Translation</a>
+</li>
+
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html'>Compile Time Parameters</a>
+<ul>
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html#usage'>Usage</a>
+</li>
+<li>
+<a href='/docs/sparkle_formation/compile-time-parameters.html#template-nesting'>Template Nesting</a>
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+<li>
+<a href='/docs/sfn/'>sfn</a>
+</li>
+
+
+</ul>
+</div>
+
+</div>
+<div class='col-sm-8 col-md-9'>
+<div class='documentation-content'>
+<h2 id="compile-time-parameters">Compile Time Parameters</h2>&#x000A;&#x000A;<p>Compile time parameters are parameters utilized during the compilation&#x000A;of a template. These parameters can <em>only</em> be used via the SparkleFormation&#x000A;library. It is for this reason that compile time parameters are generally&#x000A;discouraged from use. In most situations the structure of the template&#x000A;can be refactored to remove any requirement of compile time parameters. To&#x000A;handle the cases that fall outside of “most situations”, SparkleFormation&#x000A;provides support for compile time parameters.</p>&#x000A;&#x000A;<h3 id="usage">Usage</h3>&#x000A;&#x000A;<p>Compile time parameters are defined during the instantiation of a template:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">,</span>&#x000A;  <span class="ss">:compile_time_parameters</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;    <span class="ss">:number_of_nodes</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;      <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="ss">:number</span><span class="p">,</span>&#x000A;      <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="mi">1</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">)</span> <span class="k">do</span>&#x000A;&#x000A;  <span class="n">state!</span><span class="p">(</span><span class="ss">:number_of_nodes</span><span class="p">).</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>&#x000A;    <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="s2">"node_</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h4 id="parameter-declaration">Parameter Declaration</h4>&#x000A;&#x000A;<p>Declaring compile time parameters is done via the <code>:compile_time_parameters</code>&#x000A;option when instantiating a new template. This option expects a <code>Hash</code> value&#x000A;in which the keys are parameter names, and their respective values are a <code>Hash</code>&#x000A;defining options for the parameter. The available items within the option&#x000A;<code>Hash</code> for compile time parameters:</p>&#x000A;&#x000A;<table>&#x000A;  <thead>&#x000A;    <tr>&#x000A;      <th>Option</th>&#x000A;      <th>Attribute</th>&#x000A;      <th>Value</th>&#x000A;    </tr>&#x000A;  </thead>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:type</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Data type of parameter</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>yes</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>:number</code>, <code>:string</code>, <code>:complex</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:description</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Description of the parameter</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>String</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:default</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Default value for parameter</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>String</code>, <code>Integer</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:multiple</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Accept multiple values</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>TrueClass</code>, <code>FalseClass</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td><code>false</code></td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:prompt_when_nested</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Prompt for value when template is nested</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>TrueClass</code>, <code>FalseClass</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td><code>true</code></td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:allowed_values</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>List of allowed values</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>Array</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:allowed_pattern</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Require pattern value must match</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>String</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:min_size</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Minimum size of value</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>Numeric</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:max_size</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Maximum size of value</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>Numeric</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:min_length</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Minimum length of value</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>Numeric</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;  <tbody>&#x000A;    <tr>&#x000A;      <td><code>:max_length</code></td>&#x000A;      <td>Description</td>&#x000A;      <td>Maximum length of value</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Required</td>&#x000A;      <td>no</td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Valid</td>&#x000A;      <td><code>Numeric</code></td>&#x000A;    </tr>&#x000A;    <tr>&#x000A;      <td> </td>&#x000A;      <td>Default</td>&#x000A;      <td>none</td>&#x000A;    </tr>&#x000A;  </tbody>&#x000A;</table>&#x000A;&#x000A;<h5 id="multiple-value-support">Multiple value support</h5>&#x000A;&#x000A;<p>The <code>:multiple</code> option for compile time parameters will automatically convert&#x000A;a received comma-delimited list into an <code>Array</code> of items. Each item in the list&#x000A;must be the expected type for the parameter. For example, a compile time parameter&#x000A;defined as:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">,</span>&#x000A;  <span class="ss">:compile_time_parameters</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;    <span class="ss">:network_ids</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;      <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="ss">:string</span><span class="p">,</span>&#x000A;      <span class="ss">:multiple</span> <span class="o">=&gt;</span> <span class="kp">true</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">)</span>&#x000A;</code></pre></div>&#x000A;<p>If the value provided for this parameter is:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight plaintext"><code>network-a2413, network-cs214, network-as113&#x000A;</code></pre></div>&#x000A;<p>The resulting value when accessed will be:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="p">[</span>&#x000A;  <span class="s2">"network-a2413"</span><span class="p">,</span>&#x000A;  <span class="s2">"network-cs214"</span><span class="p">,</span>&#x000A;  <span class="s2">"network-as113"</span>&#x000A;<span class="p">]</span>&#x000A;</code></pre></div>&#x000A;<h5 id="complex-type-support">Complex type support</h5>&#x000A;&#x000A;<p>Complex types are supported but should rarely be used. Defining these types of compile&#x000A;time parameters impose restrictions on templates and make them much less flexible. However,&#x000A;there may be cases where providing a complex type to a template is ideal. It is important to&#x000A;note these restrictions:</p>&#x000A;&#x000A;<ul>&#x000A;  <li>No <code>:multiple</code> support</li>&#x000A;  <li>No user defined input via sfn CLI</li>&#x000A;  <li>No template serialization</li>&#x000A;</ul>&#x000A;&#x000A;<p>The last restriction is extremely important. Compile time parameters are stored in a template’s&#x000A;outputs. This is done to support template reprocessing and change detection. Complex types are&#x000A;not stored within the template output due to the fragility introduced by the dependency on the&#x000A;complex type to properly serialize itself. The size of the serialization is also a concern which&#x000A;can easily invalidate a template due to size restrictions given a sufficiently complex type.</p>&#x000A;&#x000A;<p>In general complex types should never be used. Given a situation where complex types may seem&#x000A;like the correct solution, re-evaluate the usage and determine no other solution can be implemented&#x000A;to solve the problem. Compile time parameters already make templates less flexible and complex&#x000A;types increases this rigidity.</p>&#x000A;&#x000A;<h5 id="prompting-when-nested">Prompting when nested</h5>&#x000A;&#x000A;<p>The <code>:prompt_when_nested</code> is used by implementations to suppress parameter prompts&#x000A;when the template is encountered in a nested context. This allows for parent templates&#x000A;to handle compile time parameters for a nested template, but the nested template still&#x000A;retains its ability to be built in a standalone context.</p>&#x000A;&#x000A;<h4 id="accessing-parameter-values">Accessing Parameter Values</h4>&#x000A;&#x000A;<p>Compile time parameter values can be accessed via the <code>state!</code> method. If a compile time&#x000A;parameter has been defined for a template, and no value has been provided when that template&#x000A;is compiled, <code>state!</code> will raise an <code>ArgumentError</code>. This exception will only be raised on&#x000A;defined compile time parameters, and not other values that may be persisted within the state.</p>&#x000A;&#x000A;<p>Example usage:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:test</span><span class="p">,</span>&#x000A;  <span class="ss">:compile_time_parameters</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;    <span class="ss">:number_of_nodes</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;      <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="ss">:number</span><span class="p">,</span>&#x000A;      <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="mi">1</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">)</span> <span class="k">do</span>&#x000A;&#x000A;  <span class="n">state!</span><span class="p">(</span><span class="ss">:number_of_nodes</span><span class="p">).</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>&#x000A;    <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="s2">"node_</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<h4 id="template-modification">Template Modification</h4>&#x000A;&#x000A;<p>When compile time parameters are present SparkleFormation will automatically adjust the outputs&#x000A;of the template to include a <code>CompileState</code> output. The output will contain a JSON dump of the&#x000A;compile time parameter values used to generate the template. This allows update requests to&#x000A;fetch the previous state and seed the compilation of the updated template. This approach provides&#x000A;consistency and removes any requirement of prior knowledge about how a template was used to build&#x000A;a stack.</p>&#x000A;&#x000A;<h3 id="template-nesting">Template Nesting</h3>&#x000A;&#x000A;<p>Compile time parameters are local to a given template instance. A parent template can provide&#x000A;compile time parameters when nesting a template. This is done using the <code>:parameters</code> option&#x000A;when nesting:</p>&#x000A;&#x000A;<div class="highlight"><pre class="highlight ruby"><code><span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:node_generator</span><span class="p">,</span>&#x000A;  <span class="ss">:parameters</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;    <span class="ss">:number_of_nodes</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;      <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="ss">:number</span><span class="p">,</span>&#x000A;      <span class="ss">:prompt_when_nested</span> <span class="o">=&gt;</span> <span class="kp">false</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">state!</span><span class="p">(</span><span class="ss">:number_of_nodes</span><span class="p">).</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>&#x000A;    <span class="n">dynamic!</span><span class="p">(</span><span class="ss">:ec2_instance</span><span class="p">,</span> <span class="s2">"node_</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;<span class="k">end</span>&#x000A;&#x000A;<span class="no">SparkleFormation</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:root</span><span class="p">)</span> <span class="k">do</span>&#x000A;  <span class="n">nest!</span><span class="p">(</span><span class="ss">:nested_template</span><span class="p">,</span>&#x000A;    <span class="ss">:parameters</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;      <span class="ss">:number_of_nodes</span> <span class="o">=&gt;</span> <span class="mi">5</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre></div>&#x000A;<p>In this example the <code>:root</code> template is providing the compile time parameter <code>:number_of_nodes</code>&#x000A;explicitly to the <code>:node_generator</code> template. Due to the compile time parameter option&#x000A;<code>:prompt_when_nested</code> being set to false, when the <code>:root</code> template is compiled, no prompt&#x000A;will be received for the <code>:number_of_nodes</code> compile time parameter. However, if the&#x000A;<code>:node_generator</code> template is compiled directly, the prompt will be received.</p>&#x000A;
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='footer section theme-bg-inverse'>
+<link href="/css/section.css" rel="stylesheet" />
+<link href="/css/footer.css" rel="stylesheet" />
+<div class='container'>
+<div class='row content-row'>
+<div class='col-sm-2 col-sm-offset-0 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2 col-sm-offset-0 col-sm-2'>
+<div class='list'>
+<div class='row'>
+<link href="/css/list.css" rel="stylesheet" />
+<div class='col-sm-12 list-column'>
+<ul class='list-unstyled'>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/">Home</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/#components">Components</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/#features">Features</a></p>
+
+
+</span>
+
+</li>
+<li>
+<div class='white'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="/docs/">Docs</a></p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/guides/getting-started.html">Getting Started</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sparkle_formation/">Library &amp; DSL</a></p>
+
+
+</span>
+
+</li>
+<li>
+<span>
+<p><a href="/docs/sfn/">CLI</a></p>
+
+
+</span>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='text-center'>
+<div class='content-block'>
+<link href="/css/content-block.css" rel="stylesheet" />
+
+<div class='content-body'>
+<span>
+<p><a href="https://twitter.com/sfnftw"><span class="social-icon fa fa-twitter"></span></a> <a href="https://github.com/sparkleformation"><span class="social-icon fa fa-github"></span></a></p>
+
+
+</span>
+
+<span>
+<p>Made with <span class="fa fa-heart"></span> by <a href="https://github.com/chrisroberts">spox</a> © 2013-2019</p>
+
+
+</span>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<tail>
+<!-- / "JQuery + Bootstrap" -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+<!-- / "IE10 viewport hack for Surface/desktop Windows 8 bug" -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<!-- / "Google Analytics" -->
+
+<!-- / "Twitter" -->
+
+<!-- / "Auto loader for custom Javascript" -->
+<!-- / = javascript_include_tag "all" -->
+<script src="/js/sparkleformation.js"></script>
+<script src="/js/typetype.min.js"></script>
+</tail>
+
+</body>
+</html>
