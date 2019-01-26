@@ -4,3 +4,4 @@ build/*
 !source/docs/guides/index.md
 Gemfile.lock
 source/docs/*/images*
+.bundle
